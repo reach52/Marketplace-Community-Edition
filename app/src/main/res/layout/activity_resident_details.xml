@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".resident.view.ResidentDetailsActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:theme="@style/ToolBarStyle"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:title="@string/resident_details"
+			app:navigationIcon="?attr/homeAsUpIndicator"
+			app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/residentDetailCardView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/fragment_container"
+		app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="12dp">
+
+			<Button
+				android:id="@+id/engagementBtn"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/engagement"
+				android:fontFamily="@font/montserrat_bold"
+				android:background="@drawable/rounded_blue_shape"
+				android:textColor="@color/colorPrimary"
+				android:layout_marginTop="4dp"
+				android:textAllCaps="false"
+				app:layout_constraintEnd_toEndOf="@+id/updateResidentButton"
+				app:layout_constraintStart_toStartOf="@+id/updateResidentButton"
+				app:layout_constraintTop_toBottomOf="@+id/updateResidentButton"/>
+
+			<TextView
+				android:id="@+id/residentNameTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:textSize="18sp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				android:textColor="@color/purple"
+				android:fontFamily="@font/montserrat_bold"
+				tools:text="Juan Dela Cruz" />
+
+
+			<TextView
+				android:id="@+id/residentSexTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="@{resident.gender}"
+				tools:text="Female"
+				android:textColor="@color/black"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				app:layout_constraintStart_toStartOf="@+id/residentNameTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentNameTextView" />
+
+
+			<TextView
+				android:id="@+id/residentAgeTextView"
+				android:layout_width="23dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:textColor="@color/black"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentSexTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentSexTextView"
+				android:text="@{resident.ageString}"
+				tools:text="42"  />
+
+
+			<TextView
+				android:id="@+id/dobtextmain"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/purple"
+				android:textSize="10sp"
+				android:text="Date of Birth"
+				android:layout_marginTop="12dp"
+				android:fontFamily="@font/montserrat_medium"
+				app:layout_constraintStart_toStartOf="@+id/residentSexTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentSexTextView"
+
+
+				/>
+
+			<TextView
+				android:id="@+id/residentDOBTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLines="20"
+				android:singleLine="false"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				android:textSize="12sp"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+				app:layout_constraintStart_toStartOf="@+id/dobtextmain"
+				app:layout_constraintTop_toBottomOf="@+id/dobtextmain"
+				tools:text="30/12/2020" />
+			<TextView
+				android:id="@+id/contacttextmain"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/purple"
+				android:textSize="10sp"
+				android:layout_marginTop="10dp"
+				android:text="Contact"
+				android:fontFamily="@font/montserrat_medium"
+				app:layout_constraintStart_toStartOf="@+id/residentDOBTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentDOBTextView"
+				/>
+
+			<TextView
+				android:id="@+id/residentContTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLines="20"
+				android:singleLine="false"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				android:textSize="12sp"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+				app:layout_constraintStart_toStartOf="@+id/contacttextmain"
+				app:layout_constraintTop_toBottomOf="@+id/contacttextmain"
+				tools:text="9921172179" />
+
+			<TextView
+				android:id="@+id/addresstextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/purple"
+				android:textSize="10sp"
+				android:text="Address"
+				android:layout_marginTop="12dp"
+				android:fontFamily="@font/montserrat_medium"
+				app:layout_constraintStart_toStartOf="@+id/residentContTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentContTextView"
+				 />
+
+			<TextView
+				android:id="@+id/residentAddressTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:maxLines="20"
+				android:singleLine="false"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				android:textSize="12sp"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+				app:layout_constraintStart_toStartOf="@+id/addresstextView"
+				app:layout_constraintTop_toBottomOf="@+id/addresstextView"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				tools:text="Manila, Philippines" />
+
+		<!--	<TextView
+				android:id="@+id/residentAgeLabelTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="@string/age"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintStart_toStartOf="@+id/residentAddressTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentAddressTextView" />
+
+			<TextView
+				android:id="@+id/residentAgeTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:textAlignment="viewEnd"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentAgeLabelTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentAgeLabelTextView"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				tools:text="24" />
+
+			<TextView
+				android:id="@+id/residentSexLabelTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="@string/sex"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentAgeTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentAgeTextView" />
+
+			<TextView
+				android:id="@+id/residentSexTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentSexLabelTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentSexLabelTextView"
+				tools:text="Male" />-->
+
+			<Button
+				android:id="@+id/updateResidentButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/edit_round_button_purpl"
+				android:fontFamily="@font/montserrat_bold"
+				android:text="@string/update"
+				android:textAllCaps="false"
+				android:textColor="@color/purple"
+				android:textSize="12dp"
+				android:visibility="gone"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/residentAddressTextView"
+
+				tools:visibility="visible" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+
+	<FrameLayout
+		android:id="@+id/fragment_container"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layout_constraintBottom_toTopOf="@+id/residentNavigation"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/residentDetailCardView"
+		/>
+
+	<View
+		android:id="@+id/highlighter"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#C9C9C9"
+		app:layout_constraintBottom_toTopOf="@id/residentNavigation"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/residentNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#F8F6F6"
+		app:labelVisibilityMode="labeled"
+		app:itemTextColor="@color/purple"
+		app:itemIconTint="@color/purple"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="@id/highlighter"
+		app:menu="@menu/resident_drawer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

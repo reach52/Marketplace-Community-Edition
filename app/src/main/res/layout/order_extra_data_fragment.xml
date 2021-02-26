@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColorWhite"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="reach52.marketplace.community.medicine.view.OrderExtraDataFragment">
+
+    <TextView
+        android:id="@+id/physicanLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/physician_name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/physicianLicenseSpinner"
+        style="@style/EdittextStyle"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="@+id/physicanLabel"
+        app:layout_constraintStart_toStartOf="@+id/physicanLabel"
+        app:layout_constraintTop_toBottomOf="@+id/physicanLabel" />
+
+    <TextView
+        android:id="@+id/discountLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/discount_label"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/physicianLicenseSpinner" />
+
+    <Spinner
+        android:id="@+id/discountCodeSpinner"
+        style="@style/EdittextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="@+id/discountLabel"
+        app:layout_constraintStart_toStartOf="@+id/discountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/discountLabel" />
+
+    <TextView
+        android:id="@+id/discountLabelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/discount_id_number_hint"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discountCodeSpinner" />
+
+    <EditText
+        android:id="@+id/discountIdNumberTextInputEditText"
+        style="@style/EdittextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/NEW10"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/discountCodeSpinner"
+        app:layout_constraintStart_toStartOf="@+id/discountCodeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/discountLabelTextView">
+
+
+    </EditText>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/round_blue_button_selector"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/textColorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/discount_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="discountLabel, discountIdNumberTextInputEditText, discountCodeSpinner,discountLabelTextView" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/physician_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="physicanLabel,physicianLicenseSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

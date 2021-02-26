@@ -1,0 +1,843 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fil_PH">
+	<string name="server_client_id"></string>
+	<string name="accept_delivery">Accept Delivery</string>
+	<string name="accepted">Accepted</string>
+	<string name="accepted_order">Accepted</string>
+	<string name="accepted_order_details">Accepted Order Details</string>
+	<string name="acknowledgment">Acknowledgement Photo</string>
+	<string name="add">add</string>
+	<string name="add_family_member">add family member</string>
+	<string name="add_medication">Add Medication</string>
+	<string name="age">Age</string>
+	<string name="age_label">23 yrs old</string>
+	<string name="app_name">reach52 Marketplace</string>
+	<string name="beneficiary">Beneficiary</string>
+	<string name="birthday_image">birthday_img</string>
+	<string name="cancel">Cancel</string>
+	<string name="captured_image">Captured Image</string>
+	<string name="checkout">Checkout</string>
+	<string name="civil_status_label">Single</string>
+	<string name="consumer_health">Health</string>
+	<string name="currency">Php</string>
+	<string name="date">Date</string>
+	<string name="date_label">Nov 19, 2019 8:00 am</string>
+	<string name="delivered">Delivered</string>
+	<string name="delivered_details">Delivered Order Details</string>
+	<string name="delivered_order">Delivered</string>
+	<string name="discount_id_number_hint">Discount ID Number</string>
+	<string name="discount_label">Discount</string>
+	<string name="dispatched">Dispatched</string>
+	<string name="dispatched_order_details">Dispatched Order Details</string>
+	<string name="dispatched_orders">Dispatched</string>
+	<string name="dispergo">Dispergo</string>
+	<string name="dispergo_logo">Dispergo Logo</string>
+	<string name="expiration_date">Nov 15, 2020</string>
+	<string name="family_member">Insurance Plan Beneficiaries</string>
+	<string name="fee_label">Delivery Fee</string>
+	<string name="full_name">Full Name</string>
+	<string name="go_back">Go Back</string>
+	<string name="gold_insurance">Gold Plan</string>
+	<string name="header_background">Header Background</string>
+	<string name="hold_order">Hold</string>
+	<string name="icon_depicting_an_event">Icon depicting an event</string>
+	<string name="id">ID:</string>
+	<string name="image1">image1</string>
+	<string name="insurance_benefits">Insurance Plan Benefits</string>
+	<string name="insurance_details">Insurance Plan Details</string>
+	<string name="insurance_label">Insurance</string>
+	<string name="insurance_plan">Insurance Plan</string>
+	<string name="insurance_plan_details">Insurance Plan Details</string>
+	<string name="invalid_credentials">Invalid credentials</string>
+	<string name="logging_in_status">Logging in…</string>
+	<string name="login">Login</string>
+	<string name="logout">Logout</string>
+	<string name="malayan">Malayan</string>
+	<string name="malayan_insurance">Malayan Insurance</string>
+	<string name="marital_status">Select Marital Status</string>
+	<string name="marker_label">Marker</string>
+	<string name="medication_label">Medication</string>
+	<string name="medications">Medications</string>
+	<string name="medicine_list">Medicine List</string>
+	<string name="name_label">Michelle Subdivision. Manila City</string>
+	<string name="nav_header_desc">Navigation header</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="new_medication_order">New Medication Order</string>
+	<string name="no_reason">No Reason</string>
+	<string name="none">None</string>
+	<string name="not_delivered">Not Delivered</string>
+	<string name="not_delivered_details">Not Delivered Order Details</string>
+	<string name="ok">OK</string>
+	<string name="on_hold_details">On Hold Order Details</string>
+	<string name="on_hold_order">On Hold</string>
+	<string name="order_medication">Order Medication</string>
+	<string name="order_medicine">Order Medicine</string>
+	<string name="order_processing">Order Processing</string>
+	<string name="order_status">Order Status</string>
+	<string name="orders">Orders</string>
+	<string name="orders_rejected_details">Rejected Order Details</string>
+	<string name="package_size_label">Pk Size</string>
+	<string name="password">Password</string>
+	<string name="patient_name">Patient Name</string>
+	<string name="pending">Pending</string>
+	<string name="pending_order">Pending</string>
+	<string name="pending_order_details">Pending Order Details</string>
+	<string name="personal_information">Personal Information</string>
+	<string name="physician_name">Physician Name</string>
+	<string name="pick_up_this_order">Pick up this Order</string>
+	<string name="picked_up">Picked-up</string>
+	<string name="picked_up_order_details">Picked-Up Order Details</string>
+	<string name="picked_up_orders">Picked-Up</string>
+	<string name="pills_icon">Pills Icon</string>
+	<string name="plan">Gold Plan</string>
+	<string name="prescription_number">Prescription Number</string>
+	<string name="prescription_photo">Prescription Photo</string>
+	<string name="price">Price</string>
+	<string name="proceed">Proceed</string>
+	<string name="purchase_id">#23456order</string>
+	<string name="quantity">Quantity</string>
+	<string name="receive_dispatch">Receive Dispatch</string>
+	<string name="received">Received</string>
+	<string name="received_order">Received</string>
+	<string name="received_order_details">Received Order Details</string>
+	<string name="recipient_name">Recipient Name</string>
+	<string name="reject_delivery">Reject Delivery</string>
+	<string name="reject_order">Rejected</string>
+	<string name="rejected_reason">Reason</string>
+	<string name="remove">Remove</string>
+	<string name="remove_item_prompt">Remove Item?</string>
+	<string name="resident_details">Resident Details</string>
+	<string name="resident_label">Pepito Manila</string>
+	<string name="residents">Residents</string>
+	<string name="resume">Resume</string>
+	<string name="search">search</string>
+	<string name="sex">Sex:</string>
+	<string name="status">Status:</string>
+	<string name="status_label">Active</string>
+	<string name="sub_total">Sub Total</string>
+	<string name="sync_error">SYNC ERROR</string>
+	<string name="sync_finished">SYNC FINISHED</string>
+	<string name="sync_in_progress">SYNC IN PROGRESS</string>
+	<string name="sync_offline">SYNC OFFLINE</string>
+	<string name="sync_started">SYNC STARTED</string>
+	<string name="take_a_photo">Take a Photo</string>
+	<string name="text_acknowledgement_required">A photo of the Acknowledgement is required</string>
+	<string name="text_complete_the_purchase">Complete the purchase</string>
+	<string name="text_required_fields">Please don\'t leave anything blank</string>
+	<string name="text_session_expired">Can\'t proceed, session has expired</string>
+	<string name="total">Total</string>
+	<string name="tracking_code">Tracking Code : </string>
+	<string name="updating_index">UPDATING INDEX</string>
+	<string name="username">Username</string>
+	<string name="valid_until">Valid Until</string>
+	<string name="vat_exclusive">VAT exclusive</string>
+	<string name="vat_exempt_label">VAT Exempt</string>
+	<string name="vat_inclusive">VAT Inclusive</string>
+	<string name="view_insurance_policy">View Insurance Policy</string>
+	<string name="view_products_and_services">View Products And Services</string>
+	<string name="wedding_ring_img">wedding_ring</string>
+	<string name="years_old">years old</string>
+	<string name="agent_name">Agent Name:</string>
+	<string name="date_start">Date start:</string>
+	<string name="date_end">Date end:</string>
+	<string name="insurance_name">Insurance name:</string>
+	<string name="plan_name">Plan name:</string>
+	<string name="relationship">Relationship</string>
+	<string name="contact">Contact</string>
+	<string name="email">Email</string>
+	<string name="number">09128415711</string>
+	<string name="email_sample">example@email.com</string>
+	<string name="contact_no">Contact no.</string>
+	<string name="additional_info">Additional info</string>
+	<string name="sorry_your_age_is_not_qualified_for_this_insurance">Sorry, your age is not qualified for this insurance</string>
+	<string name="first_name">First Name</string>
+	<string name="middle_name">Middle Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+	<string name="date_of_birth">Date of Birth</string>
+	<string name="residents_access_list">Access</string>
+	<string name="residents_logistic_list">Logistic</string>
+	<string name="gender">Gender</string>
+	<string name="postal_code">Postal Code</string>
+	<string name="address">Address</string>
+	<string name="address_line_1">Address Line 1</string>
+	<string name="address_line_2">Address Line 2</string>
+	<string name="country_code">+63</string>
+	<string name="province">Municipality Province</string>
+	<string name="marital">Marital Status</string>
+	<string name="save">Save</string>
+	<string name="update">Update</string>
+	<string name="edit">Edit</string>
+	<string name="temp_vat_health">VAT Inclusive</string>
+	<string name="your_basket">Your basket</string>
+	<string name="your_order">Your Order</string>
+	<string name="when_to_follow_up">When to follow-up?</string>
+	<string name="follow_up_date">Follow up date</string>
+	<string name="follow_up_product">What is your follow-up product/service?</string>
+	<string name="choose_your_category">Choose your category</string>
+
+	<string name="follow_up_list">Follow-up list</string>
+	<string name="all_follow_up">All</string>
+	<string name="tomorrow_follow_up">Tomorrow</string>
+	<string name="today_follow_up">Today</string>
+
+
+	<string-array name="civilStatus">
+		<item>Single</item>
+		<item>Married</item>
+		<item>Widowed</item>
+		<item>Divorced</item>
+		<item>Separated</item>
+	</string-array>
+
+	<string-array name="country">
+		<item>Cambodia</item>
+		<item>Philippines</item>
+		<item>India</item>
+	</string-array>
+
+	<string-array name="service_interests">
+		<item>Health articles I can read myself</item>
+		<item>Reminders to my phone for healthier lifestyle (e.g. reminder to get a check up, or screening)</item>
+		<item>Health Information through Facebook or WhatsApp</item>
+		<item>Local health events, run in my community</item>
+		<item>Doctor visits to the community</item>
+		<item>Access to doctors via phone/video call</item>
+		<item>Personal health services in my home (e.g. blood pressure checks at home)</item>
+		<item>Connecting to other patients with the same condition as me to learn/share</item>
+		<item>Access to affordable medicines</item>
+		<item>Access to diagnostic/screening services</item>
+		<item>Access to health insurance to cover my bills</item>
+		<item>Access to life insurance, in case of accidents and to protect my family if I pass away</item>
+		<item>Access to vaccines</item>
+		<item>Access to nutrition or wellness products (e.g. vitamins)</item>
+		<item>Access to consumer non-prescription medication (e.g. paracetamol)</item>
+		<item>Access to consumer health products (e.g. toothpaste)</item>
+		<item>None of the above (cannot select if other option selected)</item>
+		<item>I don’t want to say (cannot select if other option selected)</item>
+	</string-array>
+
+	<string-array name="service_interests_codes">
+		<item>INFO</item>
+		<item>DREM</item>
+		<item>INFO-FB</item>
+		<item>LHE</item>
+		<item>DVC</item>
+		<item>DPV</item>
+		<item>PHSH</item>
+		<item>PSG</item>
+		<item>MEDS</item>
+		<item>DIAG</item>
+		<item>INS-B</item>
+		<item>INS-L</item>
+		<item>VACC</item>
+		<item>NUTR</item>
+		<item>OTC</item>
+		<item>CHP</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+
+	<string-array name="existing_insurance_options">
+		<item>I have personal life or healthcare insurance plan</item>
+		<item>I have other insurance (e.g. crop, motor insurance)</item>
+		<item>I am part of a group or family plan (e.g. from my employer)</item>
+		<item>I do not have insurance but am interested in this</item>
+		<item>I am not interested in insurance</item>
+		<item>I don’t want to say</item>
+	</string-array>
+	<string-array name="existing_insurance_options_codes">
+		<item>PERS</item>
+		<item>OTH</item>
+		<item>FAM</item>
+		<item>NONI</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+
+	<string-array name="future_insurance_options">
+		<item>Accident cover</item>
+		<item>Hospitalisation cover</item>
+		<item>Medical reimbursement for primary care (e.g. testing, doctors appointments) </item>
+		<item>Accidental death cover</item>
+		<item>Loss of earnings cover</item>
+		<item>Crop insurance </item>
+		<item>Motor insurance</item>
+		<item>Not applicable</item>
+	</string-array>
+
+	<string-array name="future_insurance_options_codes">
+		<item>ACC</item>
+		<item>HSP</item>
+		<item>MEDR</item>
+		<item>ACCD</item>
+		<item>LOE</item>
+		<item>CRP</item>
+		<item>MTR</item>
+		<item>NO</item>
+	</string-array>
+
+	<string-array name="health_conditions">
+		<item>Alzheimers or other dementia</item>
+		<item>Arthritis</item>
+		<item>Asthma</item>
+		<item>Cancer</item>
+		<item>Chronic Obstructive Pulmonary Disorder (COPD)</item>
+		<item>Cirrhosis of the Liver</item>
+		<item>Coronary artery disease</item>
+		<item>Diabetes</item>
+		<item>Diarrhoeal diseases</item>
+		<item>Hepatitis A</item>
+		<item>Hepatitis B</item>
+		<item>Hepatitis C</item>
+		<item>HIV or AIDS</item>
+		<item>Hypertension</item>
+		<item>Ischaemic Heart Disease</item>
+		<item>Kidney Disease</item>
+		<item>Lower Respiratory Infections</item>
+		<item>Malaria</item>
+		<item>Measles</item>
+		<item>Stroke</item>
+		<item>Pneumonia</item>
+		<item>Tuberculosis</item>
+		<item>None of the above (cannot select if other option selected)</item>
+		<item>I don’t want to say (cannot select if other option selected)</item>
+	</string-array>
+	<string-array name="health_conditions_codes">
+		<item>ALZ</item>
+		<item>ART</item>
+		<item>AST</item>
+		<item>CAN</item>
+		<item>COPD</item>
+		<item>CIR</item>
+		<item>CAD</item>
+		<item>DIAB</item>
+		<item>DIAR</item>
+		<item>HEPA</item>
+		<item>HEPB</item>
+		<item>HEPC</item>
+		<item>HIV</item>
+		<item>HYP</item>
+		<item>IHD</item>
+		<item>KID</item>
+		<item>LRI</item>
+		<item>MAL</item>
+		<item>MEA</item>
+		<item>STR</item>
+		<item>PNE</item>
+		<item>TB</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+
+	<string-array name="familyMember">
+		<item>Father</item>
+		<item>Mother</item>
+		<item>Brother</item>
+		<item>Sister</item>
+		<item>Son</item>
+		<item>Daughter</item>
+		<item>Grandfather</item>
+		<item>Grandmother</item>
+		<item>Aunt</item>
+		<item>Uncle</item>
+		<item>Niece</item>
+		<item>Nephew</item>
+		<item>Grandson</item>
+		<item>Granddaughter</item>
+		<item>Guardian</item>
+		<item>Legal Husband</item>
+		<item>Legal Wife</item>
+	</string-array>
+
+	<string-array name="follow_up_reason">
+		<item>Did not have money</item>
+		<item>Already has product stock</item>
+		<item>Wanted a different product</item>
+		<item>Wanted more information</item>
+		<item>Wanted to consult with family/friends</item>
+		<item>Did not have a prescription/valid prescription</item>
+		<item>Others</item>
+	</string-array>
+
+	<string name="home_testing_kit">Home Testing Kit</string>
+	<string name="discount_selection">Discount selection</string>
+	<string name="add_items">Add Items</string>
+	<string name="follow_up">Follow-up</string>
+	<string name="select_follow_up_reason">Select follow up reason</string>
+	<string name="order_otc">Order OTC</string>
+
+	<string name="notes">Notes</string>
+	<string name="some_product">Some Product</string>
+	<string name="reason">Reason</string>
+	<string name="description">Description</string>
+	<string name="consumer_health_wellness">Consumer Health Wellness</string>
+	<string name="otc_all_orders">Orders</string>
+	<string name="medication">Medication</string>
+	<string name="otc_pending_orders">Pending</string>
+	<string name="on_hold_consumer">On Hold</string>
+	<string name="rejected_consumer">Rejected</string>
+	<string name="hcp_number_status">HCP Number</string>
+	<string name="consumer_name">Consumer Name</string>
+	<string name="order_number">Order Number</string>
+	<string name="basic_info">Basic Info</string>
+	<string name="follow_up_info">Follow-Up Info</string>
+	<string name="consumer_health_and_wellness">Consumer Health and Wellness</string>
+	<string name="consumer_health_order">Consumer Health Order</string>
+	<string name="hcp_number">HCP Number</string>
+	<string name="saved">SAVED</string>
+	<string name="view_save_products">View Save Orders</string>
+	<string name="save_order">Save Order</string>
+	<string name="view_saved_products">View Saved Products</string>
+	<string name="my_cart">My Cart</string>
+	<string name="mark_as_done">Mark as Done</string>
+	<string name="save_note">Save note</string>
+	<string name="sample_description">sample description</string>
+	<string name="med_express">MedExpress</string>
+	<string name="choose_supplier">Choose Supplier</string>
+	<string name="category" tools:ignore="MissingTranslation">Category</string>
+	<string name="display" tools:ignore="MissingTranslation">Display</string>
+	<string name="policy_owner" tools:ignore="MissingTranslation">Policy Owner</string>
+	<string name="view" tools:ignore="MissingTranslation">View</string>
+	<string name="insured_person" tools:ignore="MissingTranslation">Insured Person</string>
+	<string name="purchase_preview" tools:ignore="MissingTranslation">Purchase Preview</string>
+	<string name="certificate_no" tools:ignore="MissingTranslation">Certificate No.</string>
+	<string name="policy_owner_details" tools:ignore="MissingTranslation">Policy Owner Details</string>
+	<string name="insured_details" tools:ignore="MissingTranslation">Insured details</string>
+	<string name="self" tools:ignore="MissingTranslation">Self</string>
+	<string name="reviewed_by" tools:ignore="MissingTranslation">Reviewed By</string>
+	<string name="denial_reason" tools:ignore="MissingTranslation">Denial Reason</string>
+	<string name="plan_details" tools:ignore="MissingTranslation">Plan Details</string>
+	<string name="acknowledgement_initials" translatable="false">AR/ID/IC</string>
+	<string name="addtional_detail_info" tools:ignore="MissingTranslation">Additional Detail Info</string>
+	<string name="required_photo_prescription" tools:ignore="MissingTranslation">A photo of the prescription is required</string>
+	<string name="order_created" tools:ignore="MissingTranslation">Order Created</string>
+	<string name="okay" tools:ignore="MissingTranslation">Okay</string>
+	<string name="add_new_resident" tools:ignore="MissingTranslation">Add New Resident</string>
+	<string name="add_follow_up_details" tools:ignore="MissingTranslation">Add follow-up details</string>
+	<string name="discount_optional" tools:ignore="MissingTranslation">Discount (Optional)</string>
+	<string name="follow_up_date_validation" tools:ignore="MissingTranslation">Follow up date cannot be empty</string>
+	<string name="input_products" tools:ignore="MissingTranslation">Please input product</string>
+	<string name="successfully_updated" tools:ignore="MissingTranslation">Successfully updated</string>
+	<string name="special_character_message" tools:ignore="MissingTranslation">Invalid input: special characters not allowed as first input</string>
+	<string name="follow_up_details" tools:ignore="MissingTranslation">Follow-up Details</string>
+	<string name="mark_down" tools:ignore="MissingTranslation">Follow-up was marked as done</string>
+	<string name="unmarked" tools:ignore="MissingTranslation">Follow-up was unmarked</string>
+	<string name="folllow_up_chicking" tools:ignore="MissingTranslation">Please add notes before checking</string>
+	<string name="city">City</string>
+	<string name="country">Country</string>
+
+	<string-array name="genders">
+		<item>Male</item>
+		<item>Female</item>
+	</string-array>
+
+	<string-array name="relations">
+		<item>Spouse</item>
+		<item>Parent</item>
+		<item>Sibling</item>
+		<item>Child</item>
+	</string-array>
+
+	<string name="facebook_app_id"></string>
+	<string name="fb_login_protocol_scheme"></string>
+
+	<string-array name="carousel_titles">
+		<item>Become a reach52 marketplace manager!</item>
+		<item>Who is reach52?</item>
+		<item>What does a Marketplace Area Manager do?</item>
+		<item>Why should you become a Marketplace Area Manager?</item>
+		<item>reach52 marketplace has everything you need for your health in one place</item>
+		<item>Ready to sign up… here’s how:</item>
+	</string-array>
+
+	<string name="i_agree">I agree</string>
+
+	<string name="consent_text" tools:ignore="MissingTranslation">
+        <![CDATA[
+<p><strong>In order for us to process your order and deliver medicines and any other services to you, we must capture your consent. Please read the below and confirm your consent for us to process this order on your behalf. The below is designed to make the process of receiving your medicines easier, transparent and legal. Once we have received this Consent Form, we will be able to deliver our services to you.</strong></p>
+<p>I am made fully aware, and likewise amenable, that this pilot shall last for three (3) months only.</p>
+<p>I give permission for my prescription or any other order form to be stored and processed, in line with providing me with the described order fulfilment service.</p>
+<p>I give permission to analyse the information provided therein, to drive service improvement.</p>
+<p>I give permission for any repeat or part-shipped orders, to be stored and processed.</p>
+<p>I accept responsibility for being available at the suggested or agreed time of the delivery to my home, or to personally collect from a collection point (which collection point REACH52 will advise me when the collection or delivery is due).</p>
+<p>In the event that I am not able to personally receive my medication, I give permission for my medicine to be delivered to an approved family member or someone who lives in my household.</p>
+<p>At my request, I give consent for REACH52 or any of its authorized representative to collect my prescription from the local health provider, if required and the same becomes available and necessary.</p>
+<p>At my request, I give consent to collect my dispensed medication from a suitable stocking point on a recurrent basis.</p>
+<p>I give consent to REACH52 to deliver the dispensed medicines to my home or I agree to collect from an agreed location upon request.</p>
+<p>I give permission for my personal data, as provided below, to be stored digitally and processed and likewise shared with other relevant parties that are necessary to process and fulfil this and any future order of mine. The authorization hereby given to REACH52 shall be valid for a period of 10 years from the date of my signature unless expressly revoked by me through proper written notice to REACH52.</p>
+<p>I understand that my data will be processed by REACH52 only, and in accordance with applicable local regulations, laws and guidelines.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>REACH52 makes all transactions transparent to the patient at the time of ordering to avoid any hidden cost and so:</strong></p>
+<p>I agree to pay the price of the order as provided at the time of ordering. The ordered price shall already include the price of goods, taxes and any additional services, for example: medicines delivery, etc.</p>
+<p>I agree to pay any agreed recurring fees as agreed at the time of ordering.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>In providing targeted, low cost products and services, REACH52 has to ensure that the products and services are received by their intended, qualifying recipients, therefore:</strong></p>
+<p>I give my permission for my data to be processed as a means of ensuring that the qualification criteria for the goods and services are met.</p>
+<p>I understand that any qualifying criteria against which my profile may be assessed, are available to me upon request.</p>
+<p>I confirm that this order is for myself and will not be shared, sold or distributed to any other persons or organisations. If I do not comply with this, I understand this is a breach of contract and amounts to fraud, and this contracted service and/or arrangement shall be terminated and referred to law enforcement authorities.</p>
+<p>I agree to use the products and services in line with the guidance issued in order to ensure that the beneficial effects are maximised.</p>
+<p>I confirm that I all the information I have herein provided are true and correct.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>REACH52 is only interested in providing services to persons who wish and agree to participate and so:</strong></p>
+<p>I reserve the right to terminate or amend this agreement at any time, but this will result in my order not being processed or delivered.</p>
+<p>I agree that I will be liable for the payment for any goods or services being fulfilled, delivered or outstanding at the time of cancellation or change.</p>
+<p>In the event that there is an adverse event that may be related to products I have purchased thru REACH52, I give REACH52 the consent to further collect details about</p>
+<p>said adverse event, forward the same details to drug manufacturers or health authorities, and likewise give consent for REACH52&rsquo;s partners or any health authorities to contact me to get additional information in the interest of patient safety as required and necessary.</p>
+]]>
+    </string>
+
+	<string name="india_consent">
+		 <![CDATA[
+<p><strong>In order for us to process your order and deliver medicines and any other services to you, we must capture your consent. Please read the below and confirm your consent for us to process this order on your behalf. The below is designed to make the process of receiving your medicines easier, transparent and legal. Once we have received this Consent Form, we will be able to deliver our services to you.</strong></p>
+<p>I am made fully aware, and likewise amenable, that this pilot shall last for three (3) months only.</p>
+<p>I give permission for my prescription or any other order form to be stored and processed, in line with providing me with the described order fulfilment service.</p>
+<p>I give permission to analyse the information provided therein, to drive service improvement.</p>
+<p>I give permission for any repeat or part-shipped orders, to be stored and processed.</p>
+<p>I accept responsibility for being available at the suggested or agreed time of the delivery to my home, or to personally collect from a collection point (which collection point REACH52 will advise me when the collection or delivery is due).</p>
+<p>In the event that I am not able to personally receive my medication, I give permission for my medicine to be delivered to an approved family member or someone who lives in my household.</p>
+<p>At my request, I give consent for REACH52 or any of its authorized representative to collect my prescription from the local health provider, if required and the same becomes available and necessary.</p>
+<p>At my request, I give consent to collect my dispensed medication from a suitable stocking point on a recurrent basis.</p>
+<p>I give consent to REACH52 to deliver the dispensed medicines to my home or I agree to collect from an agreed location upon request.</p>
+<p>I give permission for my personal data, as provided below, to be stored digitally and processed and likewise shared with other relevant parties that are necessary to process and fulfil this and any future order of mine. The authorization hereby given to REACH52 shall be valid for a period of 10 years from the date of my signature unless expressly revoked by me through proper written notice to REACH52.</p>
+<p>I understand that my data will be processed by REACH52 only, and in accordance with applicable local regulations, laws and guidelines.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>REACH52 makes all transactions transparent to the patient at the time of ordering to avoid any hidden cost and so:</strong></p>
+<p>I agree to pay the price of the order as provided at the time of ordering. The ordered price shall already include the price of goods, taxes and any additional services, for example: medicines delivery, etc.</p>
+<p>I agree to pay any agreed recurring fees as agreed at the time of ordering.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>In providing targeted, low cost products and services, REACH52 has to ensure that the products and services are received by their intended, qualifying recipients, therefore:</strong></p>
+<p>I give my permission for my data to be processed as a means of ensuring that the qualification criteria for the goods and services are met.</p>
+<p>I understand that any qualifying criteria against which my profile may be assessed, are available to me upon request.</p>
+<p>I confirm that this order is for myself and will not be shared, sold or distributed to any other persons or organisations. If I do not comply with this, I understand this is a breach of contract and amounts to fraud, and this contracted service and/or arrangement shall be terminated and referred to law enforcement authorities.</p>
+<p>I agree to use the products and services in line with the guidance issued in order to ensure that the beneficial effects are maximised.</p>
+<p>I confirm that I all the information I have herein provided are true and correct.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong>REACH52 is only interested in providing services to persons who wish and agree to participate and so:</strong></p>
+<p>I reserve the right to terminate or amend this agreement at any time, but this will result in my order not being processed or delivered.</p>
+<p>I agree that I will be liable for the payment for any goods or services being fulfilled, delivered or outstanding at the time of cancellation or change.</p>
+<p>In the event that there is an adverse event that may be related to products I have purchased thru REACH52, I give REACH52 the consent to further collect details about</p>
+<p>said adverse event, forward the same details to drug manufacturers or health authorities, and likewise give consent for REACH52&rsquo;s partners or any health authorities to contact me to get additional information in the interest of patient safety as required and necessary.</p>
+         ]]>
+	</string>
+
+	<string-array name="carousel_bodies">
+        <item>
+            <![CDATA[
+            Deliver health services for your community.<br/><br/>
+            Excellent rewards and opportunities for you!<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            reach52 delivers affordable healthcare to over 400 communities. <br/><br/>
+            reach52 marketplace is an online catalogue, with everything you need for your health in one place.<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            You visit people in your community – residents neighbours, friends and family. <br/><br/>
+            Order products on reach52 marketplace. Deliver products into the community. <br/><br/>
+            It’s as simple as that!<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>Get paid for every order you make</li>
+            <li>The more orders you make, the more you get paid</li>
+            <li>Be your own boss – you choose when to work</li>
+            <li>Fast track your career with world class training</li>
+            <li>Support your community through affordable healthcare</li>
+            </ul>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>Vitamins, Medicines, Insurance and a wide range of Family Health products</li>
+            <li>Affordable prices, delivered direct to communities</li>
+            <li>No travel, no hassle, just better health</li>
+            </ul>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>Fill in your details in the form</li>
+            <li>Submit and await validation</li>
+            <li>Receive instructions to complete training</li>
+            <li>Complete training, then you’re ready to go!</li>
+            </ul>
+            ]]>
+        </item>
+	</string-array>
+
+	<string name="faq">
+        <![CDATA[
+        <h2>What are the minimum requirements to become a Marketplace Area Manager?​</h2>
+        <ul>
+            <li>You must be at least 18 years old​.</li>
+        </ul>
+        <br/>
+        <h2>How much does a Marketplace Area Manager typically earn?</h2>
+        <ul>
+            <li>You get a commission for every order you make through reach52 marketplace​.</li>
+            <li>The more orders you make, the more commission you make.</li>
+        </ul>
+        ​<br/>
+        <h2>I’m ready to sign up, what do I do next?​</h2>
+        <ul>
+            <li>Just submit your details in the form here along with photo ID​.</li>
+            <li>We’ll then confirm your sign up as Marketplace Area Manager​.</li>
+            <li>You’ll then receive training from us to get you started​.</li>
+        </ul>
+        ]]>
+    </string>
+
+	<string name="TnC">
+        <![CDATA[
+        <h2>What does a Marketplace Area Manager do?</h2>
+        <ul>
+            <li>Meets with residents in an assigned area to promote reach52 marketplace.</li>
+            <li>Supports residents in selecting and ordering the products and services they need from the catalogue.</li>
+            <li>Receives payment for orders from residents on behalf of reach52’s partners.</li>
+            <li>Coordinates with their Territory Manager for orders made, and remittance of payments based on agreed upon timeframes on a weekly basis.</li>
+            <li>Submit the sales sheet on a weekly basis.</li>
+            <li>Receives or picks up orders from their Territory Manager and deliver orders to the residents.</li>
+            <li>Coordinates scheduled delivery dates to minimize failed deliveries.</li>
+            <li>Supports reach52 and its partners to put marketing materials in key areas for residents.</li>
+        </ul>
+        ]]>
+    </string>
+
+	<string name="next">Next</string>
+	<string name="tell_us_about_yourself">Tell us about yourself</string>
+	<string name="Continue">Continue</string>
+	<string name="carousel_1_title">Manage Residents</string>
+	<string name="carousel_1_subtext">Efficiently onboard residents and access their records or appointments with ease.</string>
+	<string name="carousel_2_title">Last-mile logistics</string>
+	<string name="carousel_2_subtext">Purchase medicine and track resident orders in one app.</string>
+	<string name="carousel_3_title">Secure their future</string>
+	<string name="carousel_3_subtext">Showcase available insurance plans and place orders for your residents.</string>
+	<string name="carousel_4_title">Access on the go!</string>
+	<string name="carousel_4_subtext">Create and edit resident records, place orders even while offline.</string>
+	<string name="please_enter_pin">Please enter PIN</string>
+	<string name="forgot_pin">Forgot PIN?</string>
+	<string name="enter">ENTER</string>
+	<string name="please_enter_new_pin">Please enter new PIN</string>
+	<string name="done">done</string>
+	<string name="pin_too_short">PIN too short</string>
+	<string name="incorrect_pin">Incorrect PIN</string>
+	<string name="something_went_wrong">Something went wrong. Try again.</string>
+	<string name="incomplete_pin">Incomplete PIN</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="incorrect_creds">Incorrect Credentials</string>
+	<string name="password_too_short">Password too short.</string>
+	<string name="passwords_dont_match">Passwords do not match.</string>
+	<string name="or">OR</string>
+	<string name="continue_with_email"><![CDATA[Continue with<br/><b>%1$s?</b>]]></string>
+	<string name="no_email_found">No email found.</string>
+	<string name="setup_new_password"><![CDATA[Set up new password for<br/><b>%1$s</b>]]></string>
+	<string name="enter_your_password"><![CDATA[Enter password for<br/><b>%1$s</b>]]></string>
+	<string name="faq_heading">Frequently Asked Questions</string>
+	<string name="sign_up_as_a_normal_user">SIGN UP AS A NORMAL USER</string>
+	<string name="sign_up_as_a_community_manager">SIGN UP AS A COMMUNITY MANAGER</string>
+	<string name="ready_to_get_started_sign_up_here">Ready to get started?\nSign up here.</string>
+	<string name="town">Town</string>
+	<string name="phone">Phone</string>
+	<string name="region">Region</string>
+	<string name="fb_login_canceled">Facebook login canceled.</string>
+	<string name="error_with_fb">Error continuing with Facebook. Try again.</string>
+	<string name="i_agree_with_terms_and_conditions">I agree to the terms and conditions.</string>
+	<string name="our_privacy_policy"><u>Our privacy policy</u></string>
+	<string name="please_upload_your_id">Please Upload Your ID</string>
+	<string name="add_dependents_to_countinue">Add dependents to continue</string>
+	<string name="dependents">Dependents</string>
+	<string name="relation_to_insured">Relation to Insured:</string>
+	<string name="click_to_add_new_dependents">Click + to add new Dependents.</string>
+	<string name="date_cannot_be_empty">Date cannot be empty</string>
+	<string name="name_cannot_be_empty">Name cannot be empty</string>
+	<string name="age_too_low">Age cannot be lower than 18 years</string>
+
+	<string name="working_days">Expect 4-5 working days for an update of the said request.</string>
+	<string name="pending_questionnaire">Pending Questionnaire</string>
+	<string name="pending_issuance">Pending Issuance</string>
+	<string name="approved">Approved</string>
+	<string name="declined">Declined</string>
+	<string name="cancelled">Cancelled</string>
+	<string name="not_available">Not available</string>
+	<string name="invalid_user">Invalid User Account</string>
+	<string name="image_too_large_error">Image too large. Please click another picture.</string>
+	<string name="id_image_upload_fail">Upload failed. Please try again.</string>
+	<string name="processing_image">"Processing Image... "</string>
+	<string name="image_processing_fail">Failed to process image. Please try again.</string>
+	<string name="uploading_image">Uploading image...</string>
+	<string name="signin_with_facebook">Sign in with Facebook</string>
+	<string name="disconnect_facebook">Disconnect Facebook</string>
+	<string name="signin_with_google">Sign in with Google</string>
+	<string name="disconnect_google">Disconnect Google</string>
+	<string name="available">Available</string>
+	<string name="details">Details</string>
+	<string name="prescription_required">Prescription required</string>
+	<string name="country_not_supported">Sorry. Your country is not supported.</string>
+	<string name="invalid_email_format">Invalid email</string>
+
+	<string name="invalid_email">Invalid email format</string>
+	<string name="invalid_input">Invalid input: special characters not allowed as first input</string>
+	<string name="date_validation">Follow up date cannot be empty</string>
+	<string name="phone_number_validation">Please input contact number</string>
+	<string name="product_validation">Please input product</string>
+	<string name="follow_up_lists">Follow-up Lists</string>
+	<string name="successfully_saved">Notes was successfully saved</string>
+	<string name="add_notes">Please add notes before saving</string>
+	<string name="install_access_continue">Install Access to Continue</string>
+	<string name="update_resident">Update Resident</string>
+	<string name="resident_preview_details">Resident Preview Details</string>
+	<string name="please_add_family_member">Please add family member</string>
+	<string name="insurance_policy_details">Insurance Policy Details</string>
+	<string name="medicine_details">Medicine Details</string>
+	<string name="take_id_photo">Take ID photo</string>
+	<string name="products_term">%s Months</string>
+	<string name="general_exclusions">General Exclusions</string>
+	<string name="plan_validity_term">Plan Validity Term:</string>
+
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<!-- Insurance -->
+	<string name="consent_insurance">Consent</string>
+	<string name="insurers">Insurers</string>
+	<string name="insurance_products">Insurance Plans</string>
+	<string name="insurance_products_details">Insurance Details</string>
+	<string name="constructs">Plan Types</string>
+	<string name="members">Add Members</string>
+	<string name="premium">Premium Details</string>
+	<string name="beneficiaries">Add Beneficiaries</string>
+	<string name="id_upload">Upload ID</string>
+	<string name="order_preview">Order Preview</string>
+	<string name="max_age_is">"Max age is "</string>
+	<string name="min_age_required">"Minimum age required is "</string>
+	<string name="invalid_phone_number">Invalid phone number</string>
+	<string name="address_is_incomplete">Address is incomplete</string>
+	<string name="insured_amount">Insured Amount</string>
+	<string name="exclusions">Exclusions</string>
+	<string name="premium_starting_form">Starting from %1$s %2$s</string>
+	<string name="period">Period</string>
+	<string name="premium_breakdown">Premium Breakdown</string>
+	<string name="primary_members">Primary Members</string>
+	<string name="extra_members">Extra Members</string>
+	<string name="tax">Tax</string>
+	<string name="final_total_tax">Final (Total + Tax)</string>
+	<string name="click_to_add_beneficiaries">Add a beneficiary for your plan.</string>
+	<string name="members_covered">Members Covered</string>
+	<string name="premium_details">Premium Details</string>
+	<string name="premium_amount">Premium Amount</string>
+	<string name="premium_period">Premium Period</string>
+	<string name="uploaded_id">Uploaded ID</string>
+	<string name="buy">Buy</string>
+	<string name="confirm_this_purchase">Confirm this purchase?</string>
+	<string name="your_insurance_purchase_is_complete">Your insurance purchase is complete</string>
+	<string name="updated_on">Updated On:</string>
+	<string name="created_on">Created On:</string>
+	<string name="click_to_purchase_new_insurance">Click + to purchase new insurance</string>
+	<string name="weight_in_kg">Weight (in kg)</string>
+	<string name="height_in_cm">Height (in cm)</string>
+	<string name="have_you_been_diagnosed_with_any_of_the_following_conditions">Have you been diagnosed with any of the following conditions?</string>
+	<string name="answer">Answer</string>
+	<string name="do_you_take_medications">Do you take medications?</string>
+	<string name="are_you_currently_pregnant_or_have_any_children_under_5_years_old">Are you currently pregnant or have any children under 5 years old?</string>
+	<string name="i_don_t_want_to_say">I don’t want to say</string>
+	<string name="not_applicable">Not applicable</string>
+	<string name="do_you_have_any_form_of_insurance">Do you have any form of insurance?</string>
+	<string name="if_you_have_insurance_or_think_you_might_in_future_what_cover_do_you_have">If you have insurance, or think you might in future, what cover do you have?</string>
+	<string name="do_you_have_a_bank_account">Do you have a bank account?</string>
+	<string name="do_you_have_an_mwallet_or_electronic_payment_solution">Do you have an mWallet or electronic payment solution?</string>
+	<string name="which_of_the_following_products_and_services_would_you_be_interested_in">Which of the following products and services would you be interested in?</string>
+	<string name="Updated">Updated</string>
+	<string name="service_interests">Service Interests</string>
+	<string name="insurance_profile">Insurance Profile</string>
+	<string name="health_profile">Health Profile</string>
+	<string name="weight_too_low">Weight too low.</string>
+	<string name="first_weight_input_not_0">First input for weight must not be 0</string>
+	<string name="invalid_weight">Invalid weight.</string>
+	<string name="height_too_low">Height too low.</string>
+	<string name="height_too_high">Height too high.</string>
+	<string name="weight_too_heavy">Weight too heavy.</string>
+	<string name="first_height_must_not_0">First input for height must not be 0</string>
+	<string name="invalid_height">Invalid height.</string>
+	<string name="first_name_cannot_be_empty">First name cannot be empty</string>
+	<string name="last_name_cannot_be_empty">Last name cannot be empty</string>
+	<string name="postal_code_cannot_be_empty">Postal code cannot be empty</string>
+	<string name="city_cannot_be_empty">City cannot be empty</string>
+	<string name="dob_not_set">Date of birth not set</string>
+	<string name="phone_number_cannot_be_empty">Phone number cannot be empty</string>
+	<string name="Update_resident">Update Resident</string>
+	<string name="answers_selected">Answers Selected</string>
+	<string name="please_enter_your_email">Please enter your email</string>
+	<string name="resident_previwe_details">Resident Preview Details</string>
+	<string name="phone_min_limit">Phone number must not be less than 10</string>
+	<string name="questions">Questions</string>
+	<string name="loading_questions">Loading questions</string>
+	<string name="you_are_offline">You are offline</string>
+	<string name="check_order_status">Check order status</string>
+	<string name="medication_order_status">Medication Order Status</string>
+	<string name="add_discount_number">Please add discount number</string>
+
+
+	<string-array name="order_status">
+		<item>ACCEPTED</item>
+		<item>DELIVERED</item>
+		<item>DISPATCHED</item>
+		<item>NOT_DELIVERED</item>
+		<item>PENDING</item>
+		<item>PICKED_UP</item>
+		<item>RECEIVED</item>
+		<item>REJECTED</item>
+		<item>ON HOLD</item>
+	</string-array>
+
+	<string name="generic_name">Generic name</string>
+	<string name="brand_name">Brand name</string>
+	<string name="total_item_count">Total item count</string>
+	<string name="loading_meds_please_wait">Loading medicines. Please wait.</string>
+	<string name="something_error">Something went wrong</string>
+	<string name="purchase_requested">Purchase requested</string>
+	<string name="finish">FINISH</string>
+	<string name="your_sign_up_is_done_nplease_watch_video_about_the_platform">Your sign up is done!\nPlease watch video about the platform</string>
+	<string name="form">Form</string>
+	<string name="dosage">Dosage</string>
+	<string name="purchase_medication_list">Purchased Medication List</string>
+	<string name="purchase_medication_details">Purchased Medication Details</string>
+	<string name="mandatory_fileds">Mandatory fields are empty</string>
+	<string name="uploading">Uploading...</string>
+	<string name="please_update_the_app_to_continue">Update is available. Please update the app to continue.</string>
+	<string name="goto_playstore">go to Play Store</string>
+	<string name="do_you_want_to_install_the_update">Update is available. Do you want to install it?</string>
+	<string name="later">later</string>
+	<string name="item_s">Item/s</string>
+	<string name="purchaseproduct">Purchase Insurance <u>underline</u>
+    </string>
+	<string name="prescription_hint">Rx-221545</string>
+	<string name="NEW10">NEW100</string>
+	<string name="purchase_medicine">Purchase medicine</string>
+	<string name="let_s_make_your_first_purchase">Lets Make Your First Purchase</string>
+	<string name="engagement">Engagement</string>
+	<string name="account_setup">Account Setup</string>
+	<string name="invalid_pin">Invalid PIN.</string>
+	<string name="username_taken_error">Username already taken. Please select another one.</string>
+	<string name="invalid_username">Invalid username</string>
+	<string name="username_too_short">Username too short. It should be at least 6 characters.</string>
+	<string name="set_up_your_new_account">Set up your new account!\nAdd a username and PIN of your choice.</string>
+	<string name="login_again">Please login again with your username and PIN.</string>
+	<string name="your_acc_is_locked">Your account is locked</string>
+	<string name="account_not_allowerd">Your account is not allowed to use this app</string>
+	<string name="please_enter_your_username_or_email_and_your_pin_to_continue">Please enter your username or email\nand your PIN to continue</string>
+	<string name="username_email">Username / Email</string>
+	<string name="enter_pin_below">Enter PIN below</string>
+	<string name="ask_help_from_pin_manager_for_forgot_password">Your field manager will assist you in setting up your new PIN. Please contact them for any help.</string>
+	<string name="account_locked_contact_field_manager">Your account is locked because of 3 unsuccessful attempts. Please contact your field manager for further assistance.</string>
+	<string name="manufacturer">Manufacturer</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

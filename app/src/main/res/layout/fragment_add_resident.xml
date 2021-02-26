@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameTextView"
+            app:layout_constraintTop_toTopOf="@+id/nameTextView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/first_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--    <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/first_name"
+                style="@style/EdittextStyle"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"/>-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstNameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintStart_toStartOf="@+id/star1"
+            app:layout_constraintTop_toBottomOf="@+id/star1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/firstNameTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/middle_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star1"
+            app:layout_constraintTop_toBottomOf="@+id/firstNameTextInputLayout"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/OutlinedRoundedBox"
+            android:id="@+id/middleNameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/middleNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/middleNameTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/middleNameTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/last_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star3"
+            app:layout_constraintTop_toBottomOf="@+id/middleNameTextInputLayout"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastNameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/lastNameTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/contact"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star4"
+            app:layout_constraintTop_toBottomOf="@+id/lastNameTextInputLayout"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/countryCodeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="+91"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/star4"
+            app:layout_constraintTop_toBottomOf="@+id/star4"
+            app:layout_constraintBaseline_toBaselineOf="@id/contactTextInputLayout"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contactTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/countryCodeTextView"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView4">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/countryCodeTextView"
+            app:layout_constraintTop_toBottomOf="@+id/contactTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star5"
+            app:layout_constraintTop_toBottomOf="@+id/contactTextInputLayout"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star5"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/residentEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/star6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/emailTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star6"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dobTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView6">
+
+            <EditText
+                android:id="@+id/editTextDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:focusableInTouchMode="false"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/star7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/dobTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/dobTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star7"
+            app:layout_constraintTop_toBottomOf="@+id/dobTextInputLayout"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView7">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/star8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/addressTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star8"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextInputLayout"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cityTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cityInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/star9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/cityTextInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/cityTextInputLayout"/>
+
+        <TextView
+            android:id="@+id/nameTextView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="14sp"
+            android:text="@string/postal_code"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star9"
+            app:layout_constraintTop_toBottomOf="@+id/cityTextInputLayout"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/postalCodeInputTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:boxCornerRadiusTopStart="22dp"
+            app:boxCornerRadiusBottomStart="22dp"
+            app:boxCornerRadiusBottomEnd="22dp"
+            app:boxCornerRadiusTopEnd="22dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="#8181815C"
+            style="@style/OutlinedRoundedBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView9">
+
+            <EditText
+                android:id="@+id/postalCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="16sp"
+                tools:ignore="LabelFor,TextFields"
+                android:autofillHints="@string/number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/countryTextView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/country"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/postalCodeEditText"/>-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerCountry"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/countryTextView"/>-->
+
+
+        <TextView
+            android:id="@+id/star10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/postalCodeInputTextLayout"
+            app:layout_constraintTop_toBottomOf="@+id/postalCodeInputTextLayout"/>
+
+
+        <TextView
+            android:id="@+id/maritalStatusText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/marital_status"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star10"
+            app:layout_constraintTop_toBottomOf="@+id/postalCodeInputTextLayout"/>
+
+        <RelativeLayout
+            android:id="@+id/rlspinnerMaritalStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/maritalStatusText"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+        <Spinner
+            android:id="@+id/spinnerMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/star11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/rlspinnerMaritalStatus"
+            app:layout_constraintTop_toBottomOf="@+id/rlspinnerMaritalStatus"/>
+
+
+
+        <TextView
+            android:id="@+id/genderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/star10"
+            app:layout_constraintTop_toBottomOf="@+id/rlspinnerMaritalStatus"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genderText">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male"
+                />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+<!--        <Button-->
+<!--            android:id="@+id/addResident"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.AppCompat.Button.Colored"-->
+<!--            android:text="@string/add"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/radioGroupGender"/>-->
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:background="@drawable/round_blue_button_selector"
+            android:text="@string/update"
+            android:textColor="@color/textColorWhite"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupGender"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

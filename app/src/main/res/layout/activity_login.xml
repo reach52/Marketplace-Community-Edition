@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#00ADEE"
+	android:orientation="vertical">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/mainconstrain"
+		style="@style/loginlayoutborder"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="center"
+		app:layout_constraintBottom_toTopOf="@+id/appVersionText"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_marginBottom="32dp"
+		tools:ignore="MissingConstraints">
+
+		<ImageView
+			android:id="@+id/imageView9"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="32dp"
+			android:layout_marginTop="152dp"
+			android:layout_marginEnd="32dp"
+			android:adjustViewBounds="true"
+			android:contentDescription="@string/dispergo_logo"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/reach52_marketplace_logo" />
+
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/email_edittext"
+			style="@style/EdittextStyle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="32dp"
+			android:layout_marginTop="40dp"
+			android:layout_marginEnd="32dp"
+			android:autofillHints="email"
+			android:ems="10"
+			android:hint="@string/username_email"
+			android:inputType="textEmailAddress"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+
+		<TextView
+			android:id="@+id/pin_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32dp"
+			android:text="@string/enter_pin_below"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/email_edittext" />
+
+
+		<reach52.marketplace.community.auth.view.PINView
+			android:id="@+id/pin_input"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:codeHiddenMode="true"
+			android:layout_marginTop="8dp"
+			app:codeLength="4"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/pin_message"
+			app:textSize="30sp"
+			app:underlineCursorEnabled="false"
+			app:underlineFilledColor="@color/colorPrimary"
+			app:underlineStroke="4dp" />
+
+		<Button
+			android:id="@+id/continue_btn"
+			style="@style/RoundBottomBlueButton"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="32dp"
+			android:layout_marginTop="32dp"
+			android:layout_marginEnd="32dp"
+			android:text="@string/login"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/pin_input" />
+
+
+		<TextView
+			android:id="@+id/login_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Please login again with your username and PIN."
+			android:visibility="gone"
+			app:layout_constraintBottom_toTopOf="@+id/imageView9"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<TextView
+		android:id="@+id/appVersionText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="16dp"
+		android:textAlignment="center"
+		android:textColor="#FFFFFF"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:ignore="MissingConstraints" />
+
+	<RelativeLayout
+		android:id="@+id/textRelative"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#00ADEE"
+		android:gravity="center_horizontal"
+		android:visibility="gone"
+		app:layout_constraintStart_toStartOf="parent"
+
+		app:layout_constraintTop_toBottomOf="@+id/mainconstrain">
+
+		<LinearLayout
+			android:id="@+id/linText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="28dp"
+			android:orientation="horizontal"
+			android:textAlignment="center">
+
+			<TextView
+				android:id="@+id/signupText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Don't have an account?"
+				android:textColor="#FFFFFF"
+				tools:ignore="MissingConstraints" />
+
+			<TextView
+				android:id="@+id/creatoneText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/signupText"
+				android:text=" Create one here."
+				android:textColor="#24DEB2"
+				tools:ignore="MissingConstraints" />
+		</LinearLayout>
+	</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

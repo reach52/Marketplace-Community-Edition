@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/residentDetailCardView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="12dp">
+
+			<TextView
+				android:id="@+id/residentNameTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+				android:textSize="20sp"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				tools:text="Juan Dela Cruz" />
+
+			<TextView
+				android:id="@+id/residentAddressTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:maxLines="20"
+				android:singleLine="false"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+				app:layout_constraintStart_toStartOf="@+id/residentNameTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentNameTextView"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				tools:text="Manila, Philippines" />
+
+			<TextView
+				android:id="@+id/residentAgeLabelTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="@string/age"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintStart_toStartOf="@+id/residentAddressTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentAddressTextView" />
+
+			<TextView
+				android:id="@+id/residentAgeTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:textAlignment="viewEnd"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentAgeLabelTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentAgeLabelTextView"
+				tools:layout_conversion_absoluteHeight="0dp"
+				tools:layout_conversion_absoluteWidth="0dp"
+				tools:text="24" />
+
+			<TextView
+				android:id="@+id/residentSexLabelTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="@string/sex"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentAgeTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentAgeTextView" />
+
+			<TextView
+				android:id="@+id/residentSexTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentSexLabelTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentSexLabelTextView"
+				tools:text="Male" />
+
+			<Button
+				android:id="@+id/updateResidentButton"
+				style="@style/Widget.AppCompat.Button.Colored"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/update"
+				android:visibility="gone"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/residentSexTextView" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+
+	<FrameLayout
+		android:id="@+id/residentMenuContainer"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="12dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/residentDetailCardView" />
+
+	<!--    <View-->
+	<!--        android:id="@+id/highlighter"-->
+	<!--        android:layout_width="match_parent"-->
+	<!--        android:layout_height="1dp"-->
+	<!--        android:background="#C9C9C9"-->
+	<!--        app:layout_constraintBottom_toTopOf="@id/residentNavigation"-->
+	<!--        app:layout_constraintEnd_toEndOf="parent"-->
+	<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+	<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+	<!--        android:id="@+id/residentNavigation"-->
+	<!--        android:layout_width="match_parent"-->
+	<!--        android:layout_height="wrap_content"-->
+	<!--        android:background="#F8F6F6"-->
+	<!--        app:labelVisibilityMode="labeled"-->
+	<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+	<!--        app:layout_constraintEnd_toEndOf="parent"-->
+	<!--        app:layout_constraintStart_toStartOf="@id/highlighter"-->
+	<!--        app:menu="@menu/resident_drawer" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/specificCostImage"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:contentDescription="@string/icon_depicting_an_event"
+        android:src="@drawable/accidental_death"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- <androidx.constraintlayout.widget.Guideline
+         android:id="@+id/guideline"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         app:layout_constraintGuide_percent="0.63" />-->
+
+    <TextView
+        android:id="@+id/specificCostTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/specificCostImage"
+        app:layout_constraintStart_toEndOf="@id/specificCostImage"
+        app:layout_constraintTop_toTopOf="@+id/specificCostImage"
+        app:layout_constraintVertical_bias="0.285"
+        tool:text="Specific Cost 1" />
+
+    <TextView
+        android:id="@+id/specificCostView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/specificCostImage"
+        app:layout_constraintStart_toEndOf="@id/specificCostImage"
+        app:layout_constraintStart_toStartOf="@id/specificCostTitle"
+        app:layout_constraintTop_toBottomOf="@id/specificCostTitle"
+        app:layout_constraintVertical_bias="0.2"
+        tool:text="Specific Cost 2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintStart_toStartOf="@id/specificCostImage"
+        app:layout_constraintTop_toBottomOf="@id/specificCostImage"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

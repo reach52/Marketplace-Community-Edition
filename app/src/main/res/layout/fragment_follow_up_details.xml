@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.follow_up.FollowUpDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/basicInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/basic_info"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/basicInfoText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/residentNameText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/residentNameText"/>
+
+                <TextView
+                    android:id="@+id/contactDetailsText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/contact_no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/addressTextDisplay" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <TextView
+                    android:id="@+id/residentNameTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patient_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="@id/residentNameText" />
+
+                <TextView
+                    android:id="@+id/addressTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="@id/addressText"/>
+
+                <TextView
+                    android:id="@+id/countryCodeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country_code"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="@id/contactDetailsText"/>
+
+                <TextView
+                    android:id="@+id/contactTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/countryCodeText"
+                    app:layout_constraintTop_toTopOf="@id/contactDetailsText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/followUpInfoText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/follow_up_info"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/followUpInfoText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:id="@+id/followUpDateText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/follow_up_date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/followUpDateText" />
+
+                <TextView
+                    android:id="@+id/reasonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reason"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productTextDisplay" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35" />
+
+                <TextView
+                    android:id="@+id/productTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/some_product"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@+id/descriptionText" />
+
+                <TextView
+                    android:id="@+id/followUpdateTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expiration_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/followUpDateText" />
+
+                <TextView
+                    android:id="@+id/reasonTextDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_reason"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    app:layout_constraintTop_toTopOf="@id/reasonText" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/followUpDateTextInputLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:hint="@string/when_to_follow_up"
+                    android:layout_marginTop="12dp"
+                    app:errorEnabled="true"
+                    app:layout_constraintTop_toBottomOf="@id/reasonTextDisplay">
+
+                    <EditText
+                        android:id="@+id/followUpDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:importantForAutofill="no"
+                        android:autofillHints="none"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        tools:ignore="LabelFor,TextFields" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/followUpProductTextInputLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:hint="@string/follow_up_product"
+                    app:errorEnabled="true"
+                    app:layout_constraintTop_toBottomOf="@id/followUpDateTextInputLayout">
+
+                    <EditText
+                        android:id="@+id/followUpProductEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="none"
+                        android:singleLine="true"
+                        android:inputType="none"
+                        android:maxLength="150"
+                        tools:ignore="LabelFor,TextFields" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/followUpReasonText"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="16sp"
+                    android:text="@string/select_follow_up_reason"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/followUpProductTextInputLayout"/>
+
+                <Spinner
+                    android:id="@+id/spinnerFollowUpReason"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/followUpReasonText"/>
+
+                <Button
+                    android:id="@+id/editFollowUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/edit"
+                    android:textColor="#6498D1"
+                    android:textAllCaps="false"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/spinnerFollowUpReason" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:textColor="#6498D1"
+                    android:textAllCaps="false"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintEnd_toStartOf="@id/saveEditedFollowUpButton"
+                    app:layout_constraintTop_toTopOf="@id/editFollowUpButton"/>
+
+                <Button
+                    android:id="@+id/saveEditedFollowUpButton"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textColor="#6498D1"
+                    android:textAllCaps="false"
+                    android:background="?android:attr/selectableItemBackground"
+                    app:layout_constraintEnd_toStartOf="@id/editFollowUpButton"
+                    app:layout_constraintTop_toTopOf="@id/editFollowUpButton"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/addNotesText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/notes"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addNotesText">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="6dp">
+
+                <EditText
+                    android:id="@+id/notesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:maxLength="250"
+                    android:scrollbars="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/saveNotesButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="LabelFor"
+                    tools:layout_editor_absoluteX="4dp" />
+
+                <Button
+                    android:id="@+id/saveNotesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/save_note"
+                    android:textColor="#6498D1"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <CheckBox
+            android:id="@+id/markDoneCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/mark_as_done"
+            app:layout_constraintTop_toBottomOf="@id/cardView3" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/go_back"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/markDoneCheckBox"
+            app:layout_constraintEnd_toEndOf="@id/markDoneCheckBox"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

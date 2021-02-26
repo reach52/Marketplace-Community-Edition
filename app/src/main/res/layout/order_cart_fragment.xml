@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="vm"
+			type="reach52.marketplace.community.medicine.viewmodel.MedicationPurchaseViewModel" />
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/textColorWhite"
+		android:descendantFocusability="beforeDescendants"
+		android:focusable="true"
+		android:focusableInTouchMode="true">
+
+		<com.google.android.material.appbar.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/AppTheme.NoActionBar.AppBarOverlay"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id='@+id/residentDetailsContainer'
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+
+			<TextView
+				android:id="@+id/residentNameTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="8dp"
+				android:fontFamily="@font/montserrat_bold"
+				android:text="@{vm.resident.firstName+ ` ` +vm.resident.lastName}"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:textColor="@color/purple"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:text="{resident.firstName}" />
+
+			<TextView
+				android:id="@+id/residentAddressTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="8dp"
+				android:fontFamily="@font/opensans_regular"
+				android:text="@{vm.resident.addressLine+` `+vm.resident.city+` `+vm.resident.country}"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:textSize="11sp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/residentNameTextView"
+				tools:text="Address" />
+
+			<TextView
+				android:id="@+id/residentGenderTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:fontFamily="@font/opensans_regular"
+				android:text="@{vm.resident.gender}"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:textSize="12sp"
+				app:layout_constraintStart_toStartOf="@+id/residentAddressTextView"
+				app:layout_constraintTop_toBottomOf="@+id/residentAddressTextView"
+				tools:text="Male" />
+
+			<TextView
+				android:id="@+id/residentAgeTextView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:fontFamily="@font/opensans_regular"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:textSize="12sp"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentGenderTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentGenderTextView"
+				tools:text="42" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:fontFamily="@font/opensans_regular"
+				android:text="@string/years_old"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:textSize="12sp"
+				app:layout_constraintBaseline_toBaselineOf="@+id/residentAgeTextView"
+				app:layout_constraintStart_toEndOf="@+id/residentAgeTextView" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--		<ImageView-->
+<!--			android:id="@+id/header_background"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="80dp"-->
+<!--			android:background="#593D41"-->
+<!--			android:contentDescription="@string/header_background"-->
+<!--			android:scaleType="centerCrop"-->
+<!--			android:src="@drawable/orders_bg"-->
+<!--			android:visibility="gone"-->
+<!--			app:layout_constraintEnd_toEndOf="parent"-->
+<!--			app:layout_constraintHorizontal_bias="0.0"-->
+<!--			app:layout_constraintStart_toStartOf="parent"-->
+<!--			app:layout_constraintTop_toTopOf="parent"-->
+<!--			tools:layout_conversion_absoluteHeight="0dp"-->
+<!--			tools:layout_conversion_absoluteWidth="0dp"-->
+<!--			tools:visibility="invisible" />-->
+
+		<Button
+			android:id="@+id/addMedicationButton"
+			style="@style/Widget.AppCompat.Button"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="16dp"
+			android:background="@drawable/rounded_blue_shape"
+			android:fontFamily="@font/montserrat_bold"
+			android:paddingLeft="10dp"
+			android:paddingEnd="10dp"
+			android:text="@string/add_medication"
+			android:textAllCaps="false"
+			android:textColor="@color/colorPrimary"
+			android:textSize="12sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/residentDetailsContainer" />
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/selectedMedicationsRecyclerView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			app:layout_constraintBottom_toTopOf="@+id/discountIdNumberLabelTextView"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+			app:layout_constraintTop_toBottomOf="@+id/addMedicationButton"
+			app:layout_constraintVertical_bias="1.0" />
+
+		<TextView
+			android:id="@+id/discountIdNumberLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:text="@string/discount_id_number_hint"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBaseline_toBaselineOf="@+id/discountIdNumberTextView"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<TextView
+			android:id="@+id/discountIdNumberTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBottom_toTopOf="@+id/subTotalTextView"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/discountIdNumberLabelTextView"
+			tools:text="PH-1234" />
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/sub_total"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBaseline_toBaselineOf="@+id/subTotalTextView"
+			app:layout_constraintStart_toStartOf="@+id/discountLabelTextView" />
+
+		<TextView
+			android:id="@+id/subTotalTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBottom_toTopOf="@+id/taxTextView"
+			app:layout_constraintEnd_toEndOf="@+id/discountTextView"
+			app:layout_constraintStart_toEndOf="@+id/textView"
+			tools:text="1234.56" />
+
+		<TextView
+			android:id="@+id/vatExemptLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/tax"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBaseline_toBaselineOf="@+id/taxTextView"
+			app:layout_constraintStart_toStartOf="@+id/totalLabelTextView" />
+
+		<TextView
+			android:id="@+id/taxTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="8dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBottom_toTopOf="@+id/discountTextView"
+			app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+			app:layout_constraintStart_toEndOf="@+id/vatExemptLabelTextView"
+			tools:text="1234.56" />
+
+		<TextView
+			android:id="@+id/discountLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/discount_label"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBaseline_toBaselineOf="@+id/discountTextView"
+			app:layout_constraintStart_toStartOf="@+id/vatExemptLabelTextView" />
+
+		<TextView
+			android:id="@+id/discountTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBottom_toTopOf="@+id/feeTextView"
+			app:layout_constraintEnd_toEndOf="@+id/taxTextView"
+			app:layout_constraintStart_toEndOf="@+id/discountLabelTextView"
+			tools:text="1234.56" />
+
+		<TextView
+			android:id="@+id/feeLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/fee_label"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBaseline_toBaselineOf="@+id/feeTextView"
+			app:layout_constraintStart_toStartOf="@+id/discountLabelTextView" />
+
+		<TextView
+			android:id="@+id/feeTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="9dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			app:layout_constraintBottom_toTopOf="@+id/totalTextView"
+			app:layout_constraintEnd_toEndOf="@+id/totalTextView"
+			app:layout_constraintStart_toEndOf="@+id/feeLabelTextView"
+			tools:text="24" />
+
+		<TextView
+			android:id="@+id/totalTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:textAlignment="viewEnd"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+			app:layout_constraintBottom_toTopOf="@+id/checkoutButton"
+			app:layout_constraintEnd_toEndOf="@+id/checkoutButton"
+			app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintStart_toEndOf="@+id/totalLabelTextView"
+			tools:text="1234.56" />
+
+		<TextView
+			android:id="@+id/totalLabelTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/total"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+			app:layout_constraintBaseline_toBaselineOf="@+id/totalTextView"
+			app:layout_constraintStart_toStartOf="@+id/checkoutButton"
+			tools:text="Total" />
+
+		<Button
+			android:id="@+id/checkoutButton"
+			android:background="@drawable/round_blue_button_selector"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:text="@string/checkout"
+			android:textAllCaps="false"
+			android:textColor="@color/textColorWhite"
+			android:fontFamily="@font/montserrat_bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

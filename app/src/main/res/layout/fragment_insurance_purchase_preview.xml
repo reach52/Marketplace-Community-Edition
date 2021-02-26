@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/previewCancelButton"
+		android:layout_marginBottom="16dp"
+		>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="100dp">
+
+			<TextView
+				android:id="@+id/insuranceNameDisplay"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/insurance_label"
+				android:textAppearance="@style/TextAppearance.AppCompat.Large"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/planNameDisplay"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="@string/plan"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				app:layout_constraintTop_toBottomOf="@id/insuranceNameDisplay" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/benefitsPreviewRecyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginTop="8dp"
+				app:layout_constraintBottom_toTopOf="@id/priceLabelTextView"
+				app:layout_constraintTop_toBottomOf="@id/planNameDisplay"
+				tools:listitem="@layout/item_benefit" />
+
+			<TextView
+				android:id="@+id/priceLabelTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="12dp"
+				android:text="@string/price"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				app:layout_constraintBottom_toTopOf="@id/policyOwnerCardView"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/benefitsPreviewRecyclerView" />
+
+			<TextView
+				android:id="@+id/priceTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textAlignment="viewEnd"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				app:layout_constraintBaseline_toBaselineOf="@id/priceLabelTextView"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@id/priceLabelTextView"
+				tools:text="$300" />
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/policyOwnerCardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:layout_constraintBottom_toTopOf="@id/insuredCardView"
+				app:layout_constraintTop_toBottomOf="@id/priceLabelTextView">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="12dp">
+
+					<TextView
+						android:id="@+id/policyOwnerTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/policy_owner"
+						android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+						app:layout_constraintEnd_toEndOf="@id/guideline"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						android:id="@+id/policyOwnerName"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						app:layout_constraintEnd_toEndOf="@id/guideline"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/policyOwnerTextView"
+						tools:text="Juan Dela Cruz" />
+
+					<androidx.constraintlayout.widget.Guideline
+						android:id="@+id/guideline"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						app:layout_constraintGuide_percent="0.8073879" />
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/view"
+						android:textAlignment="center"
+						android:textColor="#2196F3"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@id/guideline"
+						app:layout_constraintTop_toTopOf="parent" />
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/insuredCardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				app:layout_constraintBottom_toTopOf="@id/beneficiaryCardView"
+				app:layout_constraintTop_toBottomOf="@id/policyOwnerCardView">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="12dp">
+
+					<TextView
+						android:id="@+id/insuredTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/insured_person"
+						android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						android:id="@+id/insuredPersonName"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/insuredTextView"
+						tools:text="Juan Dela Cruz" />
+
+					<androidx.constraintlayout.widget.Guideline
+						android:id="@+id/guideline2"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:orientation="vertical"
+						app:layout_constraintGuide_percent="0.8073879" />
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/view"
+						android:textAlignment="center"
+						android:textColor="#2196F3"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@id/guideline2"
+						app:layout_constraintTop_toTopOf="parent" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/beneficiaryCardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				app:layout_constraintTop_toBottomOf="@id/insuredCardView">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="12dp">
+
+					<TextView
+						android:id="@+id/beneficiaryTextView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/beneficiary"
+						android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						android:id="@+id/beneficiaryNameTextView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						app:layout_constraintTop_toBottomOf="@id/beneficiaryTextView"
+						tools:text="Juan Dela Cruz" />
+
+					<TextView
+						android:id="@+id/relationshipLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="@string/relationship"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@id/beneficiaryNameTextView" />
+
+					<TextView
+						android:id="@+id/relationshipTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="6dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@id/relationshipLabel"
+						app:layout_constraintTop_toTopOf="@id/relationshipLabel"
+						tools:text="father" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/dependentsCardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:layout_marginBottom="12dp"
+				android:visibility="gone"
+				app:layout_constraintTop_toBottomOf="@id/beneficiaryCardView"
+				tools:visibility="visible">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/dependantsTextView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="12dp"
+						android:layout_marginTop="12dp"
+						android:text="@string/dependents"
+						android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+						app:layout_constraintTop_toTopOf="parent" />
+
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/dependents_list"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+						app:layout_constraintTop_toBottomOf="@id/dependantsTextView"
+						app:layout_constraintBottom_toBottomOf="parent"
+						android:layout_marginBottom="12dp"
+						tools:itemCount="3"
+						tools:listitem="@layout/x_member_item" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+	<Button
+		android:id="@+id/previewCancelButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="5dp"
+		android:text="@string/cancel"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/previewProceedButton" />
+
+	<Button
+		android:id="@+id/previewProceedButton"
+		style="@style/Widget.AppCompat.Button.Colored"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/proceed"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

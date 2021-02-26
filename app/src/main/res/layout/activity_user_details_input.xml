@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".signup.view.RegistrationActivity">
+
+	<include layout="@layout/toolbar"/>
+
+	<ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:scrollbars="none"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingBottom="100dp">
+
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/start"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				app:layout_constraintGuide_begin="32dp" />
+
+			<androidx.constraintlayout.widget.Guideline
+				android:id="@+id/end"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				app:layout_constraintGuide_end="32dp" />
+
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="96dp"
+				android:fontFamily="@font/montserrat_bold"
+				android:text="@string/tell_us_about_yourself"
+				android:textColor="@color/purple"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<com.mikhaellopez.circularimageview.CircularImageView
+				android:id="@+id/profilePic"
+				android:layout_width="96dp"
+				android:layout_height="96dp"
+				android:layout_marginTop="32dp"
+				app:civ_border_color="@color/lightPurple"
+				app:civ_border_width="1dp"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/textView4"
+				app:srcCompat="@drawable/def_photo" />
+
+			<EditText
+				android:id="@+id/first_name"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:hint="@string/first_name"
+				android:singleLine="true"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+
+			<EditText
+				android:id="@+id/last_name"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:hint="@string/last_name"
+				android:singleLine="true"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+			<TextView
+				android:id="@+id/gender_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/gender"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toBottomOf="@+id/gender"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toTopOf="@+id/gender" />
+
+			<Spinner
+				android:id="@+id/gender"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="32dp"
+				android:dropDownWidth="match_parent"
+				android:entries="@array/genders"
+				android:spinnerMode="dropdown"
+				app:layout_constraintEnd_toEndOf="@id/end"
+				app:layout_constraintStart_toEndOf="@+id/gender_textview"
+				app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+			<EditText
+				android:id="@+id/dob"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:clickable="false"
+				android:focusable="false"
+				android:hint="@string/date_of_birth"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+			<TextView
+				android:id="@+id/std_code"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+91"
+				android:textSize="18sp"
+				app:layout_constraintBottom_toBottomOf="@+id/phone"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toTopOf="@+id/phone" />
+
+			<EditText
+				android:id="@+id/phone"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="32dp"
+				android:ems="10"
+				android:hint="@string/phone"
+				android:inputType="phone"
+				android:maxLength="10"
+				android:singleLine="true"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toEndOf="@+id/std_code"
+				app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+			<EditText
+				android:id="@+id/town"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:layout_marginBottom="132dp"
+				android:ems="10"
+				android:hint="@string/town"
+				android:inputType="textPostalAddress"
+				android:singleLine="true"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+			<EditText
+				android:id="@+id/region"
+				style="@style/EdittextStyle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				android:ems="10"
+				android:hint="@string/region"
+				android:inputType="textPostalAddress"
+				android:singleLine="true"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/town" />
+
+			<ImageView
+				android:id="@+id/addPicBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintBottom_toBottomOf="@+id/profilePic"
+				app:layout_constraintEnd_toEndOf="@+id/profilePic"
+				app:srcCompat="@drawable/ic_blue_add" />
+
+			<CheckBox
+				android:id="@+id/TnC_checkBox"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=""
+				android:layout_marginTop="32dp"
+				app:layout_constraintHorizontal_chainStyle="packed"
+				app:layout_constraintTop_toBottomOf="@+id/region"
+				app:layout_constraintEnd_toStartOf="@+id/TnC_text"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				/>
+
+			<TextView
+				android:id="@+id/TnC_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/i_agree_with_terms_and_conditions"
+				android:fontFamily="@font/opensans_regular"
+				app:layout_constraintHorizontal_chainStyle="packed"
+				app:layout_constraintBottom_toBottomOf="@+id/TnC_checkBox"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toEndOf="@+id/TnC_checkBox"
+				app:layout_constraintTop_toTopOf="@+id/TnC_checkBox" />
+
+			<TextView
+				android:id="@+id/privacy_policy"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:text="@string/our_privacy_policy"
+				app:layout_constraintEnd_toStartOf="@+id/end"
+				app:layout_constraintStart_toStartOf="@+id/start"
+				app:layout_constraintTop_toBottomOf="@+id/TnC_checkBox" />
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</ScrollView>
+
+	<Button
+		android:id="@+id/next_btn"
+		style="@style/BottomBlueButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="@string/next"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		android:enabled="false"
+		android:onClick="onNextPress"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

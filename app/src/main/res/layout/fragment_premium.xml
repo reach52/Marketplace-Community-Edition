@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/textColorWhite"
+		android:clickable="true"
+		android:focusable="true"
+		tools:context=".insurance.view.PremiumFragment">
+
+		<TextView
+			android:id="@+id/textView38"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:text="@string/period"
+			android:textSize="16sp"
+			android:textColor="@color/black"
+			android:fontFamily="@font/montserrat_medium"
+			app:layout_constraintBottom_toBottomOf="@+id/period_spinner"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/period_spinner" />
+
+		<Spinner
+			android:id="@+id/period_spinner"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="16dp"
+			android:textAlignment="center"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/textView38"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<View
+			android:layout_width="0dp"
+			android:layout_height="2dp"
+			android:background="@color/divider"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBottom_toTopOf="@id/premium_breakdown_container" />
+
+		<ScrollView
+			android:id="@+id/premium_breakdown_container"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:fillViewport="true"
+			android:layout_marginTop="16dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/period_spinner">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingBottom="14dp">
+
+				<View
+					android:id="@+id/view2"
+					android:layout_width="0dp"
+					android:layout_height="2dp"
+					android:layout_marginTop="10dp"
+					android:background="@color/divider"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+				<TextView
+					android:id="@+id/extra_subtotal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="16dp"
+					tools:text="TextView"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintBottom_toBottomOf="@+id/textView41"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/textView41"
+					app:layout_constraintVertical_bias="1.0" />
+
+				<TextView
+					android:id="@+id/textView41"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:text="@string/sub_total"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintEnd_toStartOf="@+id/guideline5"
+					app:layout_constraintTop_toBottomOf="@+id/extraMembers" />
+
+				<Button
+					android:id="@+id/proceedBtn"
+					style="@style/RoundBottomBlueButton"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="16dp"
+					android:layout_marginTop="16dp"
+					android:layout_marginEnd="16dp"
+					android:layout_marginBottom="16dp"
+					android:text="@string/proceed"
+					android:textAllCaps="false"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/final_premium" />
+
+				<TextView
+					android:id="@+id/textView33"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:text="@string/premium_breakdown"
+					android:textSize="18sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					android:layout_marginStart="16dp"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+				<TextView
+					android:id="@+id/textView34"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="16dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginEnd="3dp"
+					android:text="@string/primary_members"
+					android:textSize="14sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/primary_members"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:layout_marginBottom="3dp"
+					app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView34"
+					android:overScrollMode="never"
+					tools:itemCount="1"
+					tools:listitem="@layout/x_breakdown_member_item" />
+				<View
+					android:layout_width="0dp"
+					android:layout_height="2dp"
+					android:background="@color/divider"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/primary_members" />
+
+				<TextView
+					android:id="@+id/textView37"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:text="@string/sub_total"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintEnd_toStartOf="@+id/guideline5"
+					app:layout_constraintTop_toBottomOf="@+id/primary_members" />
+
+				<TextView
+					android:id="@+id/primary_subtotal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="16dp"
+					tools:text="TextView"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintBottom_toBottomOf="@+id/textView37"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+				<View
+					android:id="@+id/view3"
+					android:layout_width="0dp"
+					android:layout_height="2dp"
+					android:layout_marginTop="4dp"
+					android:background="@color/divider"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+				<TextView
+					android:id="@+id/textView40"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:text="@string/extra_members"
+					android:textSize="18sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintStart_toStartOf="@+id/textView34"
+					app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/extraMembers"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:layout_marginBottom="3dp"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView40"
+					app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+					tools:itemCount="1"
+					android:overScrollMode="never"
+					tools:listitem="@layout/x_breakdown_member_item" />
+
+				<View
+					android:id="@+id/view4"
+					android:layout_width="0dp"
+					android:layout_height="2dp"
+					android:background="@color/divider"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/extraMembers" />
+
+				<androidx.constraintlayout.widget.Group
+					android:id="@+id/extra_group"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:constraint_referenced_ids="extra_subtotal,textView41,textView40,extraMembers, view, view4"
+					tools:visibility="visible" />
+
+				<View
+					android:id="@+id/view"
+					android:layout_width="0dp"
+					android:layout_height="2dp"
+					android:layout_marginTop="4dp"
+					android:background="@color/divider"
+					app:layout_constraintBottom_toTopOf="@+id/total"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+				<TextView
+					android:id="@+id/total"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:text="@string/total"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_medium"
+					android:textColor="@color/black"
+					app:layout_constraintEnd_toStartOf="@+id/guideline5"
+					app:layout_constraintTop_toBottomOf="@+id/view" />
+
+				<TextView
+					android:id="@+id/total_amount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="16dp"
+					tools:text="TextView"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_medium"
+					android:textColor="@color/black"
+					app:layout_constraintBottom_toBottomOf="@id/total"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/total" />
+
+				<TextView
+					android:id="@+id/textView44"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:text="@string/tax"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_medium"
+					android:textColor="@color/black"
+					app:layout_constraintEnd_toStartOf="@+id/guideline5"
+					app:layout_constraintTop_toBottomOf="@+id/total" />
+
+				<TextView
+					android:id="@+id/tax_percentage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="16dp"
+					tools:text="TextView"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_medium"
+					android:textColor="@color/black"
+					app:layout_constraintBottom_toBottomOf="@+id/textView44"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+				<TextView
+					android:id="@+id/textView46"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="@string/final_total_tax"
+					android:textAlignment="viewEnd"
+					android:textStyle="bold"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintBottom_toBottomOf="@+id/final_premium"
+					app:layout_constraintEnd_toStartOf="@+id/guideline5"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="@+id/final_premium" />
+
+				<TextView
+					android:id="@+id/final_premium"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:layout_marginEnd="16dp"
+					tools:text="TextView"
+					android:textSize="16sp"
+					android:fontFamily="@font/montserrat_bold"
+					android:textColor="@color/black"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+				<androidx.constraintlayout.widget.Guideline
+					android:id="@+id/guideline5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintGuide_end="152dp" />
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+		</ScrollView>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

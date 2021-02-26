@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="order"
+			type="reach52.marketplace.community.insurance.entity.PolicyOrder" />
+	</data>
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingBottom="20dp"
+			android:layout_gravity="center"
+			tools:context=".insurance.view.PolicyOrderDetailsActivity">
+
+
+			<TextView
+				android:id="@+id/textView28"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:textColor="@color/black"
+				android:text="@string/tracking_code"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+			<TextView
+				android:id="@+id/textView35"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:text="@{order.trackingCode}"
+				app:layout_constraintEnd_toEndOf="parent"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toEndOf="@+id/textView28"
+				app:layout_constraintTop_toTopOf="@+id/textView28"
+				tools:text="{order.trackingCode}" />
+
+			<TextView
+				android:id="@+id/textView39"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:text="@{order.productName}"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView42"
+				tools:text="{order.productName}" />
+
+			<TextView
+				android:id="@+id/textView42"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:text="@{order.insurerName}"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:text="{order.insurerName}" />
+
+			<TextView
+				android:id="@+id/textView43"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:text="@string/status"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+			<TextView
+				android:id="@+id/textView49"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:text="@{order.orderStatus}"
+				android:textStyle="bold"
+				android:textColor="@color/black"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/textView43"
+				app:layout_constraintTop_toTopOf="@+id/textView43"
+				tools:text="{order.orderStatus}" />
+
+			<TextView
+				android:id="@+id/textView50"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:text="@{order.productDesc}"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView39"
+				tools:text="{order.productDesc}" />
+
+			<TextView
+				android:id="@+id/textView51"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:text="@string/certificate_no"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+			<TextView
+				android:id="@+id/textView52"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:text="@{order.certificateNo}"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/textView51"
+				app:layout_constraintTop_toTopOf="@+id/textView51"
+				tools:text="{order.certificateNo}" />
+
+			<TextView
+				android:id="@+id/textView53"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="10dp"
+				android:text="@string/members_covered"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/covered_members_list"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView53"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				android:overScrollMode="never"
+				android:scrollbars="none"
+				tools:itemCount="2"
+				tools:listitem="@layout/x_party_list_item" />
+
+			<TextView
+				android:id="@+id/textView54"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="10dp"
+				android:text="@string/beneficiary"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/covered_members_list" />
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/beneficary_list"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView54"
+				android:overScrollMode="never"
+				android:scrollbars="none"
+				android:textColor="@color/black"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				tools:itemCount="1"
+				tools:listitem="@layout/x_beneficiary_item" />
+
+			<TextView
+				android:id="@+id/textView55"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="4dp"
+				android:text="@string/premium_details"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/beneficary_list" />
+
+			<TextView
+				android:id="@+id/textView56"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/premium_amount"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/textView55"
+				app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+			<TextView
+				android:id="@+id/textView57"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/premium_period"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/textView56"
+				app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+			<TextView
+				android:id="@+id/textView58"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:text="@{order.payment.amount + ` ` + order.isoCurrency.toUpperCase()}"
+				android:textStyle="bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toEndOf="@+id/textView56"
+				app:layout_constraintTop_toTopOf="@+id/textView56"
+				tools:text="120 INR" />
+
+			<TextView
+				android:id="@+id/textView59"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@{order.payment.period}"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/textView58"
+				app:layout_constraintTop_toBottomOf="@+id/textView58"
+				tools:text="{order.payment.period}" />
+
+			<TextView
+				android:id="@+id/textView60"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="2dp"
+				android:text="@string/agent_name"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+			<TextView
+				android:id="@+id/textView61"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:layout_marginEnd="16dp"
+				android:text="@{order.agent.name}"
+				tools:text="{order.agent.name}"
+				android:textColor="@color/black"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toEndOf="@+id/textView60"
+				app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+			<TextView
+				android:id="@+id/textView62"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:text="@string/email"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+			<TextView
+				android:id="@+id/textView63"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@{order.agent.email}"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/textView61"
+				app:layout_constraintTop_toTopOf="@+id/textView62" />
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.core.widget.NestedScrollView>
+</layout>

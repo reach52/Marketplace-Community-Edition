@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+	<data>
+
+		<variable
+			name="order"
+			type="reach52.marketplace.community.insurance.entity.PolicyOrder" />
+	</data>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="10dp"
+		android:paddingTop="10dp"
+		android:paddingRight="10dp">
+
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="7dp">
+
+			<FrameLayout
+				android:id="@+id/statusIndicator"
+				android:layout_width="5dp"
+				android:layout_height="match_parent"
+				android:background="#4caf50" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="8dp">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/purchased_plan_status"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+                        android:text="@{order.orderStatus}"
+						android:textColor="#A8A9AA" />
+
+
+				</RelativeLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="8dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/insuredName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+                        android:text="@{order.insurerName}"
+						tools:text="@string/malayan"
+						android:textColor="#303030"
+						android:textSize="24sp" />
+
+					<TextView
+						android:id="@+id/planName"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@{order.productName}"
+						tools:text="@string/plan"
+						android:textSize="16sp" />
+
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/RelativeLayout01"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+						<TextView
+							android:id="@+id/validityLabelTextDisplay"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:visibility="gone"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent"
+							tools:text="Sample text" />
+
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</androidx.cardview.widget.CardView>
+
+	</LinearLayout>
+</layout>

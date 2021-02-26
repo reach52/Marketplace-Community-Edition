@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tool="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="insurer"
+			type="reach52.marketplace.community.insurance.entity.Insurer" />
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_margin="5dp"
+		android:background="@drawable/border_insuranceproduct"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/textView31"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:fontFamily="@font/montserrat_bold"
+			android:text="@{insurer.name}"
+			android:textSize="14sp"
+			android:textColor="@color/black"
+
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tool:text="{insurer.name}" />
+
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="5dp"
+			android:fontFamily="@font/montserrat_medium"
+			android:text="@{insurer.isoCountry}"
+			android:textColor="@color/black"
+			android:textSize="12sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textView31"
+			tool:text="{insurer.country}" />
+
+		<View
+			android:id="@+id/bottom_devider"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:layout_marginTop="10dp"
+			android:background="@color/divider"
+			android:visibility="invisible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fil_PH">
+    <string name="policy_text" tools:ignore="MissingTranslation">
+        <![CDATA[
+            <p><b>Insured</b></p>
+            <ul>
+                <li>CLIENTS OF ALLIED WORLD HEALTHCARE / REACH52
+                (subject to submission of names and or employee number, birth dates, position,
+                beneficiary including relationship to the insured in MSExcel format)</li>
+            </ul>
+
+            <p><b>Age Eligibility</b></p>
+            <ul>
+                <li>Not less than eighteen (18) years old nor more than sixty-five (65) years of age</li>
+            </ul>
+
+            <p><b>Coverage Period</b></p>
+            <ul>
+                <li>One (1) year effective on the date to be advised</li>
+            </ul>
+
+            <p><b>Conditions/Extensions</b></p>
+            <ol type="a">
+                <li>Accidental Food Poisoning (presence of deleterious matter on food and drinks and not as a result of spoilage/expiration</li>
+                <li>Accidental Gas Poisoning</li>
+                <li>Acts of Nature</li>
+                <li>Amateur and Social Sports</li>
+                <li>Animal Bites including mosquito bites (except viral infections/disease following animal/mosquito bites</li>
+                <li>Commercial flying as fare paying passenger</li>
+                <li>Drowning</li>
+                <li>Motorcycling cover including pillion riding excluding whilst engaged in any form of racing, riding exhibition, motocross racing, etc.</li>
+                <li>Pyogenic infections acquired through accidental cut or wound</li>
+                <li>Riot and strikes (not as an active participant)</li>
+                <li>Sabotage and Terrorism (not as an active participant)</li>
+                <li>24/7 worldwide coverage; on and off the job</li>
+            </ol>
+
+            <p><b>Exclusions</b></p>
+            <ol type="a">
+                <li>loss caused directly or indirectly, wholly or partly by:</li>
+                </br><ol type="1">
+                    <li>Bacterial infections, viral infections, sickness or disease (except pyogenic infections which shall occur through an accidental cut or wound)</li>
+                    <li>Medical or surgical treatment (except such as may be necessary solely by reason of injuries covered by this policy)</li>
+                    <li>Miscarriage or pregnancy, any disease of the female reproductive organ</li>
+                </ol>
+                <li>Suicide or any attempt thereat</li>
+                <li>
+                    Loss occasioned by war, invasion, act of foreign enemy, hostilities or warlike operations
+                    (whether war be declared or not), mutiny, strikes, riots, civil commotion, civil war, rebellion, revolution, insurrection, conspiracy,
+                    terrorism, military or usurped power, martial law or state of siege, seizure, quarantine, or customs regulations or naturalization by
+                    or under the order of any government or public or local authority. the exclusion shall be affected by any endorsement which does not
+                    specifically refer to it, in whole or in part. The application of the exclusion referring to martial law or state of siege is hereby waived
+                    for any territorial jurisdiction of the Republic of the Philippines.
+                </li>
+                <li>Nuclear radiation or radioactive contamination</li>
+                <li>Injury sustained while participating in professional athletics, local sports</li>
+                <li>
+                    Injury sustained while engaging in but not limited to mountaineering
+                    requiring the use of ropes or guides, skin diving employing the use of
+                    compressed cylinders, racing on wheels or horseback, skydiving from device
+                    for aerial navigation, hang gliding or any type of water sports.
+                </li>
+                <li>
+                    Cave-in of mines
+                </li>
+                <li>
+                    Loss of life or injury sustained as a direct result of, in connection with or
+                    attributable to the insured being under the influence of prohibited/regulated drugs or alcohol.
+                </li>
+                <li>
+                    Loss of life or injury sustained as a direct result of, in connection with or attributable to;
+                    <ol type="1">
+                        <li>A commission of a crime or any attempt thereat</li>
+                        <li>Violation of rules and regulation on traffic and/or road use</li>
+                        <li>Avoiding arrest or</li>
+                        <li>Any unlawful act(civil or criminal)</li>
+                    </ol>
+                </li>
+                <li>
+                    Coverage on murder and unprovoked is excluded in the following areas:
+                    <ol type="1">
+                        <li>Autonomous Region of Muslim Mindanao(Basilan, Lanao del Sur, Maguindanao, Sulu Archipelago and Tawi-Tawi</li>
+                        <li>Lanao Del Norte</li>
+                        <li>North Cotabato</li>
+                        <li>South Cotabato</li>
+                        <li>Sultan Kudarat</li>
+                        <li>Zamboanga Del Norte</li>
+                        <li>Zamboanga Del Sur</li>
+                        <li>Zamboanga Sibugay</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <p><b>Exclusions Specific to Daily Hospital Income Benefit and Medical Reimbursement cover</b></p>
+            <ol type="a">
+                <li>Pregnancy resulting childbirth. miscarriage or diseases of the female reproductive system</li>
+                <li>
+                    Routine physical or any other examinations where there are no objective
+                    indications or impairment in normal health and laboratory diagnostic of
+                    X-ray examinations except in the course of a disability established by the
+                    prior call or attendance of a physician.
+                </li>
+                <li>Intentionally self-inflicted injury or suicide whether sane or insane, or any attempt thereat:</li>
+                <li>Cosmetic or plastic surgery, any dental work, dental treatment, eye examination, except as a result of accident</li>
+                <li>Any mental and nervous disorder or rest cures</li>
+                <li>Treatment of drug addiction or alcoholism</li>
+                <li>
+                    Sickness or disease occasioned by war, war-like operations, civil
+                    commotion, strike, civil war, revolution, rebellion, sabotage, terrorism,
+                     service in the armed forces
+                </li>
+                <li>
+                    Sickness or disease as a direct result of, in connection with, or arising from radiation and nuclear activity
+                </li>
+                <li>
+                    Congenital anomalies
+                </li>
+                <li>
+                    Treatment or surgery for tonsils, adenoid, hernia
+                </li>
+                <li>
+                    Venereal Diseases
+                </li>
+                <li>
+                    Murder and Provoked assault
+                </li>
+                <li>
+                    Pre-existing conditions
+                </li>
+                <li>Acquired Immunology Deficiency Syndrome (AIDS)</li>
+                <li>Pneumonia except High Risk Pneumonia and Hospital Acquired Pneumonia (HAP) or Nosocomial Pneumonia</li>
+                <li>
+                    Dengue, Malaria, Japanese Encephalitis, Hepatitis A, B, C, D and E,
+                    Meningococcemia, Cholera, Influenza, Typhoid Fever, Severe Acute Respiratory Syndrome (SARS)
+                    , and Middle East Respiratory Syndrome Corona virus (MERS-Cov)
+                </li>
+                <li>
+                    Widespread diseases, virus outbreak, epidemic or pandemic as declared by the Department of Health
+                </li>
+            </ol>
+
+            <p><b>Guideline</b></p>
+            <ol type="1">
+                <li>Master policy shall be issued to Allied World Healthcare / REACH52</li>
+                <li>
+                    Daily Hospital Income Benefit shall be subject to 5 days exclusion period
+                     starting from the effective date of coverage.
+                </li>
+                <li>
+                    Client can avail a maximum of 5 units at any given period of coverage
+                </li>
+            </ol>
+            <p><b>Claim Requirements</b></p>
+            <p><b>BASIC REQUIREMENTS</b></p>
+            <ol type="a">
+                <li>Claim Form</li>
+                <li>Valid ID</li>
+                <li>Other necessary documents that Malayan Insurance may require</li>
+            </ol>
+            <p><b>ACCIDENTAL DEATH</b></p>
+            <ol type="a">
+                <li>Claim Form</li>
+                <li>Valid ID</li>
+                <li>Other necessary documents that Malayan Insurance may require</li>
+            </ol>
+            <p><b>DAILY HOSPITAL INCOME BENEFIT (DHIB)</b></p>
+            <ol type="a">
+                <li>Statement of account issued by the Hospital showing dates of confinement or Date of emergency room treatment</li>
+                <li>Medical Certificate from attending physician</li>
+            </ol>
+            <p><b>MEDICAL REIMBURSEMENT</b></p>
+            <ol type="a">
+                <li>Photocopy of Official Receipts of the actual medical expenses</li>
+                <li>Medical Certificate from attending physician</li>
+            </ol>
+            <p><b>Territorial Limit</b></p>
+            <ul>
+                <li>Confinement in a hospital anywhere in the Philippines</li>
+            </ul>
+        ]]>
+    </string>
+
+</resources>

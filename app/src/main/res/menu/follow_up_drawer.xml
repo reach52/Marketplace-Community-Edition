@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_today_list"
+        android:icon="@drawable/icon_today"
+        android:title="@string/today_follow_up"/>
+
+    <item
+        android:id="@+id/nav_tomorrow_list"
+        android:icon="@drawable/icon_date_tomorrow"
+        android:title="@string/tomorrow_follow_up" />
+
+    <item
+        android:id="@+id/nav_follow_up_list"
+        android:icon="@drawable/icon_planner"
+        android:title="@string/all_follow_up" />
+</menu>

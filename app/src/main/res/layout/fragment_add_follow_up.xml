@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.follow_up.AddFollowUpFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/followUpDateTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/when_to_follow_up"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/followUpDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:autofillHints="none"
+            android:singleLine="true"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/codeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_code"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/contactTextInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followUpDateTextInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contactTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/contact_no"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/codeTextView"
+        app:layout_constraintTop_toBottomOf="@id/followUpDateTextInputLayout">
+
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="10"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/email"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactTextInputLayout">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:singleLine="true"
+            android:inputType="none"
+            tools:ignore="LabelFor,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/followUpProductTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/follow_up_product"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTextInputLayout">
+
+        <EditText
+            android:id="@+id/followUpProductEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:singleLine="true"
+            android:inputType="none"
+            android:maxLength="150"
+            tools:ignore="LabelFor,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/followUpReasonText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:text="@string/select_follow_up_reason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/followUpProductTextInputLayout"/>
+
+    <Spinner
+        android:id="@+id/spinnerFollowUpReason"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/followUpReasonText"/>
+
+    <Button
+        android:id="@+id/btnCancelFollowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C82333"
+        android:text="@string/cancel"
+        android:textColor="#ffff"
+        android:layout_marginEnd="16dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSaveFollowUp" />
+
+    <Button
+        android:id="@+id/buttonSaveFollowUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#218838"
+        android:text="@string/save"
+        android:textColor="#ffff"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

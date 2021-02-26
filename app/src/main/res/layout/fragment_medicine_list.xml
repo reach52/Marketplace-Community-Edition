@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColorWhite"
+        android:clickable="true"
+        android:focusable="true"
+        tools:context=".medicine.view.MedicineListFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/medicinesListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            android:paddingTop="8sp"
+            android:background="@color/textColorWhite"
+            android:visibility="gone"
+            tools:listitem="@layout/item_medicine" />
+
+        <include layout="@layout/layout_no_medicine"
+            android:visibility="gone"
+            android:id="@+id/no_meds"/>
+
+
+    </FrameLayout>
+</layout>

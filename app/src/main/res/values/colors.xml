@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0091ea</color>
+    <color name="colorPrimaryDark">#0064b7</color>
+    <color name="colorAccent">#0064b7</color>
+    <color name="colorButtonDisable">#D4D4D4</color>
+
+
+    <!--Text-->
+    <color name="textColorWhite">#ffffff</color>
+
+    <!--Icons-->
+    <color name="purple">#AB218F</color>
+    <color name="lightPurple">#EDD1F4</color>
+    <color name="lightBlue">#00ADEE</color>
+    <color name="lightBg">#FCFAFA</color>
+    <color name="divider">#1E000000</color>
+    <color name="list_back">#F7F7F7</color>
+    <color name="black">#000000</color>
+    <color name="blacklight">#989898</color>
+    <color name="radiob">#24DEB2</color>
+
+
+
+</resources>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_client_id"></string>
+    <string name = "accept_delivery"> ವಿತರಣೆಯನ್ನು ಸ್ವೀಕರಿಸಿ </string>
+    <string name = "accepted"> ಸ್ವೀಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "accepted_order"> ಸ್ವೀಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "accepted_order_details"> ಸ್ವೀಕರಿಸಿದ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "acknowledgment"> ಸ್ವೀಕೃತಿ ಫೋಟೋ </string>
+    <string name = "add"> ಸೇರಿಸಿ </string>
+    <string name = "add_family_member"> ಕುಟುಂಬ ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "add_medication">" ಔಷಧ ಸೇರಿಸಿ"</string>
+    <string name = "age"> ವಯಸ್ಸು: </string>
+    <string name = "age_label"> 23 ವರ್ಷ ಹಳೆಯದು </string>
+    <string name = "app_name"> ರೀಚ್ 52 ಮಾರುಕಟ್ಟೆ </string>
+    <string name = "beneficiary"> ಫಲಾನುಭವಿ </string>
+    <string name = "birthday_image"> ಹುಟ್ಟುಹಬ್ಬ_ಇಮ್ </string>
+    <string name = "cancel"> ರದ್ದುಮಾಡು </string>
+    <string name = "captured_image"> ಸೆರೆಹಿಡಿದ ಚಿತ್ರ </string>
+    <string name = "checkout"> ಚೆಕ್ out ಟ್ </string>
+    <string name = "civil_status_label"> ಏಕ </string>
+    <string name = "consumer_health"> ಆರೋಗ್ಯ </string>
+    <string name = "currency"> ಪಿಎಚ್ಪಿ </string>
+    <string name = "date"> ದಿನಾಂಕ </string>
+    <string name = "date_label"> ನವೆಂಬರ್ 19, 2019 ಬೆಳಿಗ್ಗೆ 8:00 </string>
+    <string name = "delivered"> ತಲುಪಿಸಲಾಗಿದೆ </string>
+    <string name = "delivered_details"> ತಲುಪಿಸಿದ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "delivered_order"> ತಲುಪಿಸಲಾಗಿದೆ </string>
+    <string name = "discount_id_number_hint"> ರಿಯಾಯಿತಿ ID ಸಂಖ್ಯೆ </string>
+    <string name = "discount_label"> ರಿಯಾಯಿತಿ </string>
+    <string name = "dispatched"> ರವಾನೆ </string>
+    <string name = "dispatched_order_details"> ರವಾನೆ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "dispatched_orders"> ರವಾನೆ </string>
+    <string name = "dispergo"> ಡಿಸ್ಪರ್ಗೋ </string>
+    <string name = "dispergo_logo"> ಡಿಸ್ಪರ್ಗೋ ಲೋಗೋ </string>
+    <string name = "expiration_date"> ನವೆಂಬರ್ 15, 2020 </string>
+    <string name = "family_member"> ವಿಮಾ ಯೋಜನೆ ಫಲಾನುಭವಿಗಳು </string>
+    <string name = "fee_label"> ವಿತರಣಾ ಶುಲ್ಕ </string>
+    <string name = "full_name"> ಪೂರ್ಣ ಹೆಸರು </string>
+    <string name = "go_back"> ಹಿಂತಿರುಗಿ </string>
+    <string name = "gold_insurance"> ಚಿನ್ನದ ಯೋಜನೆ </string>
+    <string name = "header_background"> ಹೆಡರ್ ಹಿನ್ನೆಲೆ </string>
+    <string name = "hold_order"> ಹಿಡಿದುಕೊಳ್ಳಿ </string>
+    <string name = "icon_depicting_an_event"> ಈವೆಂಟ್ ಅನ್ನು ಚಿತ್ರಿಸುವ ಐಕಾನ್ </string>
+    <string name = "id"> ID: </string>
+    <string name = "image1"> image1 </string>
+    <string name = "insurance_benefits"> ವಿಮಾ ಯೋಜನೆ ಪ್ರಯೋಜನಗಳು </string>
+    <string name = "insurance_details"> ವಿಮಾ ಯೋಜನೆ ವಿವರಗಳು </string>
+    <string name = "insurance_label"> ವಿಮೆ </string>
+    <string name = "insurance_plan"> ವಿಮಾ ಯೋಜನೆ </string>
+    <string name = "insurance_plan_details"> ವಿಮಾ ಯೋಜನೆ ವಿವರಗಳು </string>
+    <string name = "invalid_credentials"> ಅಮಾನ್ಯ ರುಜುವಾತುಗಳು </string>
+    <string name = "logging_in_status"> ಲಾಗ್ ಇನ್ ಆಗುತ್ತಿದೆ… </string>
+    <string name = "login"> ಲಾಗಿನ್ </string>
+    <string name = "logout"> ಲಾಗ್ out ಟ್ </string>
+    <string name = "malayan"> ಮಲಯನ್ </string>
+    <string name = "malayan_insurance"> ಮಲಯನ್ ವಿಮೆ </string>
+    <string name = "marital_status"> ವೈವಾಹಿಕ ಸ್ಥಿತಿ </string> ಆಯ್ಕೆಮಾಡಿ
+    <string name = "marker_label"> ಮಾರ್ಕರ್ </string>
+    <string name = "medication_label">ಮೇಡಕೇಶನ</string>
+    <string name = "medications">ಮೇಡಕೇಶನ</string>
+    <string name = "medicine_list"> ಮೆಡಿಸಿನ್ ಪಟ್ಟಿ </string>
+    <string name = "name_label"> ಮಿಚೆಲ್ ಉಪವಿಭಾಗ. ಮನಿಲಾ ಸಿಟಿ </string>
+    <string name = "nav_header_desc"> ನ್ಯಾವಿಗೇಷನ್ ಹೆಡರ್ </string>
+    <string name = "navigation_drawer_close"> ನ್ಯಾವಿಗೇಷನ್ ಡ್ರಾಯರ್ ಅನ್ನು ಮುಚ್ಚಿ </string>
+    <string name = "navigation_drawer_open"> ನ್ಯಾವಿಗೇಷನ್ ಡ್ರಾಯರ್ ತೆರೆಯಿರಿ </string>
+    <string name = "new_medication_order"> ಹೊಸ ation ಷಧಿ ಆದೇಶ </string>
+    <string name = "no_reason"> ಕಾರಣವಿಲ್ಲ </string>
+    <string name = "none"> ಯಾವುದೂ ಇಲ್ಲ </string>
+    <string name = "not_delivered"> ತಲುಪಿಸಲಾಗಿಲ್ಲ </string>
+    <string name = "not_delivered_details"> ತಲುಪಿಸಲಾಗಿಲ್ಲ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "ok"> ಸರಿ </string>
+    <string name = "on_hold_details"> ಆನ್ ಹೋಲ್ಡ್ ಆರ್ಡರ್ ವಿವರಗಳು </string>
+    <string name = "on_hold_order"> ತಡೆಹಿಡಿಯಿರಿ </string>
+    <string name = "order_medication">" ಆರ್ಡರ್  ಔಷಧ"</string>
+    <string name = "order_medicine"> ಆರ್ಡರ್ ಮೆಡಿಸಿನ್ </string>
+    <string name = "order_processing"> ಆರ್ಡರ್ ಪ್ರಕ್ರಿಯೆ </string>
+    <string name = "order_status"> ಆದೇಶ ಸ್ಥಿತಿ </string>
+    <string name = "orders"> ಆದೇಶಗಳು </string>
+    <string name = "orders_rejected_details"> ತಿರಸ್ಕರಿಸಿದ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "package_size_label"> Pk ಗಾತ್ರ: </string>
+    <string name = "password"> ಪಾಸ್ವರ್ಡ್ </string>
+    <string name = "patient_name"> ರೋಗಿಯ ಹೆಸರು </string>
+    <string name = "pending"> ಬಾಕಿ ಉಳಿದಿದೆ </string>
+    <string name = "pending_order"> ಬಾಕಿ ಉಳಿದಿದೆ </string>
+    <string name = "pending_order_details"> ಬಾಕಿ ಉಳಿದಿರುವ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "personal_information"> ವೈಯಕ್ತಿಕ ಮಾಹಿತಿ </string>
+    <string name = "physician_name"> ವೈದ್ಯರ ಹೆಸರು </string>
+    <string name = "pick_up_this_order"> ಈ ಆದೇಶವನ್ನು ಎತ್ತಿಕೊಳ್ಳಿ </string>
+    <string name = "picked_up"> ಎತ್ತಿಕೊಂಡ </string>
+    <string name = "picked_up_order_details"> ಎತ್ತಿಕೊಂಡ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "picked_up_orders"> ಎತ್ತಿಕೊಂಡ </string>
+    <string name = "pills_icon"> ಮಾತ್ರೆಗಳ ಐಕಾನ್ </string>
+    <string name = "plan"> ಚಿನ್ನದ ಯೋಜನೆ </string>
+    <string name = "prescription_number"> ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಸಂಖ್ಯೆ </string>
+    <string name = "prescription_photo"> ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಫೋಟೋ </string>
+    <string name = "price"> ಬೆಲೆ </string>
+    <string name = "proceed"> ಮುಂದುವರಿಯಿರಿ </string>
+    <string name = "purchase_id"> # 23456order </string>
+    <string name = "quantity"> ಪ್ರಮಾಣ </string>
+    <string name = "receive_dispatch"> ರವಾನೆ ಸ್ವೀಕರಿಸಿ </string>
+    <string name = "received"> ಸ್ವೀಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "received_order"> ಸ್ವೀಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "received_order_details"> ಸ್ವೀಕರಿಸಿದ ಆದೇಶ ವಿವರಗಳು </string>
+    <string name = "recipient_name"> ಸ್ವೀಕರಿಸುವವರ ಹೆಸರು </string>
+    <string name = "reject_delivery"> ವಿತರಣೆಯನ್ನು ತಿರಸ್ಕರಿಸಿ </string>
+    <string name = "reject_order"> ತಿರಸ್ಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "rejected_reason"> ಕಾರಣ </string>
+    <string name = "remove"> ತೆಗೆದುಹಾಕಿ </string>
+    <string name = "remove_item_prompt"> ಐಟಂ ತೆಗೆದುಹಾಕಿ? </string>
+    <string name = "resident_details"> ನಿವಾಸಿ ವಿವರಗಳು </string>
+    <string name = "resident_label"> ಪೆಪಿಟೊ ಮನಿಲಾ </string>
+    <string name = "residents"> ನಿವಾಸಿಗಳು </string>
+    <string name = "resume"> ಪುನರಾರಂಭಿಸು </string>
+    <string name = "search"> ಹುಡುಕಾಟ </string>
+    <string name = "sex"> ಸೆಕ್ಸ್: </string>
+    <string name = "status"> ಸ್ಥಿತಿ: </string>
+    <string name = "status_label"> ಸಕ್ರಿಯ </string>
+    <string name = "sub_total"> ಉಪ ಒಟ್ಟು </string>
+    <string name = "sync_error"> SYNC ERROR </string>
+    <string name = "sync_finished"> SYNC FINISHED </string>
+    <string name = "sync_in_progress"> SYNC IN PROGRESS </string>
+    <string name = "sync_offline"> SYNC OFFLINE </string>
+    <string name = "sync_started"> SYNC STARTED </string>
+    <string name = "take_a_photo"> ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ </string>
+    <string name = "text_acknowledgement_required"> ಸ್ವೀಕೃತಿಯ ಫೋಟೋ ಅಗತ್ಯವಿದೆ </string>
+    <string name = "text_complete_the_purchase"> ಖರೀದಿಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ </string>
+    <string name = "text_required_fields"> ದಯವಿಟ್ಟು ಯಾವುದನ್ನೂ ಖಾಲಿ ಬಿಡಬೇಡಿ </string>
+    <string name = "text_session_expired"> ಮುಂದುವರಿಯಲು ಸಾಧ್ಯವಿಲ್ಲ, ಅಧಿವೇಶನ ಅವಧಿ ಮುಗಿದಿದೆ </string>
+    <string name = "total"> ಒಟ್ಟು: </string>
+    <string name = "tracking_code"> ಟ್ರ್ಯಾಕಿಂಗ್ ಕೋಡ್ </string>
+    <string name = "updating_index"> INDEX ಅನ್ನು ನವೀಕರಿಸುವುದು </string>
+    <string name = "username"> ಬಳಕೆದಾರಹೆಸರು </string>
+    <string name = "valid_until">" ತನಕ ಮಾನ್ಯವಾಗಿದೆ"</string> ವರೆಗೆ ಮಾನ್ಯವಾಗಿದೆ
+    <string name = "vat_exclusive"> ವ್ಯಾಟ್ ಎಕ್ಸ್‌ಕ್ಲೂಸಿವ್ </string>
+    <string name = "vat_exempt_label"> ವ್ಯಾಟ್ ವಿನಾಯಿತಿ </string>
+    <string name = "vat_inclusive"> ವ್ಯಾಟ್ ಅಂತರ್ಗತ </string>
+    <string name = "view_insurance_policy"> ವಿಮಾ ಪಾಲಿಸಿಯನ್ನು ವೀಕ್ಷಿಸಿ </string>
+    <string name = "view_products_and_services"> ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ವೀಕ್ಷಿಸಿ </string>
+    <string name = "wedding_ring_img"> ವೆಡ್ಡಿಂಗ್_ರಿಂಗ್ </string>
+    <string name = "years_old"> ವರ್ಷ </string>
+    <string name = "agent_name"> ಏಜೆಂಟ್ ಹೆಸರು: </string>
+    <string name = "date_start"> ದಿನಾಂಕ ಪ್ರಾರಂಭ: </string>
+    <string name = "date_end"> ದಿನಾಂಕ ಅಂತ್ಯ: </string>
+    <string name = "insurance_name"> ವಿಮಾ ಹೆಸರು: </string>
+    <string name = "plan_name"> ಯೋಜನೆಯ ಹೆಸರು: </string>
+    <string name = "relationship"> ಸಂಬಂಧ </string>
+    <string name = "contact"> ಸಂಪರ್ಕ </string>
+    <string name = "email"> ಇಮೇಲ್ </string>
+    <string name = "number"> 09128415711 </string>
+    <string name = "email_sample"> example@email.com </string>
+    <string name = "contact_no"> ಸಂಪರ್ಕ ಸಂಖ್ಯೆ. </string>
+    <string name = "additional_info"> ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ </string>
+    <string name = "sorry_your_age_is_not_qualified_for_this_insurance"> ಕ್ಷಮಿಸಿ, ನಿಮ್ಮ ವಯಸ್ಸು ಈ ವಿಮೆಗೆ ಅರ್ಹತೆ ಹೊಂದಿಲ್ಲ </string>
+    <string name = "first_name"> ಮೊದಲ ಹೆಸರು </string>
+    <string name = "middle_name"> ಮಧ್ಯದ ಹೆಸರು </string>
+    <string name = "last_name"> ಕೊನೆಯ ಹೆಸರು </string>
+    <string name = "male"> ಪುರುಷ </string>
+    <string name = "female"> ಹೆಣ್ಣು </string>
+    <string name = "date_of_birth"> ಹುಟ್ಟಿದ ದಿನಾಂಕ </string>
+    <string name = "residents_access_list"> ಪ್ರವೇಶ </string>
+    <string name = "residents_logistic_list"> ಲಾಜಿಸ್ಟಿಕ್ </string>
+    <string name = "gender"> ಲಿಂಗ </string>
+    <string name = "postal_code"> ಅಂಚೆ ಕೋಡ್ </string>
+    <string name = "address"> ವಿಳಾಸ </string>
+    <string name = "country_code"> + 63 </string>
+    <string name = "province"> ಪುರಸಭೆ ಪ್ರಾಂತ್ಯ </string>
+    <string name = "marital"> ವೈವಾಹಿಕ ಸ್ಥಿತಿ </string>
+    <string name = "save"> ಉಳಿಸು </string>
+    <string name = "update"> ನವೀಕರಿಸಿ </string>
+    <string name = "edit"> ಸಂಪಾದಿಸಿ </string>
+    <string name = "temp_vat_health"> ವ್ಯಾಟ್ ಒಳಗೊಂಡ </string>
+    <string name = "your_basket"> ನಿಮ್ಮ ಬುಟ್ಟಿ </string>
+    <string name = "your_order"> ನಿಮ್ಮ ಆದೇಶ </string>
+    <string name = "when_to_follow_up"> ಯಾವಾಗ ಅನುಸರಿಸಬೇಕು? </string>
+    <string name = "follow_up_date"> ಅನುಸರಣಾ ದಿನಾಂಕ </string>
+    <string name = "follow_up_product"> ನಿಮ್ಮ ಅನುಸರಣಾ ಉತ್ಪನ್ನ / ಸೇವೆ ಯಾವುದು? </string>
+
+    <string name = "follow_up_list"> ಅನುಸರಣಾ ಪಟ್ಟಿ </string>
+    <string name = "all_follow_up"> ಎಲ್ಲಾ </string>
+    <string name = "tomorrow_follow_up"> ನಾಳೆ </string>
+    <string name = "today_follow_up"> ಇಂದು </string>
+
+    <string-array name = "civilStatus">
+    <item> ಏಕ </item>
+    <item> ವಿವಾಹಿತ </item>
+    <item> ವಿಧವೆ </item>
+    <item> ವಿಚ್ ced ೇದಿತ </item>
+    <item> ಬೇರ್ಪಡಿಸಲಾಗಿದೆ </item>
+    </string-array>
+
+    <string-array name="country">
+        <item>Cambodia</item>
+        <item>Philippines</item>
+        <item>India</item>
+    </string-array>
+
+    <string-array name = "familyMember">
+    <item> ತಂದೆ </item>
+    <item> ತಾಯಿ </item>
+    <item> ಸಹೋದರ </item>
+    <item> ಸಿಸ್ಟರ್ </item>
+    <item> ಮಗ </item>
+    <item> ಮಗಳು </item>
+    <item> ಅಜ್ಜ </item>
+    <item> ಅಜ್ಜಿ </item>
+    <item> ಚಿಕ್ಕಮ್ಮ </item>
+    <item> ಅಂಕಲ್ </item>
+    <item> ಸೋದರ ಸೊಸೆ </item>
+    <item> ಸೋದರಳಿಯ </item>
+    <item> ಮೊಮ್ಮಗ </item>
+    <item> ಮೊಮ್ಮಗಳು </item>
+    <item> ಗಾರ್ಡಿಯನ್ </item>
+    <item> ಕಾನೂನು ಪತಿ </item>
+    <item> ಕಾನೂನು ಪತ್ನಿ </item>
+    </string-array>
+
+    <string-array name = "follow_up_reason">
+    <item> ಹಣ ಹೊಂದಿರಲಿಲ್ಲ </item>
+    <item> ಈಗಾಗಲೇ ಉತ್ಪನ್ನ ಸ್ಟಾಕ್ ಹೊಂದಿದೆ </item>
+    <item> ವಿಭಿನ್ನ ಉತ್ಪನ್ನವನ್ನು ಬಯಸಿದೆ </item>
+    <item> ಹೆಚ್ಚಿನ ಮಾಹಿತಿ ಬೇಕಾಗಿದೆ </item>
+    <item> ಕುಟುಂಬ / ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸಮಾಲೋಚಿಸಲು ಬಯಸಿದೆ </item>
+    <item> ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ / ಮಾನ್ಯ ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಇರಲಿಲ್ಲ </item>
+    <item> ಇತರರು </item>
+    </string-array>
+
+    <string name = "home_testing_kit"> ಹೋಮ್ ಟೆಸ್ಟಿಂಗ್ ಕಿಟ್ </string>
+    <string name = "discount_selection"> ರಿಯಾಯಿತಿ ಆಯ್ಕೆ </string>
+    <string name = "add_items"> ಐಟಂಗಳನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "follow_up"> ಫಾಲೋ-ಅಪ್ </string>
+    <string name = "select_follow_up_reason"> ಅನುಸರಣಾ ಕಾರಣವನ್ನು ಆರಿಸಿ </string>
+    <string name = "order_otc"> ಆದೇಶ OTC </string>
+
+    <string name = "notes"> ಟಿಪ್ಪಣಿಗಳು </string>
+    <string name = "some_product"> ಕೆಲವು ಉತ್ಪನ್ನ </string>
+    <string name = "reason"> ಕಾರಣ </string>
+    <string name = "description"> ವಿವರಣೆ </string>
+    <string name = "consumer_health_wellness"> ಗ್ರಾಹಕರ ಆರೋಗ್ಯ ಸ್ವಾಸ್ಥ್ಯ </string>
+    <string name = "otc_all_orders"> ಆದೇಶಗಳು </string>
+    <string name = "medication">ಮೇಡಕೇಶನ</string>
+    <string name = "otc_pending_orders"> ಬಾಕಿ ಉಳಿದಿದೆ </string>
+    <string name = "on_hold_consumer"> ಆನ್ ಹೋಲ್ಡ್ </string>
+    <string name = "rejected_consumer"> ತಿರಸ್ಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "hcp_number_status"> HCP ಸಂಖ್ಯೆ </string>
+    <string name = "consumer_name"> ಗ್ರಾಹಕರ ಹೆಸರು </string>
+    <string name = "order_number"> ಆದೇಶ ಸಂಖ್ಯೆ </string>
+    <string name = "basic_info"> ಮೂಲ ಮಾಹಿತಿ </string>
+    <string name = "follow_up_info"> ಅನುಸರಣಾ ಮಾಹಿತಿ </string>
+    <string name = "consumer_health_and_wellness"> ಗ್ರಾಹಕರ ಆರೋಗ್ಯ ಮತ್ತು ಸ್ವಾಸ್ಥ್ಯ </string>
+    <string name = "consumer_health_order"> ಗ್ರಾಹಕ ಆರೋಗ್ಯ ಆದೇಶ </string>
+    <string name="choose_your_category">ನಿಮ್ಮ ವರ್ಗವನ್ನು ಆರಿಸಿ</string>
+    <string name = "hcp_number"> HCP ಸಂಖ್ಯೆ </string>
+    <string name = "saved"> ಉಳಿಸಲಾಗಿದೆ </string>
+    <string name = "view_save_products"> ಉಳಿಸು ಆದೇಶಗಳನ್ನು ವೀಕ್ಷಿಸಿ </string>
+    <string name = "save_order"> ಆದೇಶವನ್ನು ಉಳಿಸಿ </string>
+    <string name = "view_saved_products"> ಉಳಿಸಿದ ಉತ್ಪನ್ನಗಳನ್ನು ವೀಕ್ಷಿಸಿ </string>
+    <string name = "my_cart"> ನನ್ನ ಕಾರ್ಟ್ </string>
+    <string name = "mark_as_done"> ಮುಗಿದಿದೆ ಎಂದು ಗುರುತಿಸಿ </string>
+    <string name = "save_note"> ಟಿಪ್ಪಣಿ ಉಳಿಸಿ </string>
+    <string name = "sample_description"> ಮಾದರಿ ವಿವರಣೆ </string>
+    <string name = "med_express"> MedExpress </string>
+    <string name = "choose_supplier"> ಸರಬರಾಜುದಾರರನ್ನು ಆರಿಸಿ </string>
+    <string name = "category"> ವರ್ಗ </string>
+    <string name = "display"> ಪ್ರದರ್ಶನ </string>
+    <string name = "policy_owner"> ನೀತಿ ಮಾಲೀಕ </string>
+    <string name = "view"> ವೀಕ್ಷಿಸಿ </string>
+    <string name = "insured_person"> ವಿಮೆ ಮಾಡಿದ ವ್ಯಕ್ತಿ </string>
+    <string name = "purchase_preview"> ಖರೀದಿ ಪೂರ್ವವೀಕ್ಷಣೆ </string>
+    <string name = "certificate_no"> ಪ್ರಮಾಣಪತ್ರ ಸಂಖ್ಯೆ </string>
+    <string name = "policy_owner_details"> ನೀತಿ ಮಾಲೀಕರ ವಿವರಗಳು </string>
+    <string name = "insured_details"> ವಿಮೆ ಮಾಡಿದ ವಿವರಗಳು </string>
+    <string name = "self"> ಸ್ವಯಂ </string>
+    <string name = "reviewed_by"> ಇವರಿಂದ ವಿಮರ್ಶಿಸಲಾಗಿದೆ </string>
+    <string name = "denial_reason"> ನಿರಾಕರಣೆ ಕಾರಣ </string>
+    <string name = "plan_details"> ಯೋಜನೆ ವಿವರಗಳು </string>
+    <string name = "acknowledgement_initials"> AR / ID / IC </string>
+    <string name = "addtional_detail_info"> ಹೆಚ್ಚುವರಿ ವಿವರ ಮಾಹಿತಿ </string>
+    <string name = "required_photo_prescription"> ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್‌ನ ಫೋಟೋ ಅಗತ್ಯವಿದೆ </string>
+    <string name = "order_created"> ಆದೇಶವನ್ನು ರಚಿಸಲಾಗಿದೆ </string>
+    <string name = "okay"> ಸರಿ </string>
+    <string name = "add_new_resident"> ಹೊಸ ನಿವಾಸವನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "add_follow_up_details"> ಅನುಸರಣಾ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "discount_optional"> ರಿಯಾಯಿತಿ (ಐಚ್ al ಿಕ) </string>
+    <string name = "follow_up_date_validation"> ಅನುಸರಣಾ ದಿನಾಂಕ ಖಾಲಿಯಾಗಿರಬಾರದು </string>
+    <string name = "input_products"> ದಯವಿಟ್ಟು ಉತ್ಪನ್ನವನ್ನು ನಮೂದಿಸಿ </string>
+    <string name = "successfully_updated"> ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "special_character_message"> ಅಮಾನ್ಯ ಇನ್ಪುಟ್: ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಮೊದಲ ಇನ್ಪುಟ್ ಆಗಿ ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ </string>
+    <string name = "follow_up_details"> ಅನುಸರಣಾ ವಿವರಗಳು </string>
+    <string name = "mark_down"> ಅನುಸರಣೆಯನ್ನು ಮಾಡಿದಂತೆ ಗುರುತಿಸಲಾಗಿದೆ </string>
+    <string name = "unmarked"> ಅನುಸರಣೆಯನ್ನು ಗುರುತಿಸಲಾಗಿಲ್ಲ </string>
+    <string name = "folllow_up_chicking"> ಪರಿಶೀಲಿಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "city"> ನಗರ </string>
+    <string name = "country"> ದೇಶ </string>
+
+    <string-array name = "genders">
+    <item> ಪುರುಷ </item>
+    <item> ಸ್ತ್ರೀ </item>
+    </string-array>
+
+    <string-array name = "relations">
+    <item> ಸಂಗಾತಿ </item>
+    <item> ಪೋಷಕ </item>
+    <item> ಒಡಹುಟ್ಟಿದವರು </item>
+    <item> ಮಗು </item>
+    </string-array>
+
+<!--    <string name = "facebook_app_id"> </string>-->
+<!--    <string name = "fb_login_protocol_scheme"> </string>-->
+
+    <string-array name = "carousel_titles">
+    <item> ತಲುಪಲು 52 ಮಾರುಕಟ್ಟೆ ವ್ಯವಸ್ಥಾಪಕರಾಗಿ! </item>
+    <item> ಯಾರು ತಲುಪುತ್ತಾರೆ 52? </item>
+    <item> ಮಾರುಕಟ್ಟೆ ಸ್ಥಳ ವ್ಯವಸ್ಥಾಪಕರು ಏನು ಮಾಡುತ್ತಾರೆ? </item>
+    <item> ನೀವು ಮಾರುಕಟ್ಟೆ ಸ್ಥಳ ನಿರ್ವಾಹಕರಾಗಲು ಕಾರಣವೇನು? </item>
+    <item> reach52 ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ನಿಮ್ಮ ಆರೋಗ್ಯಕ್ಕೆ ಬೇಕಾದ ಎಲ್ಲವನ್ನೂ ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ ಹೊಂದಿದೆ </item>
+    <item> ಸೈನ್ ಅಪ್ ಮಾಡಲು ಸಿದ್ಧವಾಗಿದೆ… ಇಲ್ಲಿ ಹೇಗೆ: </item>
+    </string-array>
+
+    <string-array name = "carousel_bodies">
+    <item>
+                <![CDATA[
+               ನಿಮ್ಮ ಸಮುದಾಯಕ್ಕೆ ಆರೋಗ್ಯ ಸೇವೆಗಳನ್ನು ತಲುಪಿಸಿ. <br/> <br/>
+    ನಿಮಗಾಗಿ ಅತ್ಯುತ್ತಮ ಪ್ರತಿಫಲಗಳು ಮತ್ತು ಅವಕಾಶಗಳು! <br/> <br/>
+                ]]>
+            </item>
+    <item>
+                <![CDATA[
+    ರೀಚ್ 52 400 ಕ್ಕೂ ಹೆಚ್ಚು ಸಮುದಾಯಗಳಿಗೆ ಕೈಗೆಟುಕುವ ಆರೋಗ್ಯ ಸೇವೆಯನ್ನು ನೀಡುತ್ತದೆ. <br/> <br/>
+    ರೀಚ್ 52 ಮಾರುಕಟ್ಟೆ ಸ್ಥಳವು ಆನ್‌ಲೈನ್ ಕ್ಯಾಟಲಾಗ್ ಆಗಿದೆ, ನಿಮ್ಮ ಆರೋಗ್ಯಕ್ಕೆ ಬೇಕಾದ ಎಲ್ಲವನ್ನೂ ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ ಇರಿಸಿ. <br/> <br/>
+                ]]>
+            </item>
+    <item>
+                <![CDATA[
+                 ನಿಮ್ಮ ಸಮುದಾಯದ ಜನರನ್ನು ನೀವು ಭೇಟಿ ಮಾಡುತ್ತೀರಿ - ನಿವಾಸಿಗಳು ನೆರೆಹೊರೆಯವರು, ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬ. <br/> <br/>
+                 ರೀಚ್ 52 ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಉತ್ಪನ್ನಗಳನ್ನು ಆದೇಶಿಸಿ. ಉತ್ಪನ್ನಗಳನ್ನು ಸಮುದಾಯಕ್ಕೆ ತಲುಪಿಸಿ. <br/> <br/>
+                 ಅದು ಅಷ್ಟೇ ಸರಳವಾಗಿದೆ! <br/> <br/>
+                ]]>
+            </item>
+    <item>
+                <![CDATA[
+                <ul>
+                <li> ನೀವು ಮಾಡುವ ಪ್ರತಿಯೊಂದು ಆದೇಶಕ್ಕೂ ಹಣ ಪಡೆಯಿರಿ </ li> <
+                 <li> ನೀವು ಹೆಚ್ಚು ಆದೇಶಗಳನ್ನು ನೀಡಿದರೆ, ನೀವು ಹೆಚ್ಚು ಹಣ ಪಡೆಯುತ್ತೀರಿ </ li> <
+                 <li> ನಿಮ್ಮ ಸ್ವಂತ ಮುಖ್ಯಸ್ಥರಾಗಿರಿ - ಯಾವಾಗ ಕೆಲಸ ಮಾಡಬೇಕೆಂದು ನೀವು ಆರಿಸಿಕೊಳ್ಳಿ </ li> </li>
+                 <li> ವಿಶ್ವ ದರ್ಜೆಯ ತರಬೇತಿಯೊಂದಿಗೆ ನಿಮ್ಮ ವೃತ್ತಿಜೀವನವನ್ನು ವೇಗವಾಗಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ </ li> </li>
+                 <li> ಕೈಗೆಟುಕುವ ಆರೋಗ್ಯ ರಕ್ಷಣೆಯ ಮೂಲಕ ನಿಮ್ಮ ಸಮುದಾಯವನ್ನು ಬೆಂಬಲಿಸಿ </ li> <
+                </ul>
+                ]]>
+            </item>
+    <item>
+                <![CDATA[
+                  <ul>
+                 <li> ಜೀವಸತ್ವಗಳು, ines ಷಧಿಗಳು, ವಿಮೆ ಮತ್ತು ವ್ಯಾಪಕ ಶ್ರೇಣಿಯ ಕುಟುಂಬ ಆರೋಗ್ಯ ಉತ್ಪನ್ನಗಳು </ li> </li>
+                 <li> ಕೈಗೆಟುಕುವ ಬೆಲೆಗಳು, ಸಮುದಾಯಗಳಿಗೆ ನೇರವಾಗಿ ತಲುಪಿಸಲಾಗುತ್ತದೆ </ li> </li>
+                 <li> ಪ್ರಯಾಣವಿಲ್ಲ, ತೊಂದರೆಯಿಲ್ಲ, ಉತ್ತಮ ಆರೋಗ್ಯ </ li>
+                </ul>
+                ]]>
+            </item>
+    <item>
+                <![CDATA[
+                 <ul>
+                 <li> ನಿಮ್ಮ ವಿವರಗಳನ್ನು ರೂಪದಲ್ಲಿ ಭರ್ತಿ ಮಾಡಿ </ li> </li>
+                 <li> ಸಲ್ಲಿಸಿ ಮತ್ತು ation ರ್ಜಿತಗೊಳಿಸುವಿಕೆಗಾಗಿ ಕಾಯಿರಿ </ li> </li>
+                 <li> ತರಬೇತಿ ಪೂರ್ಣಗೊಳಿಸಲು ಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಿ </ li> </li>
+                 <li> ಸಂಪೂರ್ಣ ತರಬೇತಿ, ನಂತರ ನೀವು ಹೋಗಲು ಸಿದ್ಧರಿದ್ದೀರಿ! </ Li>
+                </ul>
+                ]]>
+            </item>
+    </string-array>
+
+    <string name="faq">
+            <![CDATA[
+             <h2> ಮಾರ್ಕೆಟ್‌ಪ್ಲೇಸ್ ಏರಿಯಾ ಮ್ಯಾನೇಜರ್ ಆಗಲು ಕನಿಷ್ಠ ಅವಶ್ಯಕತೆಗಳು ಯಾವುವು? </ h2>
+             <ul>
+                 <li> ನಿಮಗೆ ಕನಿಷ್ಠ 18 ವರ್ಷ ವಯಸ್ಸಾಗಿರಬೇಕು. </ Li>
+             </ul>
+             <br/>
+             <h2> ಮಾರ್ಕೆಟ್‌ಪ್ಲೇಸ್ ಏರಿಯಾ ಮ್ಯಾನೇಜರ್ ಸಾಮಾನ್ಯವಾಗಿ ಎಷ್ಟು ಗಳಿಸುತ್ತಾನೆ? </ h2>
+             <ul>
+                 <li> ರೀಚ್ 52 ಮಾರುಕಟ್ಟೆಯ ಮೂಲಕ ನೀವು ಮಾಡುವ ಪ್ರತಿಯೊಂದು ಆದೇಶಕ್ಕೂ ನೀವು ಆಯೋಗವನ್ನು ಪಡೆಯುತ್ತೀರಿ. </ Li> </li>
+                 <li> ನೀವು ಹೆಚ್ಚು ಆದೇಶಗಳನ್ನು ನೀಡುತ್ತೀರಿ, ಹೆಚ್ಚು ಆಯೋಗವನ್ನು ನೀಡುತ್ತೀರಿ. </ Li>
+             </ul>
+             <br/>
+             <h2> ನಾನು ಸೈನ್ ಅಪ್ ಮಾಡಲು ಸಿದ್ಧನಿದ್ದೇನೆ, ಮುಂದೆ ನಾನು ಏನು ಮಾಡಬೇಕು? </ h2>
+             <ul>
+                 <li> ಫೋಟೋ ಐಡಿಯೊಂದಿಗೆ ನಿಮ್ಮ ವಿವರಗಳನ್ನು ಇಲ್ಲಿರುವ ಫಾರ್ಮ್‌ನಲ್ಲಿ ಸಲ್ಲಿಸಿ. </ Li>
+                 <li> ನಂತರ ನಾವು ಮಾರುಕಟ್ಟೆ ಸ್ಥಳ ವ್ಯವಸ್ಥಾಪಕರಾಗಿ ನಿಮ್ಮ ಸೈನ್ ಅಪ್ ಅನ್ನು ಖಚಿತಪಡಿಸುತ್ತೇವೆ. </ Li>
+                 <li> ನಂತರ ನೀವು ಪ್ರಾರಂಭಿಸಲು ನಮ್ಮಿಂದ ತರಬೇತಿ ಪಡೆಯುತ್ತೀರಿ. </ li> </li>
+            </ul>
+            ]]>
+        </string>
+
+    <string name="TnC">
+            <![CDATA[
+           <! [ಸಿಡಿಎಟಿಎ [
+             <h2> ಮಾರುಕಟ್ಟೆ ಪ್ರದೇಶ ವ್ಯವಸ್ಥಾಪಕರು ಏನು ಮಾಡುತ್ತಾರೆ? </ h2>
+                     <li> ರೀಚ್ 52 ಮಾರುಕಟ್ಟೆಯನ್ನು ಉತ್ತೇಜಿಸಲು ನಿಯೋಜಿತ ಪ್ರದೇಶದ ನಿವಾಸಿಗಳೊಂದಿಗೆ ಭೇಟಿಯಾಗುತ್ತದೆ. </ Li>
+                 <li> ನಿವಾಸಿಗಳಿಗೆ ಕ್ಯಾಟಲಾಗ್‌ನಿಂದ ಅಗತ್ಯವಿರುವ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಮತ್ತು ಆದೇಶಿಸಲು ಬೆಂಬಲಿಸುತ್ತದೆ. </ Li>
+                 <li> ರೀಚ್ 52 ಪಾಲುದಾರರ ಪರವಾಗಿ ನಿವಾಸಿಗಳಿಂದ ಆದೇಶಗಳಿಗಾಗಿ ಪಾವತಿಯನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ. </ Li> </li>
+                 <li> ಮಾಡಿದ ಆದೇಶಗಳಿಗಾಗಿ ತಮ್ಮ ಪ್ರಾದೇಶಿಕ ವ್ಯವಸ್ಥಾಪಕರೊಂದಿಗೆ ಸಮನ್ವಯಗೊಳಿಸುತ್ತದೆ ಮತ್ತು ವಾರಕ್ಕೊಮ್ಮೆ ಒಪ್ಪಿದ ಸಮಯದ ಚೌಕಟ್ಟುಗಳ ಆಧಾರದ ಮೇಲೆ ಪಾವತಿಗಳನ್ನು ರವಾನಿಸುವುದು. </ Li>
+                 <li> ಮಾರಾಟದ ಹಾಳೆಯನ್ನು ವಾರಕ್ಕೊಮ್ಮೆ ಸಲ್ಲಿಸಿ. </ Li> </li>
+                 <li> ತಮ್ಮ ಪ್ರಾಂತ್ಯ ವ್ಯವಸ್ಥಾಪಕರಿಂದ ಆದೇಶಗಳನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ ಅಥವಾ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ ಮತ್ತು ನಿವಾಸಿಗಳಿಗೆ ಆದೇಶಗಳನ್ನು ತಲುಪಿಸುತ್ತದೆ. </ Li>
+                 <li> ವಿಫಲವಾದ ಎಸೆತಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ನಿಗದಿತ ವಿತರಣಾ ದಿನಾಂಕಗಳನ್ನು ಸಂಯೋಜಿಸುತ್ತದೆ. </ Li>
+                 <li> ನಿವಾಸಿಗಳಿಗೆ ಪ್ರಮುಖ ಕ್ಷೇತ್ರಗಳಲ್ಲಿ ಮಾರ್ಕೆಟಿಂಗ್ ವಸ್ತುಗಳನ್ನು ಹಾಕಲು ರೀಚ್ 52 ಮತ್ತು ಅದರ ಪಾಲುದಾರರನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. </ Li>
+            </ul>
+            ]]>
+        </string>
+    <string name = "next"> ಮುಂದಿನ </string>
+    <string name = "tell_us_about_yourself"> ನಿಮ್ಮ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ </string>
+    <string name = "Continue"> ಮುಂದುವರಿಸಿ </string>
+    <string name = "carousel_1_title"> ನಿವಾಸಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ </string>
+    <string name = "carousel_1_subtext"> ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಆನ್‌ಬೋರ್ಡ್ ನಿವಾಸಿಗಳು ಮತ್ತು ಅವರ ದಾಖಲೆಗಳು ಅಥವಾ ನೇಮಕಾತಿಗಳನ್ನು ಸುಲಭವಾಗಿ ಪ್ರವೇಶಿಸಿ. </string>
+    <string name = "carousel_2_title"> ಕೊನೆಯ ಮೈಲಿ ಲಾಜಿಸ್ಟಿಕ್ಸ್ </string>
+    <string name = "carousel_2_subtext"> app ಷಧಿಯನ್ನು ಖರೀದಿಸಿ ಮತ್ತು ಒಂದು ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ನಿವಾಸಿ ಆದೇಶಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ. </string>
+    <string name = "carousel_3_title"> ಅವರ ಭವಿಷ್ಯವನ್ನು ಸುರಕ್ಷಿತಗೊಳಿಸಿ </string>
+    <string name = "carousel_3_subtext"> ಲಭ್ಯವಿರುವ ವಿಮಾ ಯೋಜನೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸಿ ಮತ್ತು ನಿಮ್ಮ ನಿವಾಸಿಗಳಿಗೆ ಆದೇಶಗಳನ್ನು ನೀಡಿ. </string>
+    <string name = "carousel_4_title"> ಪ್ರಯಾಣದಲ್ಲಿರುವಾಗ ಪ್ರವೇಶ! </string>
+    <string name = "carousel_4_subtext"> ನಿವಾಸಿ ದಾಖಲೆಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ, ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿದ್ದಾಗಲೂ ಆದೇಶಗಳನ್ನು ನೀಡಿ. </string>
+    <string name = "please_enter_pin"> ದಯವಿಟ್ಟು ಪಿನ್ ಅನ್ನು ನಮೂದಿಸಿ </string>
+    <string name = "forgot_pin"> ಪಿನ್ ಮರೆತಿರುವಿರಾ? </string>
+    <string name = "enter"> ನಮೂದಿಸಿ </string>
+    <string name = "please_enter_new_pin"> ದಯವಿಟ್ಟು ಹೊಸ ಪಿನ್ ಅನ್ನು ನಮೂದಿಸಿ</string>
+    <string name = "done"> ಮುಗಿದಿದೆ </string>
+    <string name = "pin_too_short"> ಪಿನ್ ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ </string>
+    <string name = "incorrect_pin"> ತಪ್ಪಾದ ಪಿನ್ </string>
+    <string name = "something_went_wrong"> ಏನೋ ತಪ್ಪಾಗಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. </string>
+    <string name = "incomplete_pin"> ಅಪೂರ್ಣ ಪಿನ್ </string>
+    <string name = "confirm_password">ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಿಸಿ</string>
+    <string name = "incorrect_creds"> ತಪ್ಪಾದ ರುಜುವಾತುಗಳು </string>
+    <string name = "password_too_short"> ಪಾಸ್‌ವರ್ಡ್ ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ. </string>
+    <string name = "passwords_dont_match"> ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ. </string>
+    <string name = "or"> ಅಥವಾ </string>
+    <string name = "continue_with_email"><![CDATA[ನೊಂದಿಗೆ ಮುಂದುವರಿಸಿ? <br/><b>%1$s?</b>]]> </string>
+    <string name = "no_email_found"> ಯಾವುದೇ ಇಮೇಲ್ ಕಂಡುಬಂದಿಲ್ಲ. </string>
+    <string name = "setup_new_password"> <![CDATA[ಗಾಗಿ ಹೊಸ ಪಾಸ್‌ವರ್ಡ್ ಹೊಂದಿಸಿ <br/> <b>%1$s</b>]]> </string>
+    <string name = "enter_your_password"> <![CDATA[ಗೆ ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ<br/><b>%1$s</b>]]> </string>
+    <string name = "faq_heading"> ಪದೇ ಪದೇ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು </string>
+    <string name = "sign_up_as_a_normal_user"> ಸಾಮಾನ್ಯ ಬಳಕೆದಾರರಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ </string>
+    <string name = "sign_up_as_a_community_manager"> ಸಮುದಾಯ ವ್ಯವಸ್ಥಾಪಕರಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ </string>
+    <string name = "ready_to_get_started_sign_up_here"> ಪ್ರಾರಂಭಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ? here n ಇಲ್ಲಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ. </string>
+    <string name = "town"> ಪಟ್ಟಣ </string>
+    <string name = "phone"> ಫೋನ್ </string>
+    <string name = "region"> ಪ್ರದೇಶ </string>
+    <string name = "fb_login_canceled"> ಫೇಸ್‌ಬುಕ್ ಲಾಗಿನ್ ರದ್ದುಗೊಂಡಿದೆ. </string>
+    <string name = "error_with_fb"> ಫೇಸ್‌ಬುಕ್‌ನೊಂದಿಗೆ ಮುಂದುವರಿಯುವಲ್ಲಿ ದೋಷ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. </string>
+    <string name = "i_agree_with_terms_and_conditions"> ನಾನು ನಿಯಮಗಳು ಮತ್ತು ಷರತ್ತುಗಳನ್ನು ಒಪ್ಪುತ್ತೇನೆ. </string>
+    <string name = "our_privacy_policy"> <u> ನಮ್ಮ ಗೌಪ್ಯತೆ ನೀತಿ </u> </string>
+    <string name = "please_upload_your_id"> ದಯವಿಟ್ಟು ನಿಮ್ಮ ID ಯನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ </string>
+    <string name = "add_dependents_to_countinue"> ಮುಂದುವರೆಯಲು ಅವಲಂಬಿತರನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "dependents"> ಅವಲಂಬಿತರು </string>
+    <string name = "relation_to_insured"> ವಿಮಾದಾರರಿಗೆ ಸಂಬಂಧ: </string>
+    <string name = "click_to_add_new_dependents"> ಹೊಸ ಅವಲಂಬಕರನ್ನು ಸೇರಿಸಲು + ಕ್ಲಿಕ್ ಮಾಡಿ. </string>
+    <string name = "date_cannot_be_empty"> ದಿನಾಂಕ ಖಾಲಿಯಾಗಿರಬಾರದು </string>
+    <string name = "name_cannot_be_empty"> ಹೆಸರು ಖಾಲಿಯಾಗಿರಬಾರದು </string>
+    <string name = "age_too_low"> ವಯಸ್ಸು 18 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆಯಿರಬಾರದು </string>
+    <string name = "working_days"> ಹೇಳಿದ ವಿನಂತಿಯ ನವೀಕರಣಕ್ಕಾಗಿ 4-5 ಕೆಲಸದ ದಿನಗಳನ್ನು ನಿರೀಕ್ಷಿಸಿ. </string>
+    <string name = "pending_questionnaire"> ಬಾಕಿ ಉಳಿದಿರುವ ಪ್ರಶ್ನಾವಳಿ </string>
+    <string name = "pending_issuance"> ಬಾಕಿ ಉಳಿದಿದೆ </string>
+    <string name = "approved"> ಅನುಮೋದಿಸಲಾಗಿದೆ </string>
+    <string name = "declined"> ನಿರಾಕರಿಸಲಾಗಿದೆ </string>
+    <string name = "cancelled"> ರದ್ದು </string>
+    <string name = "not_available"> ಲಭ್ಯವಿಲ್ಲ </string>
+    <string name = "invalid_user"> ಅಮಾನ್ಯ ಬಳಕೆದಾರ ಖಾತೆ </string>
+    <string name = "image_too_large_error"> ಚಿತ್ರ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ. ದಯವಿಟ್ಟು ಇನ್ನೊಂದು ಚಿತ್ರವನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ. </string>
+    <string name = "id_image_upload_fail"> ಅಪ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. </string>
+    <string name = "processing_image"> "ಇಮೇಜ್ ಅನ್ನು ಸಂಸ್ಕರಿಸಲಾಗುತ್ತಿದೆ ..." </string>
+    <string name = "image_processing_fail"> ಚಿತ್ರವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. </string>
+    <string name = "uploading_image"> ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ ... </string>
+    <string name = "signin_with_facebook"> ಫೇಸ್‌ಬುಕ್‌ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ </string>
+    <string name = "disconnect_facebook"> ಫೇಸ್‌ಬುಕ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ </string>
+    <string name = "signin_with_google"> Google ನೊಂದಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ </string>
+    <string name = "disconnect_google"> Google ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ </string>
+    <string name = "available"> ಲಭ್ಯವಿದೆ </string>
+    <string name = "details"> ವಿವರಗಳು </string>
+    <string name = "prescription_required"> ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಅಗತ್ಯವಿದೆ </string>
+    <string name = "country_not_supported"> ಕ್ಷಮಿಸಿ. ನಿಮ್ಮ ದೇಶವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. </string>
+    <string name = "invalid_email"> ಅಮಾನ್ಯ ಇಮೇಲ್ ಸ್ವರೂಪ </string>
+    <string name = "invalid_input"> ಅಮಾನ್ಯ ಇನ್ಪುಟ್: ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಮೊದಲ ಇನ್ಪುಟ್ ಆಗಿ ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ </string>
+    <string name = "date_validation"> ಅನುಸರಣಾ ದಿನಾಂಕ ಖಾಲಿಯಾಗಿರಬಾರದು </string>
+    <string name = "phone_number_validation"> ದಯವಿಟ್ಟು ಸಂಪರ್ಕ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ </string>
+    <string name = "product_validation"> ದಯವಿಟ್ಟು ಉತ್ಪನ್ನವನ್ನು ನಮೂದಿಸಿ </string>
+    <string name = "follow_up_lists"> ಅನುಸರಣಾ ಪಟ್ಟಿಗಳು </string>
+    <string name = "successfully_saved"> ಟಿಪ್ಪಣಿಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ </string>
+    <string name = "add_notes"> ಉಳಿಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಟಿಪ್ಪಣಿಗಳನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "install_access_continue"> ಮುಂದುವರಿಸಲು ಪ್ರವೇಶವನ್ನು ಸ್ಥಾಪಿಸಿ </string>
+    <string name = "update_resident"> ನವೀಕರಿಸಿ ನಿವಾಸ </string>
+    <string name = "resident_preview_details"> ನಿವಾಸಿ ಪೂರ್ವವೀಕ್ಷಣೆ ವಿವರಗಳು </string>
+    <string name = "please_add_family_member"> ದಯವಿಟ್ಟು ಕುಟುಂಬ ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ </string>
+    <string name = "insurance_policy_details"> ವಿಮಾ ಪಾಲಿಸಿ ವಿವರಗಳು </string>
+    <string name = "medicine_details"> ಮೆಡಿಸಿನ್ ವಿವರಗಳು </string>
+<!--    <string name="change_confirmation">ಬದಲಾವಣೆಗಳನ್ನು / ಹೊಸ ನಿವಾಸಿಗಳನ್ನು ಉಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ?</string>-->
+    <string name="yes">ಹೌದು</string>
+    <string name="no">ಇಲ್ಲ</string>
+    <string name="invalid_email_format">ಅಮಾನ್ಯವಾದ ಇಮೇಲ್ ಸ್ವರೂಪ</string>
+    <string name="address_line_1">ವಿಳಾಸ ಸಾಲು 1</string>
+    <string name="address_line_2">ವಿಳಾಸ ಸಾಲು 2</string>
+    <string name="consent_insurance">ಒಪ್ಪಿಗೆ</string>
+    <string name="take_id_photo">ಐಡಿ ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ</string>
+    <string name="india_consent">
+		 <![CDATA[
+
+<pre><strong><span lang="EN-US">ನಿಮ್ಮ</span></strong> <strong><span lang="EN-US">ಆದೇಶವನ್ನು</span></strong> <strong><span lang="EN-US">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು</span></strong> <strong><span lang="EN-US">ಮತ್ತು</span></strong> <strong><span lang="KN">ಔಷಧಿ </span></strong><strong><span lang="EN-US">ಮತ್ತು</span></strong> <strong><span lang="EN-US">ಇತರ</span></strong> <strong><span lang="EN-US">ಯಾವುದೇ</span></strong> <strong><span lang="EN-US">ಸೇವೆಗಳನ್ನು</span></strong> <strong><span lang="EN-US">ನಿಮಗೆ</span></strong> <strong><span lang="EN-US">ತಲುಪಿಸಲು</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="EN-US">ನಿಮ್ಮ</span></strong> <strong><span lang="EN-US">ಒಪ್ಪಿಗೆಯನ್ನು</span></strong> <strong><span lang="EN-US">ನಾವು</span></strong> <strong><span lang="EN-US">ಸೆರೆಹಿಡಿಯಬೇಕು</span></strong><strong><span lang="EN-US">. </span></strong><strong><span lang="EN-US">ದಯವಿಟ್ಟು</span></strong> <strong><span lang="EN-US">ಈ</span></strong> <strong><span lang="EN-US">ಕೆಳಗಿನದನ್ನು</span></strong> <strong><span lang="EN-US">ಓದಿ</span></strong> <strong><span lang="EN-US">ಮತ್ತು</span></strong> <strong><span lang="EN-US">ನಿಮ್ಮ</span></strong> <strong><span lang="EN-US">ಪರವಾಗಿ</span></strong> <strong><span lang="EN-US">ಈ</span></strong> <strong><span lang="EN-US">ಆದೇಶವನ್ನು</span></strong> <strong><span lang="EN-US">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು</span></strong> <strong><span lang="EN-US">ನಿಮ್ಮ</span></strong> <strong><span lang="EN-US">ಒಪ್ಪಿಗೆಯನ್ನು</span></strong> <strong><span lang="KN">ಖಚಿತಪಡಿಸಿ</span></strong><strong><span lang="EN-US">.</span></strong><strong><span lang="EN-US"> ನಿಮ್ಮ</span></strong> <strong><span lang="KN">ಔಷಧಿ</span></strong><strong><span lang="EN-US"> ಗಳನ್ನು</span></strong> <strong><span lang="EN-US">ಸ್ವೀಕರಿಸುವ</span></strong> <strong><span lang="EN-US">ಪ್ರಕ್ರಿಯೆಯನ್ನು</span></strong> <strong><span lang="EN-US">ಸುಲಭ</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="EN-US">ಪಾರದರ್ಶಕ</span></strong> <strong><span lang="EN-US">ಮತ್ತು</span></strong> <strong><span lang="EN-US">ಕಾನೂನುಬದ್ಧಗೊಳಿಸಲು</span></strong> <strong><span lang="EN-US">ಕೆಳಗಿನವುಗಳನ್ನು</span></strong> <strong><span lang="EN-US">ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ</span></strong><strong><span lang="EN-US">. </span></strong><strong><span lang="EN-US">ಒಮ್ಮೆ</span></strong> <strong><span lang="EN-US">ನಾವು</span></strong> <strong><span lang="EN-US">ಈ</span></strong> <strong><span lang="EN-US">ಸಮ್ಮತಿ</span></strong> <strong><span lang="EN-US">ಫಾರ್ಮ್</span></strong> <strong><span lang="EN-US">ಅನ್ನು</span></strong> <strong><span lang="EN-US">ಸ್ವೀಕರಿಸಿದ</span></strong> <strong><span lang="EN-US">ನಂತರ</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="EN-US">ನಮ್ಮ</span></strong> <strong><span lang="EN-US">ಸೇವೆಗಳನ್ನು</span></strong> <strong><span lang="EN-US">ನಿಮಗೆ</span></strong> <strong><span lang="EN-US">ತಲುಪಿಸಲು</span></strong> <strong><span lang="EN-US">ನಮಗೆ</span></strong> <strong><span lang="EN-US">ಸಾಧ್ಯವಾಗುತ್ತದೆ</span></strong><strong><span lang="EN-US">.<br /><br /></span></strong><span lang="KN">ಈ</span> <span lang="KN">ಪೈಲಟ್</span> <span lang="KN">ಕೇವಲ</span> <span lang="KN">ಮೂರು</span><span lang="KN"> (3) </span><span lang="KN">ತಿಂಗಳುಗಳವರೆಗೆ</span> <span lang="KN">ಇರುತ್ತದೆ</span> <span lang="KN">ಎಂದು</span> <span lang="KN">ನನಗೆ</span> <span lang="KN">ಸಂಪೂರ್ಣವಾಗಿ</span> <span lang="KN">ತಿಳಿದಿದೆ</span> <span lang="KN">ಮತ್ತು</span> <span lang="KN">ಅದೇ</span> <span lang="KN">ರೀತಿ</span> <span lang="KN">ಅನುಕೂಲಕರವಾಗಿದೆ</span><span lang="KN">.<br /></span><span lang="KN"><br />ವಿವರಿಸಿದ</span> <span lang="KN">ಆದೇಶ</span> <span lang="KN">ಪೂರೈಸುವ</span> <span lang="KN">ಸೇವೆಯನ್ನು</span> <span lang="KN">ನನಗೆ</span> <span lang="KN">ಒದಗಿಸುವ</span> <span lang="KN">ಸಲುವಾಗಿ</span><span lang="EN-US">, </span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ಇನ್ನಾವುದೇ</span> <span lang="KN">ಆರ್ಡರ್</span> <span lang="KN">ಫಾರ್ಮ್</span> <span lang="KN">ಅನ್ನು</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="KN">ಮತ್ತು</span> <span lang="KN">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಅನುಮತಿ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="KN">.<br /></span><span lang="KN"><br />ಸೇವೆಯ</span> <span lang="KN">ಸುಧಾರಣೆಗೆ</span> <span lang="KN">ಚಾಲನೆ</span> <span lang="KN">ನೀಡಲು</span> <span lang="KN">ಅದರಲ್ಲಿ</span> <span lang="KN">ಒದಗಿಸಲಾದ</span> <span lang="KN">ಮಾಹಿತಿಯನ್ನು</span> <span lang="KN">ವಿಶ್ಲೇಷಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಅನುಮತಿ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="KN">.<br /></span><span lang="KN"><br />ಯಾವುದೇ</span> <span lang="KN">ಪುನರಾವರ್ತಿತ</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ಭಾಗ</span><span lang="KN">-</span><span lang="KN">ಸಾಗಿಸಲಾದ</span> <span lang="KN">ಆದೇಶಗಳನ್ನು</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="KN">ಮತ್ತು</span> <span lang="KN">ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಅನುಮತಿ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="KN">.<br /><br /></span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಮನೆಗೆ</span> <span lang="KN">ತಲುಪಿಸುವ</span> <span lang="KN">ಸೂಚಿಸಿದ</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ಒಪ್ಪಿದ</span> <span lang="KN">ಸಮಯದಲ್ಲಿ</span> <span lang="KN">ಲಭ್ಯವಾಗಲು</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ಸಂಗ್ರಹಣಾ</span> <span lang="KN">ಸ್ಥಳದಿಂದ</span> <span lang="KN">ವೈಯಕ್ತಿಕವಾಗಿ</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಜವಾಬ್ದಾರಿಯನ್ನು</span> <span lang="KN">ಸ್ವೀಕರಿಸುತ್ತೇನೆ</span><span lang="KN"> (</span><span lang="KN">ಸಂಗ್ರಹಣೆ</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ವಿತರಣೆಯು</span> <span lang="KN">ಬಾಕಿ</span> <span lang="KN">ಇರುವಾಗ</span> <span lang="KN">ಯಾವ</span> <span lang="KN">ಸಂಗ್ರಹಣಾ</span> <span lang="KN">ಸ್ಥಳ</span> <span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52 </span><span lang="KN">ನನಗೆ</span> <span lang="KN">ಸಲಹೆ</span> <span lang="KN">ನೀಡುತ್ತದೆ</span><span lang="KN">)<br /><br /></span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಔಷಧಿಗಳನ್ನು</span> <span lang="KN">ವೈಯಕ್ತಿಕವಾಗಿ</span> <span lang="KN">ಸ್ವೀಕರಿಸಲು</span> <span lang="KN">ನನಗೆ</span> <span lang="KN">ಸಾಧ್ಯವಾಗದಿದ್ದಲ್ಲಿ</span><span lang="EN-US">, </span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಔಷಧಿಯನ್ನು</span> <span lang="KN">ಅನುಮೋದಿತ</span> <span lang="KN">ಕುಟುಂಬ</span> <span lang="KN">ಸದಸ್ಯರಿಗೆ</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ನನ್ನ</span> <span lang="KN">ಮನೆಯಲ್ಲಿ</span> <span lang="KN">ವಾಸಿಸುವ</span> <span lang="KN">ಯಾರಿಗಾದರೂ</span> <span lang="KN">ತಲುಪಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಅನುಮತಿ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="KN">.<br /><br /></span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಕೋರಿಕೆಯ</span> <span lang="KN">ಮೇರೆಗೆ</span><span lang="EN-US">, </span><span lang="KN">ಸ್ಥಳೀಯ</span> <span lang="KN">ಆರೋಗ್ಯ</span> <span lang="KN">ಪೂರೈಕೆದಾರರಿಂದ</span> <span lang="KN">ನನ್ನ</span> <span lang="KN">ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ಅದರ</span> <span lang="KN">ಯಾವುದೇ</span> <span lang="KN">ಅಧಿಕೃತ</span> <span lang="KN">ಪ್ರತಿನಿಧಿಗೆ</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಒಪ್ಪಿಗೆ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="EN-US">, </span><span lang="KN">ಅಗತ್ಯವಿದ್ದರೆ</span> <span lang="KN">ಮತ್ತು</span> <span lang="KN">ಅದು</span> <span lang="KN">ಲಭ್ಯವಾಗುತ್ತದೆ</span> <span lang="KN">ಮತ್ತು</span> <span lang="KN">ಅಗತ್ಯವಾಗಿರುತ್ತದೆ</span><span lang="KN">.<br /><br /></span><span lang="KN">ನನ್ನ</span> <span lang="KN">ಕೋರಿಕೆಯ</span> <span lang="KN">ಮೇರೆಗೆ</span><span lang="EN-US">, </span><span lang="KN">ಪುನರಾವರ್ತಿತ</span> <span lang="KN">ಆಧಾರದ</span> <span lang="KN">ಮೇಲೆ</span> <span lang="KN">ಸೂಕ್ತವಾದ</span> <span lang="KN">ದಾಸ್ತಾನು</span> <span lang="KN">ಬಿಂದುವಿನಿಂದ</span> <span lang="KN">ನನ್ನ</span> <span lang="KN">ವಿತರಿಸಿದ</span> <span lang="KN">ಔಷಧಿಗಳನ್ನು</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಒಪ್ಪಿಗೆ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span><span lang="KN">.<br /><br /></span><span lang="KN">ವಿತರಿಸಿದ</span> <span lang="KN">ಔಷಧಿಗಳನ್ನು</span> <span lang="KN">ನನ್ನ</span> <span lang="KN">ಮನೆಗೆ</span> <span lang="KN">ತಲುಪಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span> <span lang="KN">ಗೆ</span> <span lang="KN">ಒಪ್ಪಿಗೆ</span> <span lang="KN">ನೀಡುತ್ತೇನೆ</span> <span lang="KN">ಅಥವಾ</span> <span lang="KN">ವಿನಂತಿಯ</span> <span lang="KN">ಮೇರೆಗೆ</span> <span lang="KN">ಒಪ್ಪಿದ</span> <span lang="KN">ಸ್ಥಳದಿಂದ</span> <span lang="KN">ಸಂಗ್ರಹಿಸಲು</span> <span lang="KN">ನಾನು</span> <span lang="KN">ಒಪ್ಪುತ್ತೇನೆ</span><span lang="KN">.<br /><br /></span><span lang="KN">ಕೆಳಗೆ ನೀಡಲಾಗಿರುವಂತೆ</span><span lang="EN-US">, </span><span lang="KN">ನನ್ನ ವೈಯಕ್ತಿಕ ಡೇಟಾವನ್ನು ಡಿಜಿಟಲ್ ರೂಪದಲ್ಲಿ ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಸಂಸ್ಕರಿಸಲು ನಾನು ಅನುಮತಿ ನೀಡುತ್ತೇನೆ ಮತ್ತು ಅದೇ ರೀತಿ ನನ್ನ ಮತ್ತು ಭವಿಷ್ಯದ ಯಾವುದೇ ಕ್ರಮವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಮತ್ತು ಪೂರೈಸಲು ಅಗತ್ಯವಾದ ಇತರ ಸಂಬಂಧಿತ ಪಕ್ಷಗಳೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳುತ್ತೇನೆ. </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span><span lang="KN">ಗೆ ಸರಿಯಾದ ಲಿಖಿತ ಸೂಚನೆಯ ಮೂಲಕ ನನ್ನಿಂದ ಸ್ಪಷ್ಟವಾಗಿ ಹಿಂತೆಗೆದುಕೊಳ್ಳದ ಹೊರತು </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span><span lang="KN">ಗೆ ನೀಡಿದ ಅಧಿಕಾರವು ನನ್ನ ಸಹಿಯ ದಿನಾಂಕದಿಂದ 10 ವರ್ಷಗಳ ಅವಧಿಗೆ ಮಾನ್ಯವಾಗಿರುತ್ತದೆ.<br /><br /></span><span lang="KN">ನನ್ನ ಡೇಟಾವನ್ನು </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52 </span><span lang="KN">ನಿಂದ ಮಾತ್ರ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುವುದು ಮತ್ತು ಅನ್ವಯವಾಗುವ ಸ್ಥಳೀಯ ನಿಯಮಗಳು</span><span lang="EN-US">, </span><span lang="KN">ಕಾನೂನುಗಳು ಮತ್ತು ಮಾರ್ಗಸೂಚಿಗಳಿಗೆ ಅನುಗುಣವಾಗಿರುತ್ತವೆ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.<br /><br /><br /></span><strong><span lang="KN">ಯಾವುದೇ ಗುಪ್ತ ವೆಚ್ಚವನ್ನು ತಪ್ಪಿಸಲು ಆದೇಶಿಸುವ ಸಮಯದಲ್ಲಿ </span></strong><strong><span lang="EN-US">ರೀಚ್</span></strong><strong><span lang="EN-US">52</span></strong> <strong><span lang="KN">ಎಲ್ಲಾ ವಹಿವಾಟುಗಳನ್ನು ರೋಗಿಗೆ ಪಾರದರ್ಶಕವಾಗಿಸುತ್ತದೆ ಮತ್ತು ಹೀಗೆ:<br /><br /></span></strong><span lang="KN">ಆದೇಶದ ಸಮಯದಲ್ಲಿ ಒದಗಿಸಿದಂತೆ ಆದೇಶದ ಬೆಲೆಯನ್ನು ಪಾವತಿಸಲು ನಾನು ಒಪ್ಪುತ್ತೇನೆ. ಆದೇಶಿಸಿದ ಬೆಲೆ ಈಗಾಗಲೇ ಸರಕುಗಳ ಬೆಲೆ</span><span lang="EN-US">, </span><span lang="KN">ತೆರಿಗೆಗಳು ಮತ್ತು ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ಸೇವೆಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ</span><span lang="EN-US">, </span><span lang="KN">ಉದಾಹರಣೆಗೆ: </span><span lang="KN">ಔಷಧಿಗಳ ವಿತರಣೆ</span><span lang="EN-US">, </span><span lang="KN">ಇತ್ಯಾದಿ.</span></pre>
+<pre><span lang="KN">ಆದೇಶದ ಸಮಯದಲ್ಲಿ ಒಪ್ಪಿದಂತೆ ಯಾವುದೇ ಒಪ್ಪಿದ ಮರುಕಳಿಸುವ ಶುಲ್ಕವನ್ನು ಪಾವತಿಸಲು ನಾನು ಒಪ್ಪುತ್ತೇನೆ.<br /><br /><br /></span><strong><span lang="KN">ಉದ್ದೇಶಿತ</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="KN">ಕಡಿಮೆ ವೆಚ್ಚದ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ಒದಗಿಸುವಲ್ಲಿ</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="EN-US">ರೀಚ್</span></strong><strong><span lang="EN-US">52</span></strong> <strong><span lang="KN">ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ಅವರ ಉದ್ದೇಶಿತ</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="KN">ಅರ್ಹತಾ ಸ್ವೀಕರಿಸುವವರಿಂದ ಸ್ವೀಕರಿಸಲಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು</span></strong><strong><span lang="EN-US">, </span></strong><strong><span lang="KN">ಆದ್ದರಿಂದ:<br /><br /></span></strong><span lang="KN">ಸರಕು ಮತ್ತು ಸೇವೆಗಳ ಅರ್ಹತಾ ಮಾನದಂಡಗಳನ್ನು ಪೂರೈಸಲಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳುವ ಸಾಧನವಾಗಿ ನನ್ನ ಡೇಟಾವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ನಾನು ನನ್ನ ಅನುಮತಿಯನ್ನು ನೀಡುತ್ತೇನೆ.<br /><br /></span><span lang="KN">ನನ್ನ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡುವ ಯಾವುದೇ ಅರ್ಹತಾ ಮಾನದಂಡಗಳು ವಿನಂತಿಯ ಮೇರೆಗೆ ನನಗೆ ಲಭ್ಯವಿದೆ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ.<br /><br /></span><span lang="KN">ಈ ಆದೇಶವು ನನ್ನದಾಗಿದೆ ಎಂದು ನಾನು ಒಪ್ಪಿಗೆ ಮತ್ತು ಅದನ್ನು ಬೇರೆ ಯಾವುದೇ ವ್ಯಕ್ತಿಗಳು ಅಥವಾ ಸಂಸ್ಥೆಗಳಿಗೆ ಹಂಚಿಕೊಳ್ಳಲಾಗುವುದಿಲ್ಲ</span><span lang="EN-US">, </span><span lang="KN">ಮಾರಾಟ ಮಾಡುವುದಿಲ್ಲ ಅಥವಾ ವಿತರಿಸಲಾಗುವುದಿಲ್ಲ. ನಾನು ಇದನ್ನು ಅನುಸರಿಸದಿದ್ದರೆ</span><span lang="EN-US">, </span><span lang="KN">ಇದು ಒಪ್ಪಂದದ ಉಲ್ಲಂಘನೆ ಮತ್ತು ವಂಚನೆಯ ಮೊತ್ತ ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ ಮತ್ತು ಈ ಗುತ್ತಿಗೆ ಸೇವೆ ಮತ್ತು / ಅಥವಾ ವ್ಯವಸ್ಥೆಯನ್ನು ಕೊನೆಗೊಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಕಾನೂನು ಜಾರಿ ಅಧಿಕಾರಿಗಳಿಗೆ ಉಲ್ಲೇಖಿಸಲಾಗುತ್ತದೆ.<br /><br /></span><span lang="KN">ಪ್ರಯೋಜನಕಾರಿ ಪರಿಣಾಮಗಳನ್ನು ಗರಿಷ್ಠಗೊಳಿಸಲಾಗಿದೆಯೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ನೀಡಲಾದ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಅನುಗುಣವಾಗಿ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ಬಳಸಲು ನಾನು ಒಪ್ಪುತ್ತೇನೆ.<br /><br /></span><span lang="KN">ನಾನು ಇಲ್ಲಿ ಒದಗಿಸಿದ ಎಲ್ಲಾ ಮಾಹಿತಿಯು ನಿಜ ಮತ್ತು ಸರಿಯಾಗಿದೆ ಎಂದು ನಾನು ಖಚಿತಪಡಿಸುತ್ತೇನೆ.<br /><br /><br /></span><strong><span lang="KN">ಭಾಗವಹಿಸಲು ಆಸಕ್ತ ವ್ಯಕ್ತಿಗಳು ಮತ್ತು ಒಪ್ಪುವ ವ್ಯಕ್ತಿಗಳಿಗೆ ಸೇವೆಗಳನ್ನು ಒದಗಿಸಲು </span></strong><strong><span lang="EN-US">ರೀಚ್</span></strong><strong><span lang="EN-US">52</span></strong><strong><span lang="KN">ಮಾತ್ರ ಆಸಕ್ತಿ ಹೊಂದಿದೆ:<br /><br /></span></strong><span lang="KN">ಈ ಒಪ್ಪಂದವನ್ನು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಮುಕ್ತಾಯಗೊಳಿಸುವ ಅಥವಾ ತಿದ್ದುಪಡಿ ಮಾಡುವ ಹಕ್ಕನ್ನು ನಾನು ಕಾಯ್ದಿರಿಸಿದ್ದೇನೆ</span><span lang="EN-US">, </span><span lang="KN">ಆದರೆ ಇದು ನನ್ನ ಆದೇಶವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸದ ಅಥವಾ ತಲುಪಿಸದಿರುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ.<br /><br /></span><span lang="KN">ರದ್ದತಿ ಅಥವಾ ಬದಲಾವಣೆಯ ಸಮಯದಲ್ಲಿ ಯಾವುದೇ ಸರಕುಗಳು ಅಥವಾ ಸೇವೆಗಳನ್ನು ಪೂರೈಸುವ</span><span lang="EN-US">, </span><span lang="KN">ತಲುಪಿಸುವ ಅಥವಾ ಬಾಕಿ ಇರುವ ಪಾವತಿಗಾಗಿ ನಾನು ಜವಾಬ್ದಾರನಾಗಿರುತ್ತೇನೆ ಎಂದು ನಾನು ಒಪ್ಪುತ್ತೇನೆ.<br /><br /></span><span lang="KN">ನಾನು </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span> <span lang="KN">ಮೂಲಕ ಖರೀದಿಸಿದ ಉತ್ಪನ್ನಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಪ್ರತಿಕೂಲ ಘಟನೆ ಸಂಭವಿಸಿದಲ್ಲಿ</span><span lang="EN-US">, </span><span lang="KN">ಹೆಚ್ಚಿನ ವಿವರಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ನಾನು </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span> <span lang="KN">ಗೆ ಒಪ್ಪಿಗೆ ನೀಡುತ್ತೇನೆ<br /><br /></span><span lang="KN">ಪ್ರತಿಕೂಲ ಘಟನೆ</span><span lang="EN-US">, </span><span lang="KN">ಅದೇ ವಿವರಗಳನ್ನು </span><span lang="KN">ಔಷಧಿತಯಾರಕರು ಅಥವಾ ಆರೋಗ್ಯ ಅಧಿಕಾರಿಗಳಿಗೆ ರವಾನಿಸಿ</span><span lang="EN-US">, </span><span lang="KN">ಮತ್ತು ಅದೇ ರೀತಿ ಅಗತ್ಯವಿರುವ ಮತ್ತು ಅಗತ್ಯವಿರುವಂತೆ ರೋಗಿಗಳ ಸುರಕ್ಷತೆಯ ಹಿತದೃಷ್ಟಿಯಿಂದ ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು </span><span lang="EN-US">ರೀಚ್</span><span lang="EN-US">52</span> <span lang="KN">ನ ಪಾಲುದಾರರು ಅಥವಾ ಯಾವುದೇ ಆರೋಗ್ಯ ಅಧಿಕಾರಿಗಳು ನನ್ನನ್ನು ಸಂಪರ್ಕಿಸಲು ಒಪ್ಪಿಗೆ ನೀಡಿ.</span></pre>
+<p>&nbsp;</p>
+
+         ]]>
+	</string>
+
+    <string name="i_agree">ನಾನು ಒಪ್ಪುತ್ತೇನೆ</string>
+    <string name="max_age_is">ಗರಿಷ್ಠ ವಯಸ್ಸು</string>
+    <string name="min_age_required">ಕನಿಷ್ಠ ವಯಸ್ಸು ಅಗತ್ಯವಿದೆ</string>
+    <string name="invalid_phone_number">ಅಮಾನ್ಯ ಫೋನ್ ಸಂಖ್ಯೆ</string>
+    <string name="address_is_incomplete">ವಿಳಾಸ ಅಪೂರ್ಣವಾಗಿದೆ</string>
+    <string name="insured_amount">ವಿಮೆ ಮಾಡಿದ ಮೊತ್ತ</string>
+    <string name="exclusions">ಹೊರಗಿಡುವಿಕೆಗಳು</string>
+    <string name="premium_starting_form">%1$s %2$s ನಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ</string>
+    <string name="period">ಅವಧಿ</string>
+    <string name="premium_breakdown">ಪ್ರೀಮಿಯಂ ವಿವರಗಳು</string>
+    <string name="primary_members">ಪ್ರಾಥಮಿಕ ಸದಸ್ಯರು</string>
+    <string name="extra_members">ಹೆಚ್ಚುವರಿ ಸದಸ್ಯರು</string>
+    <string name="tax">ತೆರಿಗೆ</string>
+    <string name="final_total_tax">ಅಂತಿಮ (ಒಟ್ಟು + ತೆರಿಗೆ)</string>
+    <string name="click_to_add_beneficiaries">ಫಲಾನುಭವಿಗಳನ್ನು ಸೇರಿಸಲು + ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="members_covered">ಸದಸ್ಯರು ಆವರಿಸಿದ್ದಾರೆ</string>
+    <string name="premium_details">ಪ್ರೀಮಿಯಂ ವಿವರಗಳು</string>
+    <string name="premium_amount">ಪ್ರೀಮಿಯಂ ಮೊತ್ತ</string>
+    <string name="premium_period">ಪ್ರೀಮಿಯಂ ಅವಧಿ</string>
+    <string name="uploaded_id">ಐಡಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="buy">ಖರೀದಿಸಿ</string>
+    <string name="confirm_this_purchase">ಈ ಖರೀದಿಯನ್ನು ಖಚಿತಪಡಿಸುವುದೇ?</string>
+    <string name="your_insurance_purchase_is_complete">ನಿಮ್ಮ ವಿಮಾ ಖರೀದಿ ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="updated_on">" ನವೀಕರಿಸಲಾಗಿದೆ:"</string>
+    <string name="created_on">ಇದನ್ನು ರಚಿಸಲಾಗಿದೆ:</string>
+    <string name="products_term">%s ತಿಂಗಳುಗಳು</string>
+    <string name="general_exclusions">ಸಾಮಾನ್ಯ ಹೊರಗಿಡುವಿಕೆಗಳು</string>
+    <string name="plan_validity_term">ಯೋಜನೆ ಸಿಂಧುತ್ವ ಪದ:</string>
+    <string name="insurers">ವಿಮಾದಾರರು</string>
+    <string name="insurance_products">ವಿಮಾ ಯೋಜನೆಗಳು</string>
+    <string name="insurance_products_details">ವಿಮಾ ವಿವರಗಳು</string>
+    <string name="constructs">ಯೋಜನೆ ಪ್ರಕಾರಗಳು</string>
+    <string name="members">ಸದಸ್ಯರನ್ನು ಸೇರಿಸಿ</string>
+    <string name="premium">ಪ್ರೀಮಿಯಂ ವಿವರಗಳು</string>
+    <string name="beneficiaries">ಫಲಾನುಭವಿಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="id_upload">ID ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="order_preview">ಆದೇಶ ಪೂರ್ವವೀಕ್ಷಣೆ</string>
+    <string name="click_to_purchase_new_insurance">ಹೊಸ ವಿಮೆಯನ್ನು ಖರೀದಿಸಲು + ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="weight_in_kg">ತೂಕ (ಕೆಜಿಯಲ್ಲಿ)</string>
+    <string name="height_in_cm">ಎತ್ತರ (ಸೆಂ.ಮೀ.)</string>
+    <string name="have_you_been_diagnosed_with_any_of_the_following_conditions">ಈ ಕೆಳಗಿನ ಯಾವುದೇ ಷರತ್ತುಗಳೊಂದಿಗೆ ನೀವು ರೋಗನಿರ್ಣಯ ಮಾಡಿದ್ದೀರಾ?</string>
+    <string name="answer">ಉತ್ತರ</string>
+    <string name="do_you_take_medications">ನೀವು ಮೆಡಿಸಿನ್ ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಾ?</string>
+    <string name="are_you_currently_pregnant_or_have_any_children_under_5_years_old">ನೀವು ಪ್ರಸ್ತುತ ಗರ್ಭಿಣಿಯಾಗಿದ್ದೀರಾ ಅಥವಾ 5 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಮಕ್ಕಳನ್ನು ಹೊಂದಿದ್ದೀರಾ?</string>
+    <string name="i_don_t_want_to_say">ನಾನು ಹೇಳಲು ಬಯಸುವುದಿಲ್ಲ</string>
+    <string name="not_applicable">ಅನ್ವಯಿಸುವುದಿಲ್ಲ</string>
+    <string name="do_you_have_any_form_of_insurance">ನೀವು ಯಾವುದೇ ರೀತಿಯ ವಿಮೆಯನ್ನು ಹೊಂದಿದ್ದೀರಾ?</string>
+    <string name="if_you_have_insurance_or_think_you_might_in_future_what_cover_do_you_have">ನೀವು ವಿಮೆ ಹೊಂದಿದ್ದರೆ, ಅಥವಾ ಭವಿಷ್ಯದಲ್ಲಿ ನೀವು ಇರಬಹುದೆಂದು ಭಾವಿಸಿದರೆ, ನಿಮ್ಮ ಬಳಿ ಯಾವ ಕವರ್ ಇದೆ?</string>
+    <string name="do_you_have_a_bank_account">ನೀವು ಬ್ಯಾಂಕ್ ಖಾತೆ ಹೊಂದಿದ್ದೀರಾ?</string>
+    <string name="do_you_have_an_mwallet_or_electronic_payment_solution">ನೀವು mWallet ಅಥವಾ ಎಲೆಕ್ಟ್ರಾನಿಕ್ ಪಾವತಿ ಪರಿಹಾರವನ್ನು ಹೊಂದಿದ್ದೀರಾ?</string>
+    <string name="which_of_the_following_products_and_services_would_you_be_interested_in">ಈ ಕೆಳಗಿನ ಯಾವ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಸೇವೆಗಳಲ್ಲಿ ನೀವು ಆಸಕ್ತಿ ಹೊಂದಿದ್ದೀರಿ?</string>
+    <string name="Updated">ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="service_interests">ಸೇವಾ ಆಸಕ್ತಿಗಳು</string>
+
+    <string-array name="service_interests">
+        <item>ಆರೋಗ್ಯ ಲೇಖನಗಳು ನಾನೇ ಓದಬಹುದು</item>
+        <item>ಆರೋಗ್ಯಕರ ಜೀವನಶೈಲಿಗಾಗಿ ನನ್ನ ಫೋನ್‌ಗೆ ಜ್ಞಾಪನೆಗಳು (ಉದಾ. ಚೆಕ್ ಅಪ್ ಮಾಡಲು ಜ್ಞಾಪನೆ ಅಥವಾ ಸ್ಕ್ರೀನಿಂಗ್)</item>
+        <item>ಫೇಸ್‌ಬುಕ್ ಅಥವಾ ವಾಟ್ಸಾಪ್ ಮೂಲಕ ಆರೋಗ್ಯ ಮಾಹಿತಿ</item>
+        <item>ಸ್ಥಳೀಯ ಆರೋಗ್ಯ ಘಟನೆಗಳು, ನನ್ನ ಸಮುದಾಯದಲ್ಲಿ ನಡೆಯುತ್ತವೆ</item>
+        <item>ಸಮುದಾಯಕ್ಕೆ ವೈದ್ಯರ ಭೇಟಿ</item>
+        <item>ಫೋನ್ / ವಿಡಿಯೋ ಕರೆ ಮೂಲಕ ವೈದ್ಯರಿಗೆ ಪ್ರವೇಶ</item>
+        <item>ನನ್ನ ಮನೆಯಲ್ಲಿ ವೈಯಕ್ತಿಕ ಆರೋಗ್ಯ ಸೇವೆಗಳು (ಉದಾ. ಮನೆಯಲ್ಲಿ ರಕ್ತದೊತ್ತಡ ಪರಿಶೀಲನೆ)</item>
+        <item>ನಾನು ಕಲಿಯಲು ಅದೇ ಸ್ಥಿತಿಯಲ್ಲಿರುವ ಇತರ ರೋಗಿಗಳಿಗೆ ಸಂಪರ್ಕ ಕಲ್ಪಿಸುವುದು</item>
+        <item>ಕೈಗೆಟುಕುವ .ಷಧಿಗಳ ಪ್ರವೇಶ</item>
+        <item>ರೋಗನಿರ್ಣಯ / ಸ್ಕ್ರೀನಿಂಗ್ ಸೇವೆಗಳಿಗೆ ಪ್ರವೇಶ</item>
+        <item>Access to health insurance to cover my bills</item>
+        <item>ನನ್ನ ಬಿಲ್‌ಗಳನ್ನು ಸರಿದೂಗಿಸಲು ಆರೋಗ್ಯ ವಿಮೆಯ ಪ್ರವೇಶ</item>
+        <item>ಲಸಿಕೆಗಳಿಗೆ ಪ್ರವೇಶ</item>
+        <item>ಪೋಷಣೆ ಅಥವಾ ಕ್ಷೇಮ ಉತ್ಪನ್ನಗಳಿಗೆ ಪ್ರವೇಶ (ಉದಾ. ಜೀವಸತ್ವಗಳು)</item>
+        <item>ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ರಹಿತ medicine ಷಧಿಗೆ ಪ್ರವೇಶ (ಉದಾ. ಪ್ಯಾರೆಸಿಟಮಾಲ್)</item>
+        <item>ಗ್ರಾಹಕ ಆರೋಗ್ಯ ಉತ್ಪನ್ನಗಳಿಗೆ ಪ್ರವೇಶ (ಉದಾ. ಟೂತ್‌ಪೇಸ್ಟ್)</item>
+        <item>ಮೇಲಿನ ಯಾವುದೂ ಇಲ್ಲ (ಇತರ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ ಆಯ್ಕೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ)</item>
+        <item>ನಾನು ಹೇಳಲು ಬಯಸುವುದಿಲ್ಲ (ಇತರ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ ಆಯ್ಕೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ)</item>
+    </string-array>
+
+    <string-array name="existing_insurance_options">
+        <item>ನನ್ನ ಬಳಿ ವೈಯಕ್ತಿಕ ಜೀವನ ಅಥವಾ ಆರೋಗ್ಯ ವಿಮೆ ಯೋಜನೆ ಇದೆ</item>
+        <item>ನನಗೆ ಇತರ ವಿಮೆ ಇದೆ (ಉದಾ. ಬೆಳೆ, ಮೋಟಾರು ವಿಮೆ)</item>
+        <item>ನಾನು ಗುಂಪು ಅಥವಾ ಕುಟುಂಬ ಯೋಜನೆಯ ಭಾಗವಾಗಿದ್ದೇನೆ (ಉದಾ. ನನ್ನ ಉದ್ಯೋಗದಾತರಿಂದ)</item>
+        <item>ನನಗೆ ವಿಮೆ ಇಲ್ಲ ಆದರೆ ಈ ಬಗ್ಗೆ ನನಗೆ ಆಸಕ್ತಿ ಇದೆ</item>
+        <item>ನನಗೆ ವಿಮೆಯಲ್ಲಿ ಆಸಕ್ತಿ ಇಲ್ಲ</item>
+        <item>ನಾನು ಹೇಳಲು ಬಯಸುವುದಿಲ್ಲ</item>
+    </string-array>
+
+    <string-array name="future_insurance_options">
+        <item>ಅಪಘಾತ ಕವರ್</item>
+        <item>ಆಸ್ಪತ್ರೆಗೆ ಸೇರಿಸುವ ಕವರ್</item>
+        <item>ಪ್ರಾಥಮಿಕ ಆರೈಕೆಗಾಗಿ ವೈದ್ಯಕೀಯ ಮರುಪಾವತಿ (ಉದಾ. ಪರೀಕ್ಷೆ, ವೈದ್ಯರ ನೇಮಕಾತಿ) </item>
+        <item>ಆಕಸ್ಮಿಕ ಸಾವಿನ ಕವರ್</item>
+        <item>ಗಳಿಕೆಯ ನಷ್ಟ</item>
+        <item>ಬೆಳೆ ವಿಮೆ </item>
+        <item>ಮೋಟಾರ್ ವಿಮೆ</item>
+        <item>ಅನ್ವಯಿಸುವುದಿಲ್ಲ</item>
+    </string-array>
+
+    <string-array name="health_conditions">
+        <item>ಆಲ್ z ೈಮರ್ ಅಥವಾ ಇತರ ಬುದ್ಧಿಮಾಂದ್ಯತೆ</item>
+        <item>ಸಂಧಿವಾತ</item>
+        <item>ಉಬ್ಬಸ</item>
+        <item>ಕ್ಯಾನ್ಸರ್</item>
+        <item>ದೀರ್ಘಕಾಲದ ಅಬ್ಸ್ಟ್ರಕ್ಟಿವ್ ಪಲ್ಮನರಿ ಡಿಸಾರ್ಡರ್ (ಸಿಒಪಿಡಿ)</item>
+        <item>ಯಕೃತ್ತಿನ ಸಿರೋಸಿಸ್</item>
+        <item>ಪರಿಧಮನಿಯ ಕಾಯಿಲೆ</item>
+        <item>ಮಧುಮೇಹ</item>
+        <item>ಅತಿಸಾರ ರೋಗಗಳು</item>
+        <item>ಹೆಪಟೈಟಿಸ್ ಎ</item>
+        <item>ಹೆಪಟೈಟಿಸ್ ಬಿ</item>
+        <item>ಹೆಪಟೈಟಿಸ್ ಸಿ</item>
+        <item>ಎಚ್ಐವಿ ಅಥವಾ ಏಡ್ಸ್</item>
+        <item>ಅಧಿಕ ರಕ್ತದೊತ್ತಡ</item>
+        <item>ರಕ್ತಕೊರತೆಯ ಹೃದಯ ಕಾಯಿಲೆ</item>
+        <item>ಮೂತ್ರಪಿಂಡ ರೋಗ</item>
+        <item>ಕಡಿಮೆ ಉಸಿರಾಟದ ಸೋಂಕು</item>
+        <item>ಮಲೇರಿಯಾ</item>
+        <item>ದಡಾರ</item>
+        <item>ಪಾರ್ಶ್ವವಾಯು</item>
+        <item>ನ್ಯುಮೋನಿಯಾ</item>
+        <item>ಕ್ಷಯ</item>
+        <item>ಮೇಲಿನ ಯಾವುದೂ ಇಲ್ಲ (ಇತರ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ ಆಯ್ಕೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ) </item>
+        <item>ನಾನು ಹೇಳಲು ಬಯಸುವುದಿಲ್ಲ (ಇತರ ಆಯ್ಕೆಯನ್ನು ಆರಿಸಿದರೆ ಆಯ್ಕೆ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ)</item>
+    </string-array>
+
+    <string name="answers_selected">ಉತ್ತರಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="insurance_profile">ವಿಮಾ ವಿವರ</string>
+    <string name="health_profile">ಆರೋಗ್ಯ ವಿವರ</string>
+    <string name="weight_too_low">ತೂಕ ತುಂಬಾ ಕಡಿಮೆ.</string>
+    <string name="first_weight_input_not_0">ತೂಕದ ಮೊದಲ ಇನ್ಪುಟ್ 0 ಆಗಿರಬಾರದು</string>
+    <string name="invalid_weight">ಅಮಾನ್ಯ ತೂಕ.</string>
+    <string name="weight_too_heavy">ತುಂಬಾ ಭಾರ</string>
+    <string name="height_too_low">ಎತ್ತರ ತುಂಬಾ ಕಡಿಮೆ.</string>
+    <string name="height_too_high">ಎತ್ತರ ತುಂಬಾ.</string>
+    <string name="first_height_must_not_0">ಎತ್ತರಕ್ಕೆ ಮೊದಲ ಇನ್ಪುಟ್ 0 ಆಗಿರಬಾರದು</string>
+    <string name="invalid_height">ಅಮಾನ್ಯ ಎತ್ತರ.</string>
+    <string name="first_name_cannot_be_empty">ಮೊದಲ ಹೆಸರು ಖಾಲಿಯಾಗಿರಬಾರದು</string>
+    <string name="last_name_cannot_be_empty">ಕೊನೆಯ ಹೆಸರು ಖಾಲಿಯಾಗಿರಬಾರದು</string>
+    <string name="postal_code_cannot_be_empty">ಅಂಚೆ ಕೋಡ್ ಖಾಲಿಯಾಗಿರಬಾರದು</string>
+    <string name="city_cannot_be_empty">ನಗರ ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="dob_not_set">ಹುಟ್ಟಿದ ದಿನಾಂಕವನ್ನು ನಿಗದಿಪಡಿಸಿಲ್ಲ</string>
+    <string name="phone_number_cannot_be_empty">ಫೋನ್ ಸಂಖ್ಯೆ ಖಾಲಿಯಾಗಿರಬಾರದು</string>
+    <string name="Update_resident">ನವೀಕರಿಸಿ ನಿವಾಸಿ</string>
+    <string name="please_enter_your_email">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="resident_previwe_details">ನಿವಾಸಿ ಪೂರ್ವವೀಕ್ಷಣೆ ವಿವರಗಳು</string>
+	<string name="questions">ಪ್ರಶ್ನೆಗಳು</string>
+    <string name="loading_questions">ಪ್ರಶ್ನೆಗಳನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="you_are_offline">ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿರುವಿರಿ</string>
+    <string name="something_error">ಏನೋ ತಪ್ಪಾಗಿದೆ</string>
+    <string name="add_discount_number">Please add discount number</string>
+	<string name="loading_meds_please_wait">Loading medicines. Please wait.</string>
+	<string name="purchase_requested">ಖರೀದಿ ವಿನಂತಿಸಲಾಗಿದೆ</string>
+    <string name="finish">ಫಿನಿಶ್</string>
+    <string name="your_sign_up_is_done_nplease_watch_video_about_the_platform">ನಿಮ್ಮ ಸೈನ್ ಅಪ್ ಮುಗಿದಿದೆ! \ N ದಯವಿಟ್ಟು ವೇದಿಕೆಯ ಬಗ್ಗೆ ವೀಡಿಯೊ ನೋಡಿ</string>
+    <string name="mandatory_fileds">ಕಡ್ಡಾಯ ಕ್ಷೇತ್ರಗಳು ಖಾಲಿಯಾಗಿವೆ</string>
+    <string name="check_order_status">ಆದೇಶದ ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</string>
+    <string name="phone_min_limit">ಫೋನ್ ಸಂಖ್ಯೆ 10 ಕ್ಕಿಂತ ಕಡಿಮೆಯಿರಬಾರದು</string>
+	<string name="account_setup">ಖಾತೆ ಸೆಟಪ್</string>
+    <string name="invalid_pin">ಅಮಾನ್ಯ ಪಿನ್.</string>
+    <string name="username_taken_error">ಬಳಕೆದಾರ ಹೆಸರು ಈಗಾಗಲೇ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ. ದಯವಿಟ್ಟು ಇನ್ನೊಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="invalid_username">ಅಮಾನ್ಯ ಬಳಕೆದಾರಹೆಸರು</string>
+    <string name="username_too_short">ಬಳಕೆದಾರಹೆಸರು ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ. ಇದು ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳಾಗಿರಬೇಕು.</string>
+    <string name="set_up_your_new_account">ನಿಮ್ಮ ಹೊಸ ಖಾತೆಯನ್ನು ಹೊಂದಿಸಿ! \\ N ನಿಮ್ಮ ಆಯ್ಕೆಯ ಬಳಕೆದಾರಹೆಸರು ಮತ್ತು ಪಿನ್ ಸೇರಿಸಿ.</string>
+    <string name="login_again">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಬಳಕೆದಾರಹೆಸರು ಮತ್ತು ಪಿನ್‌ನೊಂದಿಗೆ ಮತ್ತೆ ಲಾಗಿನ್ ಮಾಡಿ.</string>
+    <string name="your_acc_is_locked">ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಲಾಕ್ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="account_not_allowerd">ಈ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಲು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅನುಮತಿಸಲಾಗುವುದಿಲ್ಲ</string>
+    <string name="please_enter_your_username_or_email_and_your_pin_to_continue">ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಬಳಕೆದಾರಹೆಸರು ಅಥವಾ ಇಮೇಲ್ ನಮೂದಿಸಿ \\ n ಮತ್ತು ನಿಮ್ಮ ಪಿನ್</string>
+    <string name="username_email">ಬಳಕೆದಾರಹೆಸರು / ಇಮೇಲ್</string>
+    <string name="enter_pin_below">ಕೆಳಗೆ ಪಿನ್ ನಮೂದಿಸಿ</string>
+    <string name="ask_help_from_pin_manager_for_forgot_password">ನಿಮ್ಮ ಹೊಸ ಪಿನ್ ಅನ್ನು ಹೊಂದಿಸಲು ನಿಮ್ಮ ಕ್ಷೇತ್ರ ವ್ಯವಸ್ಥಾಪಕರು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತಾರೆ. ಯಾವುದೇ ಸಹಾಯಕ್ಕಾಗಿ ದಯವಿಟ್ಟು ಅವರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+    <string name="medication_order_status">ಔಷಧಿ ಆದೇಶ ಸ್ಥಿತಿ</string>
+    <string name="please_update_the_app_to_continue">ನವೀಕರಣ ಲಭ್ಯವಿದೆ. ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ನವೀಕರಿಸಿ.</string>
+    <string name="goto_playstore">ಪ್ಲೇ ಸ್ಟೋರ್‌ಗೆ ಹೋಗಿ</string>
+    <string name="do_you_want_to_install_the_update">ನವೀಕರಣ ಲಭ್ಯವಿದೆ. ನೀವು ಅದನ್ನು ಸ್ಥಾಪಿಸಲು ಬಯಸುವಿರಾ?</string>
+    <string name="uploading">"ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ "</string>
+    <string name="later">ನಂತರ</string>
+    <string name="engagement">ನಿಶ್ಚಿತಾರ್ಥ</string>
+    <string name="account_locked_contact_field_manager">3 ವಿಫಲ ಪ್ರಯತ್ನಗಳಿಂದಾಗಿ ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. ಹೆಚ್ಚಿನ ಸಹಾಯಕ್ಕಾಗಿ ದಯವಿಟ್ಟು ನಿಮ್ಮ ಕ್ಷೇತ್ರ ವ್ಯವಸ್ಥಾಪಕರನ್ನು ಸಂಪರ್ಕಿಸಿ.</string>
+	<string name="manufacturer">ತಯಾರಕ</string>
+
+
+</resources>

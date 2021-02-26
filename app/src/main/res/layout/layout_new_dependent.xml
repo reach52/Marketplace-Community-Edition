@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp">
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="@string/full_name"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/dependent_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"/>
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<EditText
+		android:id="@+id/dependent_dob"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:clickable="false"
+		android:focusable="false"
+		android:hint="@string/date_of_birth"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/name" />
+
+	<TextView
+		android:id="@+id/gender_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/gender"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="@+id/dependent_gender"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/dependent_gender" />
+
+	<Spinner
+		android:id="@+id/dependent_gender"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:dropDownWidth="match_parent"
+		android:entries="@array/genders"
+		android:spinnerMode="dropdown"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/gender_textview"
+		app:layout_constraintTop_toBottomOf="@+id/dependent_dob" />
+
+	<TextView
+		android:id="@+id/relation_textview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/relation_to_insured"
+		android:textSize="18sp"
+		android:layout_marginTop="32dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/dependent_gender" />
+
+	<Spinner
+		android:id="@+id/dependent_relation"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:dropDownWidth="match_parent"
+		android:entries="@array/relations"
+		android:spinnerMode="dropdown"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/relation_textview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".signup.view.IDUploadActivity">
+
+	<ImageView
+		android:id="@+id/imageView12"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/reach52_marketplace_logo" />
+
+	<TextView
+		android:id="@+id/textView5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/please_upload_your_id"
+		android:fontFamily="@font/montserrat_bold"
+		android:textColor="@color/purple"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+	<Button
+		android:id="@+id/upload_id_btn"
+		style="@style/BlueButton"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="32dp"
+		android:onClick="onUploadID"
+		android:text="@string/id_upload"
+		app:layout_constraintBottom_toTopOf="@+id/next_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/next_btn"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		style='@style/BottomBlueButton'
+		android:enabled="false"
+		android:text="@string/next"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+		android:id="@+id/id_img_placeholder"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="32dp"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView5"
+		app:srcCompat="@drawable/id_default"
+		tools:visibility="visible"/>
+
+	<ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+		android:id="@+id/id_img"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="32dp"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView5"
+		tools:visibility="gone"/>
+
+	<TextView
+		android:id="@+id/progress_message"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/processing_image"
+		android:fontFamily="@font/opensans_regular"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView5"
+		android:visibility="invisible"
+		tools:visibility="visible"/>
+
+	<androidx.core.widget.ContentLoadingProgressBar
+		android:id="@+id/processing_progress_bar"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="64dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="64dp"
+		android:indeterminate="false"
+		android:max="100"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:progress="0"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/progress_message"
+		android:visibility="invisible"
+		tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

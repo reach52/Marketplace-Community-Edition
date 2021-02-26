@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/textColorWhite"
+		android:clickable="true"
+		android:focusable="true"
+		tools:context="reach52.marketplace.community.medicine.view.PrescriptionFragment">
+
+		<ImageView
+			android:id="@+id/capturedImageView"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:background="#F7F7F7"
+			android:contentDescription="@string/captured_image"
+			android:scaleType="fitXY"
+			app:layout_constraintBottom_toTopOf="@+id/prescriptionLabel"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/ic_baseline_photo_camera"
+			tools:srcCompat="@drawable/ic_baseline_photo_camera" />
+
+
+		<TextView
+			android:id="@+id/prescriptionLabel"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="10dp"
+			android:fontFamily="@font/montserrat_bold"
+			android:text="@string/prescription_number"
+			android:textColor="@color/black"
+			android:textSize="14sp"
+			app:layout_constraintBottom_toTopOf="@+id/prescriptionNumberEditText"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<EditText
+			android:id="@+id/prescriptionNumberEditText"
+			style="@style/EdittextStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="16dp"
+			android:hint="@string/prescription_hint"
+			android:importantForAutofill="no"
+			android:inputType="text"
+			app:layout_constraintBottom_toTopOf="@+id/takePhotoButton"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			tools:ignore="TextFields"
+			tools:targetAPI="o" />
+
+		<Button
+			android:id="@+id/takePhotoButton"
+			style="@style/BlueOutlineRoundedButton"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:text="@string/take_a_photo"
+			android:textAllCaps="false"
+			app:layout_constraintBottom_toTopOf="@+id/saveButton"
+			app:layout_constraintEnd_toEndOf="@+id/capturedImageView"
+			app:layout_constraintStart_toStartOf="@+id/capturedImageView" />
+
+		<Button
+			android:id="@+id/saveButton"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:background="@drawable/round_blue_button_selector"
+			android:fontFamily="@font/montserrat_bold"
+			android:text="@string/save"
+			android:textAllCaps="false"
+			android:textColor="@color/textColorWhite"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/discount_group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

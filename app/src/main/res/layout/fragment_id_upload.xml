@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/textColorWhite"
+	android:clickable="true"
+	android:focusable="true"
+	android:layout_gravity="center"
+	tools:context=".insurance.view.IDUploadFragment">
+
+	<TextView
+		android:id="@+id/textView22"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/please_upload_your_id"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.2" />
+
+	<ImageView
+		android:id="@+id/id_placeholder"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="32dp"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView22"
+		app:srcCompat="@drawable/id_default" />
+
+	<ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+		android:id="@+id/id_img"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginBottom="32dp"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView22"
+		tools:visibility="gone"/>
+
+	<Button
+		android:id="@+id/upload_id_btn"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="32dp"
+		style="@style/Widget.AppCompat.Button.Colored"
+		android:text="@string/take_id_photo"
+		android:textAllCaps="false"
+		android:fontFamily="@font/montserrat_bold"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/progress_message"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/processing_image"
+		android:fontFamily="@font/opensans_regular"
+		app:layout_constraintBottom_toTopOf="@+id/upload_id_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView22"
+		android:visibility="invisible"
+		tools:visibility="visible"/>
+
+	<androidx.core.widget.ContentLoadingProgressBar
+		android:id="@+id/processing_progress_bar"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="64dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="64dp"
+		android:indeterminate="false"
+		android:max="100"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:progress="0"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/progress_message"
+		android:visibility="invisible"
+		tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

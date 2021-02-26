@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="12dp"
+			android:layout_marginEnd="12dp"
+
+			>
+
+			<TextView
+				android:id="@+id/bnameTextView1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/first_name"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/first_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintStart_toStartOf="@+id/bnameTextView1"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView1">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_first_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView2"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/last_name"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/first_name"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/last_name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				android:layout_marginTop="3dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/bnameTextView2">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_last_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView3"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="4dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/date_of_birth"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/last_name"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputEditText
+				style="@style/OutlinedRoundedBox"
+				android:id="@+id/member_dob"
+				android:layout_width="0dp"
+				android:layout_marginTop="3dp"
+				android:layout_height="wrap_content"
+				android:clickable="false"
+				android:focusable="false"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				android:background="@drawable/edittext_shape"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView3" />
+
+
+
+			<TextView
+				android:id="@+id/gender_textview"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/gender"
+				android:textSize="14sp"
+				android:layout_marginTop="3dp"
+				android:layout_marginStart="5dp"
+				android:fontFamily="@font/montserrat_bold"
+				android:textColor="@color/black"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/member_dob" />
+
+			<RelativeLayout
+				android:id="@+id/rlspinnerGentderStatus"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="@drawable/edittext_shape"
+				android:layout_marginTop="6dp"
+				android:gravity="center"
+				app:layout_constraintStart_toStartOf="@id/gender_textview"
+				app:layout_constraintTop_toBottomOf="@id/gender_textview"
+				>
+				<Spinner
+					android:id="@+id/member_gender"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:dropDownWidth="match_parent"
+					android:entries="@array/genders"
+					android:spinnerMode="dropdown"
+					android:layout_marginStart="10dp"
+					android:layout_marginEnd="10dp"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					/>
+
+			</RelativeLayout>
+			<TextView
+				android:id="@+id/relation_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="@string/relation_to_insured"
+				android:textSize="14sp"
+				android:layout_marginStart="5dp"
+				android:fontFamily="@font/montserrat_bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/rlspinnerGentderStatus" />
+			<RelativeLayout
+				android:id="@+id/rlspinnerMaritalStatus"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="@drawable/edittext_shape"
+				android:layout_marginTop="8dp"
+				android:gravity="center"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/relation_textview"
+				tools:ignore="MissingConstraints">
+				<Spinner
+					android:id="@+id/member_relation"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:dropDownWidth="match_parent"
+					android:spinnerMode="dropdown"
+					android:gravity="center"
+					android:entries="@array/relations"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					/>
+			</RelativeLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView4"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/phone"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/rlspinnerMaritalStatus"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/phone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView4">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="phone"
+					android:maxLength="10"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView5"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/address_line_1"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/phone"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/address_line_1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView5">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_address_line_1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPostalAddress"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView6"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/address_line_2"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/address_line_1"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/address_line_2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView6">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_address_line_2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPostalAddress"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+			<TextView
+				android:id="@+id/bnameTextView7"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/city"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/address_line_2"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/city"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView7">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_city"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPostalAddress"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+			<TextView
+				android:id="@+id/bnameTextView8"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/country"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/city"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/country"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:visibility="visible"
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView8">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_country"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textPostalAddress"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<TextView
+				android:id="@+id/bnameTextView9"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="10dp"
+				android:textSize="14sp"
+				android:text="@string/postal_code"
+				android:textColor="@color/black"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/country"
+
+
+				/>
+
+			<com.google.android.material.textfield.TextInputLayout
+				android:id="@+id/zipcode"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+
+				app:boxCornerRadiusTopStart="22dp"
+				app:boxCornerRadiusBottomStart="22dp"
+				app:boxCornerRadiusBottomEnd="22dp"
+				app:boxCornerRadiusTopEnd="22dp"
+				app:boxStrokeWidth="1dp"
+				app:boxStrokeColor="#8181815C"
+				style="@style/OutlinedRoundedBox"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/bnameTextView9">
+
+				<com.google.android.material.textfield.TextInputEditText
+					android:id="@+id/member_zip_code"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="number"
+					android:fontFamily="@font/opensans_regular"
+					android:textColor="@color/black"
+					android:singleLine="true" />
+			</com.google.android.material.textfield.TextInputLayout>
+
+			<androidx.constraintlayout.widget.Group
+				android:id="@+id/contact_group"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:constraint_referenced_ids="phone, address_line_1, address_line_2, city, country, zipcode,bnameTextView4,bnameTextView5,bnameTextView6,bnameTextView7,bnameTextView8,bnameTextView9"
+				tools:visibility="visible" />
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+</layout>

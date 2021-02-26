@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_access_list"
+        android:icon="@drawable/ic_add_box_dp"
+        android:title="@string/residents_access_list" />
+
+    <item
+        android:id="@+id/nav_logistic_list"
+        android:icon="@drawable/ic_insert_drive_file_dp"
+        android:title="@string/residents_logistic_list" />
+</menu>

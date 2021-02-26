@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@color/textColorWhite"
+	tools:context=".medicine.view.PurchaseDetailsFragment">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/medicationInfo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="16dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingBottom="16dp">
+
+					<androidx.constraintlayout.widget.Guideline
+						android:id="@+id/guidelineHeader"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						app:layout_constraintGuide_percent="0.61" />
+
+					<TextView
+						android:id="@+id/trackingCodeLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:layout_marginTop="16dp"
+						android:layout_marginEnd="16dp"
+						android:text="@string/tracking_code"
+						android:textAppearance="@style/TextAppearance.AppCompat.Small"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<TextView
+						android:id="@+id/trackingCodeTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/montserrat_bold"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						app:layout_constraintEnd_toEndOf="@+id/trackingCodeLabel"
+						app:layout_constraintStart_toStartOf="@+id/trackingCodeLabel"
+						app:layout_constraintTop_toBottomOf="@+id/trackingCodeLabel"
+						tools:text="@string/tracking_code" />
+
+
+					<TextView
+						android:id="@+id/orderStatusLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:text="@string/status"
+						android:textAppearance="@style/TextAppearance.AppCompat.Small"
+						app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+						app:layout_constraintStart_toStartOf="@+id/trackingCodeTextView"
+						app:layout_constraintTop_toBottomOf="@+id/trackingCodeTextView" />
+
+					<TextView
+						android:id="@+id/orderStatusTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/montserrat_bold"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						app:layout_constraintEnd_toEndOf="@+id/orderStatusLabel"
+						app:layout_constraintStart_toStartOf="@+id/orderStatusLabel"
+						app:layout_constraintTop_toBottomOf="@+id/orderStatusLabel"
+						tools:text="DISPATCHED" />
+
+					<TextView
+						android:id="@+id/physicianNameLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:layout_marginEnd="16dp"
+						android:text="@string/physician_name"
+						android:textAppearance="@style/TextAppearance.AppCompat.Small"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@+id/orderStatusTextView"
+						app:layout_constraintTop_toBottomOf="@+id/orderStatusTextView" />
+
+					<TextView
+						android:id="@+id/physicianNameTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/montserrat_bold"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						app:layout_constraintEnd_toEndOf="@+id/physicianNameLabel"
+						app:layout_constraintStart_toStartOf="@+id/physicianNameLabel"
+						app:layout_constraintTop_toBottomOf="@+id/physicianNameLabel"
+						tools:text="2000-1234" />
+
+					<TextView
+						android:id="@+id/priceDetailsTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="8dp"
+						android:layout_marginEnd="16dp"
+						android:text="@string/date"
+						android:textAppearance="@style/TextAppearance.AppCompat.Small"
+						app:layout_constraintBaseline_toBaselineOf="@+id/orderStatusLabel"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="@+id/guidelineHeader" />
+
+					<TextView
+						android:id="@+id/orderDateTextView"
+						android:layout_width="102dp"
+						android:layout_height="22dp"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						app:layout_constraintStart_toStartOf="@+id/priceDetailsTextView"
+						app:layout_constraintTop_toBottomOf="@+id/priceDetailsTextView"
+						tools:text="1970-01-01" />
+
+					<TextView
+						android:id="@+id/prescriptionLabel"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:text="@string/prescription_number"
+						android:textAppearance="@style/TextAppearance.AppCompat.Small"
+						app:layout_constraintStart_toStartOf="@+id/physicianNameTextView"
+						app:layout_constraintTop_toBottomOf="@+id/physicianNameTextView" />
+
+					<TextView
+						android:id="@+id/prescriptionNumberEditText"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/montserrat_bold"
+						android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+						app:layout_constraintStart_toStartOf="@+id/prescriptionLabel"
+						app:layout_constraintTop_toBottomOf="@+id/prescriptionLabel"
+						tools:targetApi="o"
+						tools:text="23123123" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+			</androidx.cardview.widget.CardView>
+
+			<TextView
+				android:id="@+id/medicineLabel"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:fontFamily="@font/montserrat_bold"
+				android:text="@string/medications"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="@color/black"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				app:layout_constraintStart_toStartOf="@+id/medicationInfo"
+				app:layout_constraintTop_toBottomOf="@+id/orderReceivedBtn" />
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginBottom="16dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/medicineLabel">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="16dp">
+
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/orderItemsRecyclerView"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						tools:itemCount="2"
+						android:overScrollMode="never"
+						tools:listitem="@layout/item_medicine_order" />
+
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/priceBreakdown"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginBottom="16dp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:id="@+id/discountIdNumberLabelTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:layout_marginEnd="8dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:text="@string/discount_id_number_hint"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintBaseline_toBaselineOf="@+id/discountIdNumberTextView"
+						app:layout_constraintEnd_toStartOf="@+id/discountIdNumberTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/discountIdNumberTextView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:layout_marginEnd="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:text="PH-1234" />
+
+					<TextView
+						android:id="@+id/textView65"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:text="@string/sub_total"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintBaseline_toBaselineOf="@+id/subTotalTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/subTotalTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginEnd="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/textView65"
+						app:layout_constraintTop_toBottomOf="@+id/discountIdNumberTextView"
+						tools:text="1234.56" />
+
+					<TextView
+						android:id="@+id/vatExemptLabelTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:text="@string/tax"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintBaseline_toBaselineOf="@+id/taxTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/taxTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginEnd="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/vatExemptLabelTextView"
+						app:layout_constraintTop_toBottomOf="@+id/subTotalTextView"
+						tools:text="1234.56" />
+
+					<TextView
+						android:id="@+id/discountLabelTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:text="@string/discount_label"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintBaseline_toBaselineOf="@+id/discountTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/discountTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginEnd="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/discountLabelTextView"
+						app:layout_constraintTop_toBottomOf="@+id/taxTextView"
+						tools:text="1234.56" />
+
+					<TextView
+						android:id="@+id/feeLabelTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:text="@string/fee_label"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintBaseline_toBaselineOf="@+id/feeTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/feeTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginEnd="16dp"
+						android:fontFamily="@font/montserrat_medium"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/feeLabelTextView"
+						app:layout_constraintTop_toBottomOf="@+id/discountTextView"
+						tools:text="24" />
+
+					<TextView
+						android:id="@+id/totalLabelTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:fontFamily="@font/montserrat_bold"
+						android:text="@string/total"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+						app:layout_constraintBaseline_toBaselineOf="@+id/totalTextView"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<TextView
+						android:id="@+id/totalTextView"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginEnd="16dp"
+						android:layout_marginBottom="16dp"
+						android:fontFamily="@font/montserrat_bold"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/totalLabelTextView"
+						app:layout_constraintTop_toBottomOf="@+id/feeLabelTextView"
+						tools:text="1234.56" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<Button
+				android:id="@+id/orderReceivedBtn"
+				style="@style/BlueOutlineRoundedButton"
+				android:enabled="false"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:text="@string/received"
+				app:layout_constraintEnd_toEndOf="@+id/medicationInfo"
+				app:layout_constraintStart_toStartOf="@+id/medicationInfo"
+				app:layout_constraintTop_toBottomOf="@+id/medicationInfo" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+</layout>

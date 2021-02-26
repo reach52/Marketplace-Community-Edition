@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId 'com.reach52.marketplace.community'
+        minSdkVersion 19
+        targetSdkVersion 29
+        multiDexEnabled true
+        versionCode 1
+        versionName '0.0.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    flavorDimensions 'version'
+    productFlavors {
+        demo {
+            dimension 'version'
+        }
+        live {
+            dimension 'version'
+        }
+        uat {
+            dimension 'version'
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    bundle {
+        language {
+            // Specifies that the app bundle should not support
+            // configuration APKs for language resources. These
+            // resources are instead packaged with each base and
+            // dynamic feature APK.
+            enableSplit = false
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk true
+        }
+    }
+}
+
+dependencies {
+    def arrow_version = '0.8.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "io.arrow-kt:arrow-core:$arrow_version"
+    implementation "io.arrow-kt:arrow-instances-core:$arrow_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.paging:paging-runtime:2.1.2'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'at.favre.lib:bcrypt:0.8.0'
+    implementation 'com.android.support:multidex:2.0.1'
+    //noinspection GradleDependency
+    implementation 'com.couchbase.lite:couchbase-lite-android:1.4.4'
+    //noinspection GradleDependency
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.10.1'
+    implementation 'com.github.pwittchen:reactivenetwork-rx2:3.0.6'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+    implementation 'com.jakewharton.rxbinding3:rxbinding-appcompat:3.1.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.4.10'
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.bigbangbutton:editcodeview:1.0.6'
+    implementation 'com.mikhaellopez:circularimageview:4.0.2'
+    implementation 'com.github.hsmnzaydn:imagezoom:1.3.0'
+    implementation 'com.auth0.android:jwtdecode:2.0.0'
+
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.robolectric:robolectric:4.3.1'
+    testImplementation('org.threeten:threetenbp:1.4.0') {
+        exclude group: 'com.jakewharton.threetenabp', module: 'threetenabp'
+    }
+    testImplementation 'org.mockito:mockito-core:3.4.0'
+    testImplementation 'org.mockito:mockito-inline:3.4.0'
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.7.2")
+    testImplementation 'org.json:json:20180813'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.11.2"
+
+}

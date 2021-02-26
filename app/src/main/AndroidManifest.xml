@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="reach52.marketplace.community">
+
+	<uses-feature
+		android:name="android.hardware.camera"
+		android:required="true" />
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<application
+		android:name="reach52.marketplace.community.DispergoApp"
+		android:allowBackup="false"
+		android:icon="@mipmap/ic_launcher_round"
+		android:label="@string/app_name"
+		android:networkSecurityConfig="@xml/network_security_config"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme.NoActionBar"
+		tools:ignore="GoogleAppIndexingWarning,HardcodedDebugMode">
+		<activity android:name="reach52.marketplace.community.auth.view.AccountSetupActivity"></activity>
+		<activity android:name="reach52.marketplace.community.medicine.view.MedicationOrderStatusActivity" />
+		<activity android:name="reach52.marketplace.community.insurance.view.PolicyOrderDetailsActivity"
+			android:theme="@style/MyDialogTheme"/>
+		<activity android:name="reach52.marketplace.community.aqm.view.FormActivity" />
+		<activity android:name="reach52.marketplace.community.insurance.view.InsurancePurchaseActivity" />
+		<activity android:name="reach52.marketplace.community.resident.view.ResidentDetailsActivity" />
+		<activity
+			android:name="reach52.marketplace.community.medicine.view.MedicationPurchaseActivity"
+			android:windowSoftInputMode="adjustNothing" />
+		<activity
+			android:name="reach52.marketplace.community.resident.view.NewResidentActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing" />
+		<activity android:name=".auth.view.PasswordActivity" />
+		<activity android:name="reach52.marketplace.community.signup.view.FAQActivity" />
+		<activity android:name="reach52.marketplace.community.signup.view.IntroVideoActivity" />
+		<activity android:name="reach52.marketplace.community.signup.view.IDUploadActivity" />
+		<activity
+			android:name="reach52.marketplace.community.signup.view.RegistrationActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustNothing" />
+		<activity android:name="reach52.marketplace.community.signup.view.RoleSelectionActivity" />
+		<activity
+			android:name="reach52.marketplace.community.signup.view.CarouselActivity"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name="reach52.marketplace.community.activities.SplashActivity"
+			android:noHistory="false"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="reach52.marketplace.community.auth.view.PINSetupActivity"
+			android:noHistory="true"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateVisible" />
+		<activity
+			android:name="reach52.marketplace.community.auth.view.PINEnterActivity"
+			android:noHistory="true"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateVisible" />
+		<activity
+			android:name="reach52.marketplace.community.activities.LanguageSelectionActivity"
+			android:screenOrientation="portrait" />
+
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="reach52.marketplace.community.FileProvider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_paths" />
+		</provider>
+
+		<activity
+			android:name="reach52.marketplace.community.auth.view.LoginActivity"
+			android:label="@string/app_name"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="adjustNothing" />
+		<activity
+			android:name="reach52.marketplace.community.home.view.MainActivity"
+			android:label="@string/dispergo"
+			android:theme="@style/AppTheme.NoActionBar"
+			android:windowSoftInputMode="stateHidden|adjustPan" />
+
+		<meta-data
+			android:name="com.facebook.sdk.ApplicationId"
+			android:value="@string/facebook_app_id" />
+
+		<activity
+			android:name="com.facebook.FacebookActivity"
+			android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+			android:label="@string/app_name" />
+	</application>
+
+</manifest>

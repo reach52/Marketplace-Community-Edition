@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_residents"-->
+<!--            android:enabled="true"-->
+<!--            android:icon="@drawable/ic_friend"-->
+<!--            android:title="@string/residents" />-->
+
+<!--Disable for India release-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_follow_ups"-->
+<!--            android:icon="@drawable/ic_calendar_follow_up_black"-->
+<!--            android:title="@string/follow_up"/>-->
+
+<!--        <item android:title="@string/medication">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_orders"-->
+<!--                    android:icon="@drawable/ic_shopping_cart"-->
+<!--                    android:title="@string/orders" />-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_pending"-->
+<!--                    android:icon="@drawable/ic_hourglass_empty_black_24dp"-->
+<!--                    android:title="@string/pending" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_on_hold"-->
+<!--                    android:icon="@drawable/ic_pan_tool_black_24dp"-->
+<!--                    android:title="@string/on_hold_order" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_rejected"-->
+<!--                    android:icon="@drawable/ic_cancel_black_24dp"-->
+<!--                    android:title="@string/reject_order" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_accepted"-->
+<!--                    android:icon="@drawable/ic_done_black_24dp"-->
+<!--                    android:title="@string/accepted" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_receives"-->
+<!--                    android:icon="@drawable/ic_box"-->
+<!--                    android:title="@string/dispatched" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_picked_up"-->
+<!--                    android:icon="@drawable/ic_local_offer_black_24dp"-->
+<!--                    android:title="@string/received" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_delivered"-->
+<!--                    android:icon="@drawable/ic_delivery"-->
+<!--                    android:title="@string/picked_up" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_not_delivered"-->
+<!--                    android:icon="@drawable/ic_error_black_24dp"-->
+<!--                    android:title="@string/not_delivered" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_delivered_order"-->
+<!--                    android:icon="@drawable/ic_thumb_up_black_24dp"-->
+<!--                    android:title="@string/delivered" />-->
+<!--            </menu>-->
+<!--        </item>-->
+    </group>
+
+    <!--Disable for India release-->
+
+    <!--    <item android:title="@string/consumer_health_wellness">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/otcOrders"-->
+<!--                android:icon="@drawable/ic_shopping_cart"-->
+<!--                android:title="@string/otc_all_orders" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_pending"-->
+<!--                android:icon="@drawable/ic_hourglass_empty_black_24dp"-->
+<!--                android:title="@string/otc_pending_orders" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_on_hold"-->
+<!--                android:icon="@drawable/ic_pan_tool_black_24dp"-->
+<!--                android:title="@string/on_hold_consumer" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_rejected"-->
+<!--                android:icon="@drawable/ic_cancel_black_24dp"-->
+<!--                android:title="@string/rejected_consumer" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_accepted"-->
+<!--                android:icon="@drawable/ic_done_black_24dp"-->
+<!--                android:title="@string/accepted" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_receives"-->
+<!--                android:icon="@drawable/ic_box"-->
+<!--                android:title="@string/dispatched" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_picked_up"-->
+<!--                android:icon="@drawable/ic_local_offer_black_24dp"-->
+<!--                android:title="@string/received" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_delivered"-->
+<!--                android:icon="@drawable/ic_delivery"-->
+<!--                android:title="@string/picked_up" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_not_consumer_delivered"-->
+<!--                android:icon="@drawable/ic_error_black_24dp"-->
+<!--                android:title="@string/not_delivered" />-->
+
+<!--            <item-->
+<!--                android:id="@+id/nav_consumer_delivered_order"-->
+<!--                android:icon="@drawable/ic_thumb_up_black_24dp"-->
+<!--                android:title="@string/delivered" />-->
+
+<!--        </menu>-->
+<!--    </item>-->
+
+
+    <item
+        android:id="@+id/nav_resident"
+        android:icon="@drawable/ic_person"
+        android:title="Residents" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_arrow_back"
+        android:title="@string/logout" />
+</menu>

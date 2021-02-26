@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="product"
+			type="reach52.marketplace.community.insurance.entity.InsuranceProduct"/>
+	</data>
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/textColorWhite"
+		android:clickable="true"
+		android:focusable="true"
+		tools:context=".insurance.view.InsuranceProductDetailsFragment">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:id="@+id/product_name"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="16dp"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="@color/lightBlue"
+				android:text="@{product.displayName}"
+				tools:text="product displayName"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<TextView
+				android:id="@+id/product_desc"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				android:text="@{product.displaySummary}"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+			<TextView
+				android:id="@+id/textView32"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="5dp"
+				style="@style/ProductDetailHeader"
+				android:text="@string/insurance_benefits"
+				android:textColor="@color/purple"
+				android:textSize="16sp"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/product_desc" />
+			<View
+				android:id="@+id/idview"
+				android:layout_width="match_parent"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:layout_height="1dp"
+				android:background="@color/purple"
+				android:layout_marginTop="10dp"
+				app:layout_constraintEnd_toEndOf="@+id/textView32"
+				app:layout_constraintStart_toStartOf="@+id/textView32"
+				app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/benefitsList"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:overScrollMode="never"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				app:layout_constraintBottom_toTopOf="@+id/proceedBtn"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/idview"
+				app:layout_constraintVertical_bias="0.0"
+				tools:itemCount="1"
+				tools:listitem="@layout/x_benefit_item" />
+
+			<TextView
+				android:id="@+id/textView20"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/plan_validity_term"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				style="@style/ProductDetailHeader"
+				android:textColor="@color/black"
+				android:textSize="14sp"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/benefitsList" />
+
+			<TextView
+				android:id="@+id/product_term"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@{@string/products_term(product.term)}"
+				android:layout_marginTop="3dp"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+			<TextView
+				android:id="@+id/textView19"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/general_exclusions"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginTop="3dp"
+				style="@style/ProductDetailHeader"
+				android:textColor="@color/black"
+				android:textSize="14sp"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/product_term" />
+
+			<TextView
+				android:id="@+id/general_exclusions"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:layout_marginStart="16dp"
+				android:layout_marginEnd="16dp"
+				android:textColor="@color/black"
+				android:fontFamily="@font/opensans_regular"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+			<Button
+				android:id="@+id/proceedBtn"
+				android:layout_width="0dp"
+				style="@style/Widget.AppCompat.Button.Colored"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="3dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginBottom="16dp"
+				android:text="@string/proceed"
+				android:textAllCaps="false"
+				android:background="@drawable/round_blue_button_selector"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/general_exclusions" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.core.widget.NestedScrollView>
+</layout>

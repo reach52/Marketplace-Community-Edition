@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".auth.view.AccountSetupActivity">
+
+		<include
+			android:id="@+id/include2"
+			layout="@layout/toolbar"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/include2">
+
+
+			<ImageView
+				android:id="@+id/imageView9"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="32dp"
+				android:adjustViewBounds="true"
+				android:contentDescription="@string/dispergo_logo"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				app:srcCompat="@drawable/reach52_marketplace_logo" />
+
+			<TextView
+				android:id="@+id/textView10"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="64dp"
+				android:layout_marginTop="32dp"
+				android:layout_marginEnd="64dp"
+				android:text="@string/set_up_your_new_account"
+				android:textAlignment="center"
+				android:textSize="18sp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/username_edittext"
+				style="@style/EdittextStyle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="32dp"
+				android:layout_marginTop="48dp"
+				android:layout_marginEnd="32dp"
+				android:autofillHints="email"
+				android:ems="10"
+				android:hint="@string/username"
+				android:inputType="textEmailAddress"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintHorizontal_bias="0.0"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+			<reach52.marketplace.community.auth.view.PINView
+				android:id="@+id/pin_input"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="32dp"
+				app:codeHiddenMode="true"
+				app:codeLength="4"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/username_edittext"
+				app:textSize="26sp"
+				app:underlineCursorEnabled="false"
+				app:underlineFilledColor="@color/colorPrimary"
+				app:underlineStroke="4dp" />
+
+			<Button
+				android:id="@+id/continue_btn"
+				style="@style/BottomBlueButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@string/Continue"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

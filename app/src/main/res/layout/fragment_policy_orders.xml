@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".resident.view.PolicyOrdersFragment">
+
+		<LinearLayout
+			android:id="@+id/empty_orders_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" >
+
+			<ImageView
+				android:id="@+id/imgg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/maskgroup"
+				tools:ignore="ContentDescription" />
+			<TextView
+				android:id="@+id/textmesg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=" Let's make your \n first purchase "
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:textColor="@color/blacklight"
+				android:fontFamily="@font/montserrat_bold"
+				/>
+			<TextView
+				android:id="@+id/empty_orders_message"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Purchase Insurance"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginTop="5dp"
+				android:textSize="14sp"
+				android:layout_marginBottom="10dp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/lightBlue"
+
+				/>
+
+		</LinearLayout>
+
+
+
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/policyOrders"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:visibility="visible"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+			android:paddingBottom="100dp"
+			android:clipToPadding="false"
+			tools:itemCount="5"
+			tools:listitem="@layout/x_policy_order_item"/>
+
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/floatingActionButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="16dp"
+			android:layout_marginBottom="16dp"
+			android:clickable="true"
+			android:focusable="true"
+			app:srcCompat="@drawable/ic_add_white"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

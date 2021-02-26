@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="beni"
+			type="reach52.marketplace.community.insurance.entity.Beneficiary"
+			/>
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingStart="10dp"
+		android:paddingEnd="10dp"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="3dp"
+		android:background="@drawable/border_insuranceproductdetail"
+		>
+
+		<TextView
+			android:id="@+id/beni_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginTop="3dp"
+			android:text="@{beni.firstName + ` ` + beni.lastName}"
+			android:textSize="16sp"
+			android:fontFamily="@font/montserrat_bold"
+			android:textColor="@color/black"
+			app:layout_constraintBottom_toTopOf="@+id/beni_details"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="{beni.fullName}" />
+
+		<TextView
+			android:id="@+id/beni_details"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:fontFamily="@font/opensans_regular"
+			android:textColor="@color/black"
+			app:layout_constraintBottom_toTopOf="@+id/beni_contact"
+			app:layout_constraintStart_toStartOf="@+id/beni_name"
+			app:layout_constraintTop_toBottomOf="@+id/beni_name"
+			tools:text="{beni.gender + `  ` + beni.DOB.toString()}" />
+
+		<TextView
+			android:id="@+id/beni_contact"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintBottom_toBottomOf="parent"
+			android:layout_marginBottom="8dp"
+			android:fontFamily="@font/opensans_regular"
+			android:textColor="@color/black"
+			app:layout_constraintStart_toStartOf="@+id/beni_details"
+			app:layout_constraintTop_toBottomOf="@+id/beni_details"
+			tools:text="{beni.phone}" />
+
+		<ImageView
+			android:id="@+id/beni_remove_btn"
+			android:layout_width="28dp"
+			android:layout_height="28dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginEnd="16dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/close" />
+
+		<View
+			android:id="@+id/divider"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:visibility="invisible"
+			android:background="@color/divider"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

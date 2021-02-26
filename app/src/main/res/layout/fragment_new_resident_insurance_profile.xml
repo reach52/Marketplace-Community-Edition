@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/textColorWhite"
+	android:clickable="true"
+	android:focusable="true"
+	tools:context=".resident.view.NewResidentInsuranceProfileFragment">
+
+
+	<TextView
+		android:id="@+id/textView10"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="16dp"
+		android:text="@string/do_you_have_any_form_of_insurance"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<Button
+		android:id="@+id/existin_insurance_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/answer"
+		android:textAllCaps="false"
+		app:layout_constraintStart_toStartOf="@+id/textView10"
+		app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+	<TextView
+		android:id="@+id/textView11"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="@string/if_you_have_insurance_or_think_you_might_in_future_what_cover_do_you_have"
+		app:layout_constraintEnd_toEndOf="@+id/textView10"
+		app:layout_constraintStart_toStartOf="@+id/existin_insurance_btn"
+		app:layout_constraintTop_toBottomOf="@+id/existin_insurance_btn" />
+
+	<Button
+		android:id="@+id/future_insurance_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/answer"
+		android:textAllCaps="false"
+		app:layout_constraintStart_toStartOf="@+id/textView11"
+		app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+	<Button
+		android:id="@+id/nextBtn"
+		android:background="@drawable/round_blue_button_selector"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:text="@string/next"
+		android:textAllCaps="false"
+		android:textColor="@color/textColorWhite"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/textView17"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="@string/do_you_have_a_bank_account"
+		app:layout_constraintEnd_toEndOf="@+id/textView11"
+		app:layout_constraintStart_toStartOf="@+id/textView11"
+		app:layout_constraintTop_toBottomOf="@+id/future_insurance_btn" />
+
+	<RadioGroup
+		android:id="@+id/bank_acc_answer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="@+id/textView17"
+		app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+		<RadioButton
+			android:id="@+id/bank_acc_yes"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/yes" />
+
+		<RadioButton
+			android:id="@+id/bank_acc_no"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/no" />
+	</RadioGroup>
+
+	<TextView
+		android:id="@+id/textView18"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="@string/do_you_have_an_mwallet_or_electronic_payment_solution"
+		app:layout_constraintEnd_toEndOf="@+id/textView11"
+		app:layout_constraintStart_toStartOf="@+id/textView11"
+		app:layout_constraintTop_toBottomOf="@+id/bank_acc_answer" />
+
+	<RadioGroup
+		android:id="@+id/e_payment_answer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="@+id/textView17"
+		app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+		<RadioButton
+			android:id="@+id/e_payment_yes"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/yes" />
+
+		<RadioButton
+			android:id="@+id/e_payment_no"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/no" />
+	</RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

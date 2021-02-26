@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/textColorWhite"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	tools:context=".insurance.view.BeneficiariesFragment">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/beneficiary_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		tools:listitem="@layout/x_beneficiary_item"
+		app:layout_constraintBottom_toTopOf="@+id/add_beneficiary_btn"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+
+	<LinearLayout
+		android:id="@+id/addbeneficiry_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center"
+		app:layout_constraintBottom_toTopOf="@+id/add_beneficiary_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/imgg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/maskgroup"
+			tools:ignore="ContentDescription" />
+		<TextView
+			android:id="@+id/textmesg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=" You're looking \n a bit lonely.... "
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:textSize="20sp"
+			android:layout_marginTop="5dp"
+			android:textColor="@color/blacklight"
+			android:fontFamily="@font/montserrat_bold"
+			/>
+		<TextView
+			android:id="@+id/add_beneficiary_message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/click_to_add_beneficiaries"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginTop="5dp"
+			android:textSize="14sp"
+			android:layout_marginBottom="10dp"
+			android:fontFamily="@font/opensans_regular"
+			android:textColor="@color/lightBlue"
+
+			/>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/add_beneficiary_btn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		android:focusable="true"
+		android:textColor="@color/textColorWhite"
+		android:text="Add"
+		android:textAllCaps="false"
+		android:background="@drawable/rounded_blue_shape_all"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		 />
+
+
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/add_beneficiary_btn2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:clickable="true"
+		android:focusable="true"
+		app:fabSize="normal"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:srcCompat="@drawable/ic_add_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

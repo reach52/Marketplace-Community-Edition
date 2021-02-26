@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fil_PH">
+    <string name="consent" tools:ignore="MissingTranslation">Pahintulot</string>
+    <string name="i_agree_to_the_terms_and_conditions" tools:ignore="MissingTranslation">Sumasang-ayon ako sa nakasaad</string>
+    <string name="i_consent" tools:ignore="MissingTranslation">Nagbibigay ako ng Pahintulot</string>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/carousel_bg"
+	tools:context=".signup.view.CarouselActivity">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/carousel_list"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:orientation="horizontal"
+		app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:itemCount="2"
+		tools:listitem="@layout/x_carousel_item" />
+
+	<ImageView
+		android:id="@+id/help_btn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:padding="16dp"
+		tools:visibility="visible"
+		app:srcCompat="@drawable/ic_purple_help" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginStart="32dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/next">
+
+		<Button
+			android:id="@+id/dot1"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="true" />
+
+		<Button
+			android:id="@+id/dot2"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="false" />
+
+		<Button
+			android:id="@+id/dot3"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="false" />
+
+		<Button
+			android:id="@+id/dot4"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="false" />
+
+		<Button
+			android:id="@+id/dot5"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:layout_marginEnd="5dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="false" />
+
+		<Button
+			android:id="@+id/dot6"
+			android:layout_width="8dp"
+			android:layout_height="8dp"
+			android:background="@drawable/carousel_dot_selector"
+			android:enabled="false" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/next"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+
+		<TextView
+			android:id="@+id/next_btn_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/montserrat_bold"
+			android:text="@string/ready_to_get_started_sign_up_here"
+			android:textAlignment="textEnd"
+			android:gravity="end"
+			android:textColor="@color/purple"
+			android:textSize="13sp" />
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

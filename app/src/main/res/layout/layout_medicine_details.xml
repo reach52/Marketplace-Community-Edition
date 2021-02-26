@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="medicine"
+            type="reach52.marketplace.community.medicine.entity.Medicine" />
+    </data>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F7F7">
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/supplier"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+            <!--            android:layout_marginTop="8dp"-->
+            <!--            app:layout_constraintEnd_toEndOf="@+id/brandName"-->
+            <!--            app:layout_constraintHorizontal_bias="0.0"-->
+            <!--            app:layout_constraintStart_toStartOf="@+id/brandName"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/brandName"-->
+            <!--            tools:text="Supplier" />-->
+
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@{medicine.brandName}"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/priceGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Brand Name" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/genericName"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginStart="16dp"-->
+            <!--            android:layout_marginTop="4dp"-->
+            <!--            android:layout_marginEnd="8dp"-->
+            <!--            android:gravity="center_vertical"-->
+            <!--            android:text="@{medicine.genericName}"-->
+            <!--            android:textSize="16sp"-->
+            <!--            android:textStyle="bold"-->
+            <!--            app:layout_constraintEnd_toStartOf="@+id/priceGuideline"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/brandName"-->
+            <!--            tools:text="Generic Name" />-->
+
+            <TextView
+                android:id="@+id/packageSizeTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@{Integer.toString(medicine.packSize)}"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/packageSizeLabelTextView"
+                app:layout_constraintEnd_toEndOf="@+id/prescriptionReqTextView"
+                app:layout_constraintStart_toEndOf="@+id/packageSizeLabelTextView"
+                tools:text="100" />
+
+            <TextView
+                android:id="@+id/packageSizeLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@string/package_size_label"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/packageSizeTextView"
+                app:layout_constraintStart_toStartOf="@+id/formText"
+                app:layout_constraintTop_toBottomOf="@+id/formText" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="100 PHP" />
+
+            <TextView
+                android:id="@+id/supplierTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceTextView"
+                app:text="@{medicine.supplier.eng}" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/priceGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <!--    <Button-->
+            <!--        android:id="@+id/detailsButton"-->
+            <!--        style="@style/Widget.AppCompat.Button.Colored"-->
+            <!--        android:layout_width="95dp"-->
+            <!--        android:layout_height="54dp"-->
+            <!--        android:layout_marginTop="8dp"-->
+            <!--        android:layout_marginEnd="8dp"-->
+            <!--        android:text="@string/details"-->
+            <!--        app:layout_constraintEnd_toEndOf="@+id/packageSizeTextView"-->
+            <!--        app:layout_constraintHorizontal_bias="0.285"-->
+            <!--        app:layout_constraintStart_toStartOf="@+id/packageSizeLabelTextView"-->
+            <!--        app:layout_constraintTop_toBottomOf="@+id/packageSizeLabelTextView" />-->
+
+            <TextView
+                android:id="@+id/prescriptionReqTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@string/prescription_required"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/brandName"
+                app:layout_constraintStart_toStartOf="@+id/brandName"
+                app:layout_constraintTop_toBottomOf="@+id/brandName" />
+
+            <TextView
+                android:id="@+id/dosageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@string/dosage"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/brandName"
+                app:layout_constraintTop_toBottomOf="@+id/prescriptionReqTextView" />
+
+            <TextView
+                android:id="@+id/dosageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@{medicine.dosage}"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/dosageText"
+                app:layout_constraintTop_toTopOf="@+id/dosageText"
+                tools:text="60mg" />
+
+            <TextView
+                android:id="@+id/formText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@string/form"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/brandName"
+                app:layout_constraintTop_toBottomOf="@+id/dosageText" />
+
+            <TextView
+                android:id="@+id/formTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:shadowColor="@color/black"
+                android:text="@{medicine.form}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/formText"
+                app:layout_constraintStart_toEndOf="@+id/formText"
+                tools:text="form" />
+
+
+            <LinearLayout
+                android:id="@+id/quntityLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/packageSizeLabelTextView">
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:text=" + " />
+
+                <EditText
+                    android:id="@+id/edQty"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:text=" - " />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/quntityLinear" />
+
+            <LinearLayout
+                android:id="@+id/addcancellayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                tools:layout_editor_absoluteX="20dp">
+
+                <TextView
+                    android:id="@+id/addMedicine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="@color/purple" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#BDBDBD"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quntityLinear" />
+
+                <TextView
+                    android:id="@+id/cancel_action"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text=" Cancel "
+                    android:textColor="@color/purple" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

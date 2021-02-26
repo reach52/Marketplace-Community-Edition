@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="vm"
+			type="reach52.marketplace.community.insurance.viewmodel.InsurancePurchaseViewModel" />
+
+	</data>
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/textColorWhite"
+		android:clickable="true"
+		android:focusable="true"
+		tools:context=".insurance.view.OrderPreviewFragment">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/plan_summary"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="14dp"
+				android:layout_marginTop="5dp"
+				android:layout_marginEnd="14dp"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="2dp"
+				app:cardPreventCornerOverlap="false"
+				app:cardUseCompatPadding="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginStart="10dp"
+					android:layout_marginEnd="10dp"
+					android:layout_marginTop="5dp"
+					>
+
+					<TextView
+						android:id="@+id/textView23"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@{vm.selectedInsuranceProduct.displayName}"
+						android:textSize="16sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:text="{product.displayName}" />
+
+
+					<TextView
+						android:id="@+id/textView24"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="14dp"
+						android:textSize="14sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/opensans_regular"
+						android:text="@{vm.selectedInsuranceProduct.displaySummary}"
+						app:layout_constraintEnd_toEndOf="@+id/textView23"
+						app:layout_constraintStart_toStartOf="@+id/textView23"
+						app:layout_constraintTop_toBottomOf="@+id/textView23"
+						tools:text="{product.displaySummary}" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/members"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="14dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginEnd="14dp"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="2dp"
+				app:cardPreventCornerOverlap="false"
+				app:cardUseCompatPadding="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/plan_summary">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView29"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:text="@string/members_covered"
+						android:textSize="16sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<View
+						android:id="@+id/divider"
+						android:layout_width="match_parent"
+						android:layout_height="2dp"
+						android:background="@color/divider"
+						app:layout_constraintBottom_toTopOf="@id/preview_members_list"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/preview_members_list"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_marginTop="5dp"
+						android:overScrollMode="never"
+						android:scrollbars="none"
+						app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textView29"
+						tools:itemCount="2"
+						tools:listitem="@layout/x_member_item" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/premium"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="14dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="14dp"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="2dp"
+				app:cardPreventCornerOverlap="false"
+				app:cardUseCompatPadding="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/members">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:paddingBottom="3dp">
+
+					<TextView
+						android:id="@+id/premium_heading"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:text="@string/premium_details"
+						android:textSize="16sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<View
+						android:id="@+id/divider1"
+						android:layout_width="match_parent"
+						android:layout_height="2dp"
+						android:layout_marginTop="5dp"
+						android:background="@color/divider"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/premium_heading" />
+
+					<TextView
+						android:id="@+id/textView26"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:text="@string/premium_amount"
+						android:textSize="14sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_medium"
+						app:layout_constraintStart_toStartOf="@+id/premium_heading"
+						app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+					<TextView
+						android:id="@+id/textView25"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="16dp"
+						android:text="@{vm.finalPremium +` `+ vm.selectedInsuranceProduct.isoCurrency.toUpperCase()}"
+
+						android:textSize="15sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintBottom_toBottomOf="@+id/textView26"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="@+id/textView26"
+						tools:text="124 INR" />
+
+					<TextView
+						android:id="@+id/textView27"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/premium_period"
+						android:textSize="14sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_medium"
+						app:layout_constraintStart_toStartOf="@+id/textView26"
+						app:layout_constraintTop_toTopOf="@+id/premium_period" />
+
+					<TextView
+						android:id="@+id/premium_period"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:layout_marginEnd="16dp"
+						android:text="@{vm.premiumPeriod}"
+						android:textSize="14sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_medium"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textView25"
+						tools:text="annually" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/beneficiaries"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="14dp"
+				android:layout_marginTop="12dp"
+				android:layout_marginEnd="14dp"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="2dp"
+				app:cardPreventCornerOverlap="false"
+				app:cardUseCompatPadding="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/premium">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView30"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:text="@string/beneficiary"
+						android:textSize="16sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<View
+						android:id="@+id/divider2"
+						android:layout_width="match_parent"
+						android:layout_height="2dp"
+						android:background="@color/divider"
+						app:layout_constraintBottom_toTopOf="@id/preview_beneficiary_list"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/preview_beneficiary_list"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="4dp"
+						android:overScrollMode="never"
+						android:scrollbars="none"
+						app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textView30"
+						tools:itemCount="2" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/imgid"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="14dp"
+				android:layout_marginTop="8dp"
+				android:layout_marginEnd="14dp"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="2dp"
+				app:cardPreventCornerOverlap="false"
+				app:cardUseCompatPadding="true"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@id/beneficiaries">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:id="@+id/textView31"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="5dp"
+						android:text="@string/uploaded_id"
+						android:textSize="16sp"
+						android:textColor="@color/black"
+						android:fontFamily="@font/montserrat_bold"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<View
+						android:id="@+id/divider3"
+						android:layout_width="match_parent"
+						android:layout_height="2dp"
+						android:layout_marginTop="5dp"
+						android:background="@color/divider"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+					<ImageView
+						android:id="@+id/preview_id_img"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						app:layout_constraintEnd_toEndOf="parent"
+						android:adjustViewBounds="true"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/divider3"
+						tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+			</androidx.cardview.widget.CardView>
+
+			<Button
+				android:id="@+id/buyBtn"
+				style="@style/RoundBottomBlueButton"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginEnd="16dp"
+				android:layout_marginBottom="16dp"
+				android:text="@string/buy"
+				android:textAllCaps="false"
+				android:fontFamily="@font/montserrat_bold"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/imgid" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.core.widget.NestedScrollView>
+</layout>

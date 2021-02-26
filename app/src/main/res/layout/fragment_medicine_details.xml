@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="92dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicationInfo"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.61" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/medicationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.61" />
+
+                <TextView
+                    android:id="@+id/trackingCodeLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Chamomile Extract"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/nameDetailsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/trackingCodeLabel"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/trackingCodeLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/trackingCodeLabel" />
+
+
+                <TextView
+                    android:id="@+id/priceDetailsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Php 10.00"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/isVatDetailsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="VAT Inclusive"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toEndOf="@+id/priceDetailsTextView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintTop_toBottomOf="@+id/priceDetailsTextView" />
+
+                <TextView
+                    android:id="@+id/availableDetailsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toEndOf="@+id/isVatDetailsTextView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/isVatDetailsTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/isVatDetailsTextView" />
+
+                <TextView
+                    android:id="@+id/supplierDeatilsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Supplier"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/nameDetailsTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/nameDetailsTextView" />
+
+                <TextView
+                    android:id="@+id/pkDetailsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="PK Size 1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toEndOf="@+id/availableDetailsTextView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/availableDetailsTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/availableDetailsTextView" />
+
+                <TextView
+                    android:id="@+id/prescriptionRequiredDetailsTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Prescription Required"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/supplierDeatilsTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/supplierDeatilsTextView" />
+
+                <TextView
+                    android:id="@+id/r52SuppTextview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="r52 supp code : MetroDrug"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintStart_toStartOf="@+id/prescriptionRequiredDetailsTextView2"
+                    app:layout_constraintTop_toBottomOf="@+id/prescriptionRequiredDetailsTextView2" />
+
+                <TextView
+                    android:id="@+id/r52catTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="r52 cat #: 0011001"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintStart_toStartOf="@+id/r52SuppTextview"
+                    app:layout_constraintTop_toBottomOf="@+id/r52SuppTextview" />
+
+                <TextView
+                    android:id="@+id/supCatNumTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="supp cat#: Ref number 123"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/r52catTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/r52catTextView" />
+
+                <TextView
+                    android:id="@+id/infoSampleTextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Information: Sample Info"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineHeader"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/supCatNumTextView2"
+                    app:layout_constraintTop_toBottomOf="@+id/supCatNumTextView2" />
+
+                <TextView
+                    android:id="@+id/handlingInstructionTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Handling Instruction: Sample Instuction "
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/infoSampleTextView2"
+                    app:layout_constraintTop_toBottomOf="@+id/infoSampleTextView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">reach52 marketplace</string>
+	<string name="next">បន្ទាប់</string>
+	<string name="tell_us_about_yourself">ប្រាប់យើងអំពីខ្លួនអ្នក</string>
+	<string name="Continue">បន្ត</string>
+	<string name="carousel_1_title">គ្រប់គ្រងអ្នកស្រុក</string>
+	<string name="carousel_1_subtext">មានប្រសិទ្ធិភាពអ្នករស់នៅលើយន្តហោះនិងចូលមើលកំណត់ត្រាឬការណាត់ជួបរបស់ពួកគេដោយងាយស្រួល។</string>
+	<string name="carousel_2_title">ភ័ស្តុភារចុងក្រោយ</string>
+	<string name="carousel_2_subtext">ទិញថ្នាំនិងតាមដានអ្នករស់នៅ ការបញ្ជាទិញនៅក្នុងកម្មវិធីមួយ។</string>
+	<string name="carousel_3_title">ធានាអនាគតរបស់ពួកគេ</string>
+	<string name="carousel_3_subtext">បង្ហាញផែនការធានារ៉ាប់រងដែលមាននិង បញ្ជាទិញសម្រាប់អ្នករស់នៅរបស់អ្នក។</string>
+	<string name="carousel_4_title">ដំណើរការបានហើយ!</string>
+	<string name="carousel_4_subtext">បង្កើតនិងកែសំរួលឯកសារកំណត់ទីលំនៅដាក់បញ្ជាទិញទោះបីនៅក្រៅបណ្តាញក៏ដោយ។</string>
+	<string name="please_enter_pin">សូមបញ្ចូលកូដ PIN</string>
+	<string name="forgot_pin">ភ្លេច PIN?</string>
+	<string name="enter">ចូល</string>
+	<string name="please_enter_new_pin">សូមបញ្ចូលថ្មី PIN</string>
+	<string name="done">រួចរាល់</string>
+	<string name="pin_too_short">កូដ PIN ខ្លីពេក</string>
+	<string name="incorrect_pin">មិន​ត្រឹមត្រូវ PIN</string>
+	<string name="something_went_wrong">មាន​អ្វីមួយ​មិន​ប្រក្រតី។ ព្យាយាម​ម្តង​ទៀត។.</string>
+	<string name="incomplete_pin">កូដ PIN មិនពេញលេញ</string>
+	<string name="confirm_password">បញ្ជាក់ពាក្យសម្ងាត់</string>
+	<string name="incorrect_creds">លិខិតសម្គាល់មិនត្រឹមត្រូវ</string>
+	<string name="password_too_short">ពាក្យសម្ងាត់ខ្លីពេក។</string>
+	<string name="passwords_dont_match">លេខសម្ងាត់មិនត្រូវគ្នា។</string>
+	<string name="or">ឬ</string>
+	<string name="continue_with_email"><![CDATA[បន្តជាមួយ<br/><b>%1$s?</b>]]></string>
+	<string name="no_email_found">រកមិនឃើញអ៊ីមែល។</string>
+	<string name="setup_new_password"><![CDATA[រៀបចំពាក្យសម្ងាត់ថ្មីសម្រាប់<br/><b>%1$s</b>]]></string>
+	<string name="enter_your_password"><![CDATA[បញ្ចូលពាក្យសម្ងាត់សម្រាប់<br/><b>%1$s</b>]]></string>
+	<string name="faq_heading">សំណួរ​ដែលគេ​ច្រើន​សួរ</string>
+	<string name="sign_up_as_a_normal_user">ចុះឈ្មោះជាអ្នកប្រើប្រាស់ធម្មតា</string>
+	<string name="sign_up_as_a_community_manager">ចុះឈ្មោះជាអ្នកគ្រប់គ្រងសហគមន៍</string>
+	<string name="ready_to_get_started_sign_up_here">តចាប់ផ្តើមបានហើយឬនៅ?\nចុះឈ្មោះនៅទីនេះ។</string>
+
+	<string name="faq">
+        <![CDATA[
+        <b>តើមានតម្រូវការអប្បបរមាអ្វីខ្លះដើម្បីក្លាយជាអ្នកគ្រប់គ្រងតំបន់ផ្សារ?</b>
+        <ul>
+            <li>អ្នកត្រូវមានអាយុយ៉ាងតិច ១៨ ឆ្នាំ។​</li>
+        </ul>
+        <br/>
+        <b>តើអ្នកគ្រប់គ្រងតំបន់ផ្សារជាធម្មតារកចំណូលបានប៉ុន្មាន?</b>
+        <ul>
+            <li>អ្នកនឹងទទួលបានកំរៃជើងសារសម្រាប់រាល់ការបញ្ជាទិញដែលអ្នកធ្វើតាមរយៈ reach52 marketplace​</li>
+            <li>ការបញ្ជាទិញកាន់តែច្រើនអ្នកនឹងធ្វើឱ្យគណៈកម្មការកាន់តែច្រើន។</li>
+        </ul>
+        ​<br/>
+        <b>ខ្ញុំបានត្រៀមខ្លួនរួចរាល់ដើម្បីចុះឈ្មោះតើខ្ញុំត្រូវធ្វើអ្វីបន្ទាប់ទៀត?</b>
+        <ul>
+            <li>គ្រាន់តែដាក់ពត៌មានលំអិតរបស់អ្នកនៅក្នុងសំណុំបែបបទនៅទីនេះរួមជាមួយលេខសម្គាល់រូបថត។</li>
+            <li>បន្ទាប់មកយើងនឹងបញ្ជាក់ការចុះឈ្មោះរបស់អ្នកជាអ្នកគ្រប់គ្រងតំបន់ផ្សារ។​</li>
+            <li>បន្ទាប់មកអ្នកនឹងទទួលបានការបណ្តុះបណ្តាលពីពួកយើងដើម្បីចាប់ផ្តើម។​</li>
+        </ul>
+    ]]>
+    </string>
+	<string-array name="genders">
+		<item>ប្រុស</item>
+		<item>ស្រី</item>
+	</string-array>
+
+	<string-array name="relations">
+		<item>ប្តីប្រពន្ធ</item>
+		<item>ឪពុកម្តាយ</item>
+		<item>បងប្អូន</item>
+		<item>កុមារ</item>
+	</string-array>
+
+	<string-array name="carousel_titles">
+		<item>ក្លាយជាអ្នកគ្រប់គ្រង reach52 marketplace!</item>
+		<item>ដែលជា reach52?</item>
+		<item>តើ Markplace Area Manager ធ្វើអ្វីខ្លះ?</item>
+		<item>ហេតុអ្វីបានជាអ្នកគួរតែក្លាយជា Marketplace Area Manager?</item>
+		<item>reach52 marketplace មានអ្វីគ្រប់យ៉ាងដែលអ្នកត្រូវការសម្រាប់សុខភាពរបស់អ្នកនៅកន្លែងតែមួយ</item>
+		<item>ត្រៀមខ្លួនរួចរាល់ដើម្បីចុះឈ្មោះ… នេះជារបៀប៖</item>
+	</string-array>
+	<string-array name="carousel_bodies">
+        <item>
+            <![CDATA[
+            ផ្តល់សេវាសុខភាពសម្រាប់សហគមន៍របស់អ្នក<br/><br/>
+            រង្វាន់លើកទឹកចិត្តនិងឱកាសល្អដល់អ្នក!<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            reach52 ផ្តល់នូវសេវាថែទាំសុខភាពដែលមានតម្លៃសមរម្យដល់សហគមន៍ជាង ៤០០ មកហើយ។<br/><br/>
+            reach52 marketplace គឺជាសេវាផ្តល់ផលិតផលសុខភាពអនឡាញ ដែលអ្នកអាចរកបានគ្រប់មុខដែលអ្នកត្រូវការ។<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            អ្នកទៅសួរសុខទុក្ខអ្នកជិតខាងនៅសហគមន៍ ខាងមិត្តភក្តិនិងក្រុមគ្រួសាររបស់អ្នក។<br/><br/>
+            បញ្ជារទិញផលិតផលនៅលើកម្មវិធីរាជ៥២ reach52 marketplace<br/><br/>
+            ដឹកជញ្ជូនផលិតផលទៅអោយសហគមន៍<br/><br/>
+            វាពិតជាសាមញ្ញដូចនេះឯង<br/><br/>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>ទទួលបានប្រាក់កម្រៃជើងសាររាល់ពេលដែលមានការបញ្ជារទិញ</li>
+            <li>ការបញ្ជាទិញកាន់តែច្រើនអ្នកនឹងទទួលបានប្រាក់កម្រៃកាន់តែច្រើន</li>
+            <li>អ្នកជាថៅកែខ្លួនឯង អ្នកសម្រេចចិត្តពេលវេលាដែលអ្នកត្រូវធ្វើការងារនេះ</li>
+            <li>ទទួលបានអាជីពការងារនិងការបណ្តុះបណ្តាលលំដាប់អន្តរជាតិ</li>
+            <li>គាំទ្រសហគមន៍របស់អ្នកតាមរយៈការផ្តល់ជូននូវការថែទាំសុខភាពដែលមានតម្លៃសមរម្យ</li>
+            </ul>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>វីតាមីន ថ្នាំ សេវាធានារ៉ាប់រង និងផលិតផលសុខភាពសម្រាប់គ្រួសារជាច្រើនប្រភេទ។</li>
+            <li>តម្លៃសមរម្យ ដឹកជញ្ជូនទៅដល់សហគមន៍ផ្ទាល់</li>
+            <li>មិនត្រូវការធ្វើដំណើរ គ្មានការរំខាន ដើម្បីសុខភាពកាន់តែប្រសើរ</li>
+            </ul>
+            ]]>
+        </item>
+		<item>
+            <![CDATA[
+            <ul>
+            <li>បំពេញពត៌មានលម្អិតរបស់អ្នកនៅក្នុងទម្រង់នេះ</li>
+            <li>បញ្ជូននិងរង់ចាំការយល់ព្រម</li>
+            <li>ទទួលការណែនាំដើម្បីបំពេញបន្ថែមលើការបណ្តុះបណ្តាល</li>
+            <li>ក្រោយពីបានបញ្ចប់ការបណ្តុះបណ្តាល អ្នកនឹងត្រៀមខ្លួនរួចរាល់ដើម្បីចាប់ផ្តើមការងារ!</li>
+            </ul>
+            ]]>
+        </item>
+	</string-array>
+
+	<string name="town">ទីប្រជុំជន</string>
+	<string name="city">ទីក្រុង</string>
+	<string name="gender">ភេទ:</string>
+	<string name="date_of_birth">ថ្ងៃខែ​ឆ្នាំ​កំណើត</string>
+	<string name="country">ប្រទេស</string>
+	<string name="phone">ទូរស័ព្ទ</string>
+	<string name="region">តំបន់</string>
+	<string name="fb_login_canceled">បានបោះបង់ការចូល Facebook ។</string>
+	<string name="error_with_fb">កំហុសក្នុងការបន្តជាមួយ Facebook ។ ព្យាយាម​ម្តង​ទៀត។</string>
+	<string name="i_agree_with_terms_and_conditions">ខ្ញុំយល់ស្របនឹងលក្ខខណ្ឌ។</string>
+
+	<string name="TnC">
+        <![CDATA[
+        <h2>តើអ្នកគ្រប់គ្រងតំបន់ផ្សារធ្វើអ្វីខ្លះ?</h2>
+        <ul>
+            <li>ជួបជាមួយអ្នករស់នៅក្នុងតំបន់ដែលត្រូវបានចាត់តាំងដើម្បីផ្សព្វផ្សាយ reach52 marketplace ។</li>
+            <li>គាំទ្រដល់ប្រជាជនក្នុងការជ្រើសរើសនិងបញ្ជាទិញផលិតផលនិងសេវាកម្មដែលពួកគេត្រូវការពីកាតាឡុក។</li>
+            <li>ទទួលបានការទូទាត់សម្រាប់ការបញ្ជាទិញពីអ្នកស្រុកក្នុងនាមដៃគូរបស់ reach52 ។</li>
+            <li>សំរបសំរួលជាមួយអ្នកគ្រប់គ្រងទឹកដីរបស់ពួកគេសម្រាប់ការបញ្ជាទិញដែលបានធ្វើឡើងនិងការផ្ទេរប្រាក់ដោយផ្អែកលើពេលវេលាដែលបានព្រមព្រៀងគ្នារៀងរាល់សប្តាហ៍។</li>
+            <li>ដាក់ស្នើសន្លឹកកិច្ចការលក់ជារៀងរាល់សប្តាហ៍។</li>
+            <li>ទទួលឬជ្រើសរើសការបញ្ជាទិញពីអ្នកគ្រប់គ្រងទឹកដីរបស់ពួកគេហើយប្រគល់ការបញ្ជាទិញដល់អ្នករស់នៅ។</li>
+            <li>សំរបសំរួលកាលបរិច្ឆេទដឹកជញ្ជូនដែលបានគ្រោងទុកដើម្បីកាត់បន្ថយការដឹកជញ្ជូនដែលបរាជ័យ។</li>
+            <li>គាំទ្រ reach52 និងដៃគូរបស់ខ្លួនដើម្បីដាក់សម្ភារៈទីផ្សារនៅក្នុងតំបន់សំខាន់ៗសម្រាប់អ្នករស់នៅ។</li>
+        </ul>
+        ]]>
+    </string>
+	<string name="our_privacy_policy"><u>គោលការណ៍ឯកជនភាពរបស់យើង</u></string>
+	<string name="please_upload_your_id">សូមបញ្ចូលលេខសម្គាល់របស់អ្នក។</string>
+	<string name="add_dependents_to_countinue">បន្ថែមអ្នកអាស្រ័យដើម្បីបន្ត</string>
+	<string name="dependents">អ្នកនៅក្នុងបន្ទុក</string>
+	<string name="relation_to_insured">ទាក់ទងនឹងធានារ៉ាប់រង៖</string>
+	<string name="click_to_add_new_dependents">ចុច + ដើម្បីបន្ថែមភាពអាស្រ័យថ្មី។</string>
+	<string name="date_cannot_be_empty">កាលបរិច្ឆេទមិនអាចទទេបានទេ</string>
+	<string name="name_cannot_be_empty">ឈ្មោះមិនអាចទទេ</string>
+	<string name="age_too_low">អាយុមិនអាចទាបជាង ១៨ ឆ្នាំ</string>
+
+	<string name="accept_delivery">ទទួលយកការដឹកជញ្ជូន</string>
+	<string name="accepted">បានទទួលយក</string>
+	<string name="accepted_order">បានទទួលយក</string>
+	<string name="accepted_order_details">ទទួលយកព័ត៌មានលំអិតនៃការបញ្ជាទិញ</string>
+	<string name="acknowledgment">ថតរូបទទួលស្គាល់</string>
+	<string name="add">បន្ថែម</string>
+	<string name="add_family_member">បន្ថែមសមាជិកគ្រួសារ</string>
+	<string name="add_medication">បន្ថែមថ្នាំឬផលិតផល</string>
+	<string name="age">អាយុ:</string>
+	<string name="age_label">23 yrs old</string>
+	<string name="beneficiary">អ្នកទទួលផល</string>
+	<string name="birthday_image">birthday_img</string>
+	<string name="cancel">លុបចោល</string>
+	<string name="captured_image">រូបភាពត្រូវបានរក្សាទុក</string>
+	<string name="checkout">ចាកចេញ</string>
+	<string name="civil_status_label">នៅលីវ</string>
+	<string name="consumer_health">សុខភាព</string>
+	<string name="currency">KHR</string>
+	<string name="date">ថ្ងៃខែឆ្នាំ</string>
+	<string name="date_label">Nov 19, 2019 8:00 am</string>
+	<string name="delivered">បានដឹកជញ្ជូនអោយរួចរាល់</string>
+	<string name="delivered_details">បានដឹកជញ្ជូនអោយរួចរាល់</string>
+	<string name="delivered_order">បានដឹកជញ្ជូនអោយរួចរាល់</string>
+	<string name="discount_id_number_hint">លេខបញ្ចុះតម្លៃ</string>
+	<string name="discount_label">បញ្ចុះតម្លៃ</string>
+	<string name="dispatched">បានបញ្ជូន</string>
+	<string name="dispatched_order_details">បានបញ្ជូន</string>
+	<string name="dispatched_orders">បានបញ្ជូន</string>
+	<string name="dispergo">Dispergo</string>
+	<string name="dispergo_logo">Dispergo Logo</string>
+	<string name="expiration_date">Nov 15, 2020</string>
+	<string name="family_member">អ្នកទទួលផលគម្រោងធានារ៉ាប់រង</string>
+	<string name="fee_label">ថ្លៃដឹកជញ្ជូន</string>
+	<string name="full_name">ឈ្មោះពេញ</string>
+	<string name="go_back">ត្រឡប់ក្រោយ</string>
+	<string name="gold_insurance">គម្រោងមាស</string>
+	<string name="header_background">ផ្ទៃខាងក្រោយ</string>
+	<string name="hold_order">រង់ចាំ</string>
+	<string name="icon_depicting_an_event">Icon depicting an event</string>
+	<string name="id">លេខសំគាល់ខ្លួន:</string>
+	<string name="image1">image1</string>
+	<string name="insurance_benefits">អត្ថប្រយោជន៍នៃគម្រោងធានារ៉ាប់រង</string>
+	<string name="insurance_details">ព័ត៌មានលម្អិតអំពីគម្រោងធានារ៉ាប់រង</string>
+	<string name="insurance_label">សេវាធានារ៉ាប់រងសុខភាព</string>
+	<string name="insurance_plan">គម្រោងធានារ៉ាប់រង</string>
+	<string name="insurance_plan_details">ព័ត៌មានលម្អិតអំពីគម្រោងធានារ៉ាប់រង</string>
+	<string name="invalid_credentials">លិខិត​សម្គាល់ខ្លួន​មិន​ត្រឹមត្រូវ</string>
+	<string name="logging_in_status">កំពុងចូលទៅកាន់…</string>
+	<string name="login">ប៊ូតុងចូលទៅកាន់កម្មវិធី</string>
+	<string name="logout">ចាកចេញ</string>
+	<string name="malayan">Malayan</string>
+	<string name="malayan_insurance">Malayan Insurance</string>
+	<string name="marital_status">ជ្រើសរើសស្ថានភាពគ្រួសារ</string>
+	<string name="marker_label">កំណត់ចំណាំ</string>
+	<string name="medication_label">ឱសថ</string>
+	<string name="medications">ថ្នាំម្អិ</string>
+	<string name="medicine_list">បញ្ជីឱសថ</string>
+	<string name="name_label">ត្បូងឃ្មុំ</string>
+	<string name="nav_header_desc">ក្បាលនាវាចរ</string>
+	<string name="navigation_drawer_close">បិទក្បាលនាវាចរណ៍</string>
+	<string name="navigation_drawer_open">បើកផ្ទាំងរុករក</string>
+	<string name="new_medication_order">ការបញ្ជាទិញឱសថថ្មី</string>
+	<string name="no_reason">គ្មាន​ហេតុផល</string>
+	<string name="none">គ្មាន</string>
+	<string name="not_delivered">មិនបានបញ្ជូនទេ</string>
+	<string name="not_delivered_details">លម្អិតពីការបញ្ជាទិញមិនបានដឹកជញ្ជូន</string>
+	<string name="ok">យល់ព្រម</string>
+	<string name="on_hold_details">រង់ចាំព័ត៌មានលំអិតនៃការបញ្ជាទិញ</string>
+	<string name="on_hold_order">រង់ចាំ</string>
+	<string name="order_medication">បញ្ជាទិញថ្នាំ</string>
+	<string name="order_medicine">បញ្ជាទិញថ្នាំ</string>
+	<string name="order_processing">ការបញ្ជាទិញកំពុងដំណើរការ</string>
+	<string name="order_status">ស្ថានភាពនៃការបញ្ជាទិញ</string>
+	<string name="orders">បញ្ជាទិញ</string>
+	<string name="orders_rejected_details">ព័ត៌មានលម្អិតការបញ្ជាទិញបានបដិសេធ</string>
+	<string name="package_size_label">ចំនួន:</string>
+	<string name="password">លេខសម្ងាត់</string>
+	<string name="patient_name">ឈ្មោះអ្នកជម្ងឺម្អិ</string>
+	<string name="pending">ផ្អាកដំណើរការ</string>
+	<string name="pending_order">ផ្អាកដំណើរការ</string>
+	<string name="pending_order_details">ផ្អាកដំណើរការ</string>
+	<string name="personal_information">ព័ត៌មានផ្ទាល់ខ្លួន</string>
+	<string name="physician_name">ឈ្មោះគ្រូពេទ្យម្អិ</string>
+	<string name="pick_up_this_order">មកយកការបញ្ជាទិញមួយនេះ</string>
+	<string name="picked_up">បានទទួលផលិតផលដើម្បីបញ្ជូនបន្ត</string>
+	<string name="picked_up_order_details">បានទទួលផលិតផលដើម្បីបញ្ជូនបន្ត</string>
+	<string name="picked_up_orders">បានទទួលផលិតផលដើម្បីបញ្ជូនបន្ត</string>
+	<string name="pills_icon">Pills Icon</string>
+	<string name="plan">Gold Plan</string>
+	<string name="prescription_number">ឈលខឈវជជបញ្ញជ លម</string>
+	<string name="prescription_photo">រូបថតវេជ្ជបញ្ជា</string>
+	<string name="price">តម្លៃ</string>
+	<string name="proceed">បន្ត</string>
+	<string name="purchase_id">#23456order</string>
+	<string name="quantity">បរិមាណ</string>
+	<string name="receive_dispatch">ទទួលបានផលិតផល</string>
+	<string name="received">បានទទួល</string>
+	<string name="received_order">បានទទួល</string>
+	<string name="received_order_details">បានទទួល</string>
+	<string name="recipient_name">ឈ្មោះអ្នកទទួលម្អិ</string>
+	<string name="reject_delivery">បដិសេធការដឹកជញ្ជូន</string>
+	<string name="reject_order">បដិសេធ</string>
+	<string name="rejected_reason">ហេតុផល</string>
+	<string name="remove">លុបចោល</string>
+	<string name="remove_item_prompt">លុបចោលផលិតផល?</string>
+	<string name="resident_details">ព័ត៌មានលម្អិតពីអតិថិជន</string>
+	<string name="resident_label">ត្បូងឃ្មុំ</string>
+	<string name="residents">អតិថិជន</string>
+	<string name="resume">បន្តទៀត</string>
+	<string name="search">ស្វែងរក</string>
+	<string name="sex">ភេទ:</string>
+	<string name="status">ស្ថានភាពម្អិ:</string>
+	<string name="status_label">សកម្ម</string>
+	<string name="sub_total">តម្លៃសរុប</string>
+	<string name="sync_error">ការបញ្ជូនមានបញ្ហា</string>
+	<string name="sync_finished">ការបញ្ជូនបានបញ្ចប់</string>
+	<string name="sync_in_progress">ការបញ្ជូនកំពុងដំណើរការ</string>
+	<string name="sync_offline">ការបញ្ជូនគ្មានអ៊ីនធ័រណែត</string>
+	<string name="sync_started">ការបញ្ជូនបានចាប់ផ្តើម</string>
+	<string name="take_a_photo">ថតរូប</string>
+	<string name="text_acknowledgement_required">រូបថតទទួលស្គាល់ការបញ្ជាទិញចាំបាច់ត្រូវមាន</string>
+	<string name="text_complete_the_purchase">ដំណើរការទិញរួចរាល់</string>
+	<string name="text_required_fields">សូមបំពេញព័ត៌មានអោយអស់</string>
+	<string name="text_session_expired">មិនអាចដំណើរការបានទេ ដំណើរការបានផុតកំណត់</string>
+	<string name="total">សរុប: </string>
+	<string name="tracking_code">លេខកូដតាមដានម្អិ</string>
+	<string name="updating_index">ធ្វើបច្ចុប្បន្នភាពព័ត៌មាន</string>
+	<string name="username">ឈ្មោះអ្នកប្រើ</string>
+	<string name="valid_until">មាន​សុពលភាព​រហូតដល់</string>
+	<string name="vat_exclusive">អត់គិតពន្ធ</string>
+	<string name="vat_exempt_label">ពន្ធត្រូវបានលើកលែង</string>
+	<string name="vat_inclusive">គិតបញ្ចូលពន្ធ</string>
+	<string name="view_insurance_policy">ពិនិត្យមើលកញ្ចប់ធានារ៉ាប់រង</string>
+	<string name="view_products_and_services">មើលផលិតផលនិងសេវាកម្ម</string>
+	<string name="wedding_ring_img">wedding_ring</string>
+	<string name="years_old">អាយុ</string>
+	<string name="agent_name">ឈ្មោះភ្នាក់ងារ:</string>
+	<string name="date_start">ថ្ងៃខែឆ្នាំចាប់ផ្តើម:</string>
+	<string name="date_end">ថ្ងៃខែឆ្នាំបញ្ចប់:</string>
+	<string name="insurance_name">ឈ្មោះគម្រោងធានារ៉ាប់រង៖</string>
+	<string name="plan_name">ឈ្មោះគម្រោង៖</string>
+	<string name="relationship">ទំនាក់ទំនង</string>
+	<string name="contact">លេខទំនាក់ទំនង</string>
+	<string name="email">អ៊ីម៉ែល</string>
+	<string name="number">0882345678</string>
+	<string name="email_sample">example@email.com</string>
+	<string name="contact_no">លេខទូរសព្ទ</string>
+	<string name="additional_info">ពត៌មានបន្ថែម</string>
+	<string name="sorry_your_age_is_not_qualified_for_this_insurance">សូមទោស អាយុរបស់អ្នកមិនអាចទិញធានារ៉ាប់រងនេះទេ</string>
+	<string name="first_name">នាមខ្លួន</string>
+	<string name="middle_name">ឈ្មោះកណ្តាល</string>
+	<string name="last_name">នាមត្រកូល</string>
+	<string name="male">ប្រុស</string>
+	<string name="female">ស្រី</string>
+	<string name="residents_access_list">អាក់សេស</string>
+	<string name="residents_logistic_list">សេវានិងផលិតផល</string>
+	<string name="postal_code">លេខកូដតំបន់</string>
+	<string name="address">អាស័យដ្ឋាន</string>
+	<string name="country_code">+855</string>
+	<string name="province">ជ្រើសរើសឃុំ និងខេត្ត</string>
+	<string name="marital">ជ្រើសរើសស្ថានភាពគ្រួសារ</string>
+	<string name="save">រក្សាទុក</string>
+	<string name="update">ធ្វើបច្ចុប្បន្នភាព</string>
+	<string name="edit">កែតម្រូវ</string>
+	<string name="temp_vat_health">បញ្ចូលពន្ធ</string>
+	<string name="your_basket">កន្ត្រកទំនិញរបស់អ្នក</string>
+	<string name="your_order">ការកម្មង់របស់អ្នក</string>
+	<string name="when_to_follow_up">ពេលណាត្រូវតាមដានទៀត?</string>
+	<string name="follow_up_date">ថ្ងៃខែឆ្នាំដែលត្រូវតាមដានទៀត</string>
+	<string name="follow_up_product">តើផលិតផលឬសេវាកម្មអ្វីដែលត្រូវតាមដាន?</string>
+	<string name="follow_up_list">តារាងតាមដាន</string>
+	<string name="all_follow_up">ទាំងអស់</string>
+	<string name="tomorrow_follow_up">ស្អែក</string>
+	<string name="today_follow_up">ថ្ងៃនេ</string>
+
+	<string name="category">ប្រភេទ</string>
+	<string name="display">បង្ហាញ</string>
+	<string name="policy_owner">ម្ចាស់គោលនយោបាយ</string>
+	<string name="view">មើល</string>
+	<string name="insured_person">ធានារ៉ាប់រង</string>
+	<string name="purchase_preview">ការមើលការទិញជាមុន</string>
+	<string name="certificate_no">លេខវិញ្ញាបនប័ត្រ</string>
+	<string name="policy_owner_details">ព័ត៌មានលំអិតម្ចាស់គោលនយោបាយ</string>
+	<string name="insured_details">ព័ត៌មានលម្អិតធានារ៉ាប់រង</string>
+	<string name="self">ខ្លួនឯង</string>
+	<string name="reviewed_by">ពិនិត្យឡើងវិញដោយ</string>
+	<string name="denial_reason">ហេតុផលបដិសេធ</string>
+	<string name="plan_details">ព័ត៌មានលម្អិតអំពីផែនការ</string>
+	<string name="choose_your_category">ជ្រើសរើសក្រុមឬប្រភេទ</string>
+
+	<string-array name="civilStatus">
+		<item>នៅលីវ</item>
+		<item>រៀបការហើយ</item>
+		<item>មេម៉ាយ</item>
+		<item>លែងលះ</item>
+		<item>បំបែក</item>
+	</string-array>
+
+	<string-array name="familyMember">
+		<item>ឪពុក</item>
+		<item>ម្តាយ</item>
+		<item>បងប្អូនប្រុស</item>
+		<item>បងប្អូនស្រី</item>
+		<item>កូនប្រុស</item>
+		<item>កូនស្រី</item>
+		<item>ជីតា</item>
+		<item>ជីដូន</item>
+		<item>មីង</item>
+		<item>ពូ</item>
+		<item>ក្មួយស្រី</item>
+		<item>ក្មួយប្រុស</item>
+		<item>ចៅប្រុស</item>
+		<item>ចៅស្រី</item>
+		<item>អាណាព្យាបាល</item>
+		<item>ប្តីស្របច្បាប់</item>
+		<item>ប្រពន្ធស្របច្បាប់</item>
+	</string-array>
+
+	<string-array name="follow_up_reason">
+		<item>អត់លុយ</item>
+		<item>មានផលិតផលនឹងរួចហើយ</item>
+		<item>ចង់បានផលិតផលផ្សេង</item>
+		<item>ចង់ដឹងពត៌មានបន្ថែម</item>
+		<item>ចង់សួរសាច់ញាតិឬមិត្តភក្តិសិន</item>
+		<item>មិនមានវេជ្ជបញ្ជាឬវេជ្ជបញ្ជាមិនត្រឹមត្រូវ</item>
+		<item>ផ្សេងៗ</item>
+	</string-array>
+
+	<string name="home_testing_kit">ឧបករណ៍ធ្វើតេស្តិ៍នៅផ្ទះ</string>
+	<string name="discount_selection">ការជ្រើសរើសការបញ្ចុះតម្លៃ</string>
+	<string name="add_items">បន្ថែមផលិតផល</string>
+	<string name="follow_up">តាមដាន</string>
+	<string name="select_follow_up_reason">ជ្រើសរើសហេតុផលតាមដាន</string>
+	<string name="order_otc">បញ្ជាទិញថ្នាំមិនត្រូវការវេជ្ជបញ្ជា</string>
+
+	<string name="notes">ចំណាំ</string>
+	<string name="some_product">ផលិតផលមួយចំនួន</string>
+	<string name="reason">ហេតុផល</string>
+	<string name="description">ការព័ណ៌នា</string>
+	<string name="consumer_health_wellness">ផលិតផលសុខភាព</string>
+	<string name="otc_all_orders">ការបញ្ជាទិញ</string>
+	<string name="medication">ថ្នាំ</string>
+	<string name="otc_pending_orders">ផ្អាកដំណើរការ</string>
+	<string name="on_hold_consumer">រង់ចាំ</string>
+	<string name="rejected_consumer">បដិសេធ</string>
+	<string name="hcp_number_status">លេខអ្នកផ្តល់សេវា</string>
+	<string name="consumer_name">ឈ្មោះអតិថិជន</string>
+	<string name="order_number">លេខបញ្ជាទិញ</string>
+	<string name="basic_info">ពត៌មានមូលដ្ឋាន</string>
+	<string name="follow_up_info">តាមដានពត៌មាន</string>
+	<string name="consumer_health_and_wellness">ផលិតផលសុខភាព</string>
+	<string name="consumer_health_order">ការបញ្ជាទិញផលិតផលសុខភាព</string>
+	<string name="hcp_number">លេខអ្នកផ្តល់សេវា</string>
+	<string name="saved">បានរក្សាទុក</string>
+	<string name="view_save_products">មើលការបញ្ជាទិញដែលបានរក្សាទុក</string>
+	<string name="save_order">រក្សាទុកការបញ្ជាទិញ</string>
+	<string name="view_saved_products">មើលផលិតផលដែលបានរក្សាទុក</string>
+	<string name="my_cart">កន្ត្រកអីវ៉ាន់របស់ខ្ញុំ</string>
+	<string name="mark_as_done">សំគាល់ថារួចរាល់</string>
+	<string name="save_note">រក្សាទុកការចំណាំ</string>
+	<string name="sample_description">ការព័ណ៌នាគម្រូ</string>
+	<string name="med_express">MedExpress</string>
+	<string name="choose_supplier">ជ្រើសរើសអ្នកផ្គត់ផ្គង់ផលិតផល</string>
+	<string name="addtional_detail_info">ព័ត៌មានលំអិតបន្ថែម</string>
+	<string name="required_photo_prescription">រូបថតនៃវេជ្ជបញ្ជាត្រូវបានទាមទារ</string>
+	<string name="order_created">បានបង្កើតការបញ្ជាទិញ</string>
+	<string name="okay">យល់ព្រម</string>
+	<string name="add_new_resident">បន្ថែមអ្នកស្នាក់នៅថ្មី</string>
+	<string name="add_follow_up_details">បន្ថែមព័ត៌មានលម្អិតតាមដានបន្ត</string>
+	<string name="discount_optional">ការបញ្ចុះតម្លៃ (ជាជម្រើស)</string>
+	<string name="follow_up_date_validation">កាលបរិច្ឆេទតាមដានមិនអាចទទេបានទេ</string>
+	<string name="input_products">សូមបញ្ចូលផលិតផល</string>
+	<string name="successfully_updated">បានធ្វើបច្ចុប្បន្នភាពដោយជោគជ័យ</string>
+	<string name="special_character_message">ការបញ្ចូលមិនត្រឹមត្រូវ៖ តួអក្សរពិសេសមិនត្រូវបានអនុញ្ញាតជាលើកដំបូងឡើយt</string>
+	<string name="follow_up_details">ព័ត៌មានលម្អិតតាមដានបន្</string>
+	<string name="mark_down">ការតាមដានត្រូវបានសម្គាល់ថាបានធ្វើរួច</string>
+	<string name="unmarked">ការតាមដានមិនត្រូវបានសម្គាល់ទេ</string>
+	<string name="folllow_up_chicking">សូមបន្ថែមកំណត់ត្រាមុនពេលពិនិត្</string>
+
+	<string name="consent">ការយល់ព្រម</string>
+	<string name="i_agree_to_the_terms_and_conditions">ខ្ញុំយល់ស្របនឹង</string>
+	<string name="i_consent">ខ្ញុំយល់ព្រម</string>
+	<string name="i_agree">ខ្ញុំយល់ព្រម</string>
+
+	<string name="consent_text">
+        <![CDATA[
+        <p><b>ដើម្បីឱ្យយើងអាចដំណើរការការបញ្ជាទិញរបស់អ្នក និងបញ្ជូនផលិតផល ឬសេវាកម្មរបស់យើងទៅអ្នកបាន យើងត្រូវការការយល់ព្រមរបស់អ្នកដូចមានខាងក្រោម។ សូមអានខាងក្រោមហើយបញ្ជាក់ការយល់ព្រមរបស់អ្នកមុនបន្តការបញ្ជាទិញនេះ។ ព័ត៌មានខាងក្រោមនេះត្រូវបានបង្កើតឡើងដើម្បីធ្វើឱ្យដំណើរការនៃការទទួលបានផលិតផល ឬសេវាកម្មរបស់អ្នកកាន់តែមានភាពងាយស្រួល និងស្របច្បាប់។ នៅពេលដែលយើងបានទទួលបែបបទយល់ព្រមនេះយើងនឹងអាចបន្តផ្តល់សេវាកម្មរបស់យើងដល់អ្នក។</b></p>
+        <ul>
+        <li>ខ្ញុំបានដឹងពីសហគ្រាសសង្គមរាជ៥២ ព្រមទាំងផលិតផលនិងសេវាកម្មរបស់រាជ៥២ផងដែរ ។.</li>\n
+        <li>ខ្ញុំផ្តល់ការអនុញ្ញាតឱ្យទម្រង់បញ្ជាទិញ ឬវេជ្ជបញ្ជារបស់ខ្ញុំ ដើម្បីរក្សាទុកនិងដំណើរការស្របតាមការផ្តល់សេវាកម្ម និងការបំពេញការបញ្ជាទិញ។.</li>\n
+        <li>ខ្ញុំផ្តល់ការអនុញ្ញាតឱ្យវិភាគព័ត៌មានដែលបានផ្តល់នៅក្នុងនោះដើម្បីជម្រុញញការកែលំអសេវាកម្ម។.</li>\n
+        <li>ខ្ញុំផ្តល់ការអ្នុញ្ញារឲ្យរាជ៥២ ដើម្បីរក្សាទុកនូវផលិតផលដែលមិនទាន់បានដឹកមកឱ្យខ្ញុំ និងធ្វើការបញ្ជាទិញលើកក្រោយទៀតប្រសិនបើមានតម្រូវការ។.</li>\n
+        <li>ខ្ញុំទទួលខុសត្រូវសម្រាប់ការស្នើរសុំ ឬកំណត់ពេលវេលាយល់ព្រមទទួលផលិតផលនៅផ្ទះរបស់ខ្ញុំ ឬនៅចំណុចទីតាំងរួមមួយ (ទីតាំងដែលរាជ៥២ នឹងណែនាំខ្ញុំនៅពេលការប្រមូលឬចែកចាយដល់កំណត់) ។ .</li>\n
+        <li>ក្នុងករណីដែលខ្ញុំមិនអាចទទួលដោយផ្ទាល់ ខ្ញុំនឹងផ្តល់ការអនុញ្ញាតឱ្យទៅសមាជិកគ្រួសារដែលបានយល់ព្រមឬនរណាម្នាក់នៅក្នុងគ្រួសាររបស់ខ្ញុំ។.</li>\n
+        <li>តាមការស្នើសុំ ខ្ញុំយល់ព្រមដើម្បីប្រមូលផលិតផលរបស់ខ្ញុំពីចំណុចរួមមួយដែលសមស្របនៅក្នុងសហគមន៍របស់ខ្ញុំនៅរាល់ពេលនៃការបញ្ជាទិញ។ .</li>\n
+        <li>តាមការស្នើសុំខ្ញុំបានផ្តល់ការអនុញ្ញាតឱ្យខ្ញុំប្រមូលការបញ្ជាទិញរបស់ខ្ញុំពីឃ្លាំងដែលសមរម្យដោយផ្អែកលើមូលដ្ឋានដែលបានកើតឡើង.</li>\<n></n>
+        <li>ខ្ញុំយល់ព្រមឱ្យរាជ៥២ បញ្ជូនផលិតផលទៅផ្ទះរបស់ខ្ញុំ ឬមួយទៅយកពីទីតាំងរួមមួយដែលបានព្រមព្រៀងតាមការព្រមព្រៀងគ្នា។.</li>\n
+        <li>ខ្ញុំផ្តល់ការអនុញ្ញាតសម្រាប់ទិន្នន័យផ្ទាល់ខ្លួនរបស់ខ្ញុំដូចដែលបានផ្តល់ជូនខាងក្រោមដើម្បីរក្សាទុកក្នុងប្រព័ន្ធឌីជីថលនិងសម្រាប់ដំណើរការបញ្ជាទិញ និងអាចចែករំលែកជាមួយភាគីពាក់ព័ន្ធដែលចាំបាច់ដើម្បីបំពេញនូវការបញ្ជាទិញនេះនិងការបញ្ជាទិញពេលអនាគត។ ការអនុញ្ញាតដែលបានផ្តល់ឱ្យដល់រាជ៥២ នឹងមានសុពលភាពក្នុងរយៈពេល ១០ ឆ្នាំគិតចាប់ពីថ្ងៃចុះហត្ថលេខារបស់ខ្ញុំលើកលែងតែមានការដកហូតសិទ្ធិពីខ្ញុំតាមរយៈសេចក្តីជូនដំណឹងជាលាយលក្ខណ៍អក្សរត្រឹមត្រូវដល់រាជ៥២ ។.</li>
+        <li>ដឹងថាទិន្នន័យរបស់ខ្ញុំនឹងត្រូវប្រតិបត្តិការដោយរាជ៥២ ហើយអនុលោមតាមបទប្បញ្ញត្តិច្បាប់និងគោលការណ៍ក្នុងស្រុកដែលកំពុងអនុវត្ត។.</li>\n
+        </ul>
+        <p><b>រាជ៥២ធ្វើប្រតិបត្តិការទាំងអស់ក្នុងតម្លាភាពដល់អតិថិជននៅពេលបញ្ជាទិញដើម្បីជៀសវាងការចំណាយណាមួយដែលមានការលាក់បាំង ហើយដូច្នេះ៖:</b></p>
+        <ul>
+        <li>ខ្ញុំយល់ព្រមបង់ថ្លៃនៃការបញ្ជាទិញដូចដែលបានផ្តល់ជូននៅពេលបញ្ជាទិញ។ តម្លៃដែលបានបញ្ជាទិញត្រូវរាប់បញ្ចូលទាំងថ្លៃទំនិញ ពន្ធនិងសេវាកម្មដឹកជញ្ជូនបើតម្រូវ។.</li>\n
+        <li>ខ្ញុំយល់ព្រមបង់ថ្លៃដែលបានព្រមព្រៀងនៅពេលបញ្ជាទិញ។..</li>\n
+        </ul>
+        <p><b>ក្នុងការផ្តល់ផលិតផលនិងសេវាកម្មដែលមានតម្លៃទាបសមល្មម រាជ៥២ ត្រូវធានាថាផលិតផលនិងសេវាកម្មត្រូវបានទទួលដោយអ្នកបានបញ្ជាទិញមែន៖:</b></p>
+        <ul>
+        <li>ខ្ញុំផ្តល់ការអនុញ្ញាតឱ្យប្រើទិន្នន័យរបស់ខ្ញុំជាមធ្យោបាយនៃការធានាថាលក្ខណៈវិនិច្ឆ័យទៅលើរាល់ការបញ្ជាទិញផលិតផលនិងសេវាកម្ម។.</li>\n
+        <li>ខ្ញុំដឹងថាលក្ខខ័ណមួយចំនួនត្រូវធ្វើការវាយតម្លៃដោយប្រើប្រាស់ព័ត៌មានរបស់ខ្ញុំទៅតាមការស្នើសុំ។..</li>\n
+        <li>ខ្ញុំយល់ព្រមប្រើប្រាស់ផលិតផលនិងសេវាកម្មស្របតាមការណែនាំដែលបានបានដាក់ជូនដើម្បីធានានូវប្រសិទ្ធិភាពនិងគុណប្រយោជន៍។</li>\n
+        <li>ខ្ញុំសូមបញ្ជាក់ថាការបញ្ជាទិញនេះគឺសម្រាប់ការប្រើប្រាស់ផ្ទាល់ខ្លួនរបស់ខ្ញុំហើយខ្ញុំនឹងមិនចែកចាយលក់ឬចែកចាយវាទៅមនុស្សឬអង្គការណាមួយឡើយ។ ប្រសិនបើខ្ញុំមិនគោរពខ្ញុំយល់ថានេះជាការរំលោភលើកិច្ចព្រមព្រៀងហើយថានេះគឺជាការក្លែងបន្លំដូច្នេះសេវាកម្មនេះលែងមានសម្រាប់ខ្ញុំហើយនឹងត្រូវជូនដំណឹងទៅអាជ្ញាធរច្បាប់។.</li>\n
+        <li>ញុំយល់ព្រមប្រើប្រាស់សេវាកម្មស្របតាមគោលការណ៍ណែនាំដែលបានផ្តល់ដើម្បីធានាថាអត្ថប្រយោជន៍របស់វាត្រូវបានពង្រីក។.</li>\n
+        <li>ខ្ញុំសូមបញ្ជាក់ថារាល់ព័ត៌មានដែលខ្ញុំបានផ្តល់នៅទីនេះគឺត្រឹមត្រូវនិងពិតប្រាកដ។</li>\n
+        </ul>
+        <p><b>រាជ៥២ មានចំណាប់អារម្មណ៍ក្នុងការផ្តល់សេវាកម្មដល់អ្នកដែលមានបំណងចង់ទទួលនិងយល់ព្រមចូលរួម ដូច្នេះ៖:</b></p>
+        <ul>
+        <li>ខ្ញុំរក្សាសិទ្ធិក្នុងការបញ្ចប់ឬកែប្រែកិច្ចព្រមព្រៀងនេះនៅពេលណាមួយប៉ុន្តែនេះនឹងបណ្តាលឱ្យការបញ្ជាទិញរបស់ខ្ញុំមិនត្រូវបានដំណើរការឬប្រគល់ឱ្យ។..</li>\n
+        <li>ខ្ញុំយល់ព្រមថា ខ្ញុំនឹងទទួលខុសត្រូវចំពោះការបង់ប្រាក់សម្រាប់ផលិតផលឬសេវាកម្មណាមួយដែលត្រូវបានប្រគល់ជូន។.</li>
+        <li>ក្នុងករណីមានបញ្ហា ឬផលរំខានផ្សេងៗ ដែលអាចទាក់ទងទៅនឹងផលិតផលនិងសេវាកម្មដែលខ្ញុំបានទិញតាមរយៈរាជ៥២ ខ្ញុំយល់ព្រមផ្តល់ព័ត៌មានលំអិតបន្ថែមទៀតអំពីព្រឹត្តិការណ៍នោះហើយរាយការណ៍បន្តនូវពត៌មានដូចគ្នាទៅក្រុមហ៊ុនឬអាជ្ញាធរពាក់ព័ន្ធ និងយល់ព្រមឱ្យរាជ៥២ និងដៃគូសហការទាក់ទងមកខ្ញុំ ដើម្បីទទួលបានព័ត៌មានបន្ថែមជាផលប្រយោជន៍សុវត្ថិភាពសម្រាប់បុគ្គល និងសហគមន៍តាមតម្រូវការនិងចាំបាច់។.</li>\n
+        </ul>
+]]>
+    </string>
+
+	<string name="working_days">រង់ចាំ៤ទៅ៥ថ្ងៃនៃថ្ងៃធ្វើការសម្រាប់ការអនុម័តលើលក្ខខណ្ឌស្នើសុំ</string>
+	<string name="pending_questionnaire">រងចាំការអនុម័តទៅលើលក្ខខណ្ឌ</string>
+	<string name="pending_issuance">រង់ចាំសុពលភាពបណ្ណធានារ៉ាប់រង</string>
+	<string name="approved">បានទទួលយក</string>
+	<string name="declined">បានបដិសេធ</string>
+	<string name="cancelled">លុបចោល</string>
+	<string name="not_available">មិនអាច</string>
+
+	<string name="invalid_user">គណនីអ្នកប្រើប្រាស់មិនត្រឹមត្រូវ</string>
+	<string name="image_too_large_error">រូបភាពធំពេក។ សូមចុចលើរូបភាពផ្សេងទៀត។</string>
+	<string name="id_image_upload_fail">ការផ្ទុកបានបរាជ័យ។ សូម​ព្យាយាម​ម្តង​ទៀត។</string>
+	<string name="processing_image">កំពុងដំណើរការរូបភាព...</string>
+	<string name="image_processing_fail">បានបរាជ័យក្នុងដំណើរការរូបភាព។ សូម​ព្យាយាម​ម្តង​ទៀត។</string>
+	<string name="uploading_image">កំពុងផ្ទុករូបភាពឡើង...</string>
+	<string name="signin_with_facebook">ចូលជាមួយហ្វេសប៊ុក</string>
+	<string name="disconnect_facebook">ផ្តាច់ហ្វេសប៊ុក</string>
+	<string name="signin_with_google">ចូលជាមួយ Google</string>
+	<string name="disconnect_google">ផ្តាច់ Google</string>
+    <string name="country_not_supported">Sorry. Your country is not supported.</string>
+	<string name="questions">សំណួរ</string>
+	<string name="loading_questions">កំពុងផ្ទុកសំណួរ</string>
+    <string name="you_are_offline">អ្នកនៅក្រៅអ៊ីនធឺណិត</string>
+	<string name="something_error">មាន​អ្វីមួយ​មិន​ប្រក្រតី</string>
+
+	<string name="purchase_requested">ការទិញត្រូវបានស្នើរួចរាល់</string>
+	<string name="your_sign_up_is_done_nplease_watch_video_about_the_platform">ការចុះឈ្មោះរបស់អ្នករួចរាល់ សូមមើលវីដេអូអំពីវេទិកានេះ</string>
+	<string name="add_discount_number">បន្ថែមលេខបញ្ចុះតំលៃ</string>
+	<string name="loading_meds_please_wait">កំពុងដំណើរការ​ សូមមេត្តារង់ចាំ។.</string>
+	<string name="address_line_1">អាស័យដ្ឋានទី១</string>
+	<string name="address_line_2">អាស័យដ្ឋានទី២</string>
+	<string name="available">នៅមាន</string>
+	<string name="details">ព័ត៌មានលម្អិត</string>
+	<string name="prescription_required">ទាមទារវេជ្ជបញ្ជា</string>
+	<string name="invalid_email_format">អ៊ីមែលមិនត្រឹមត្រូវ</string>
+	<string name="invalid_email">ទម្រង់អ៊ីមែលមិនត្រឹមត្រូវ</string>
+	<string name="invalid_input">ការបញ្ចូលមិនត្រឹមត្រូវ៖ សញ្ញាមិនត្រូវបានអនុញ្ញាតជាការបញ្ចូលមុនដំបូងទេ</string>
+	<string name="phone_number_validation">សូមបំពេញលេខទំនាក់ទំនង</string>
+	<string name="product_validation">សូមបញ្ចូលផលិតផល</string>
+	<string name="follow_up_lists">បញ្ជីតាមដាន</string>
+	<string name="Update_resident">ធ្វើបច្ចុប្បន្នភាពព័ត៌មានអតិថិជន</string>
+	<string name="resident_preview_details">ពិនិត្យមើលឡើងវិញពត៌មានលម្អិតរបស់អតិថិជន</string>
+	<string name="please_add_family_member">សូមបន្ថែមសមាជិកគ្រួសារ</string>
+	<string name="insurance_policy_details">ព័ត៌មានលម្អិតអំពីកញ្ចប់ធានារ៉ាប់រង និងអត្ថប្រយោជន៍</string>
+	<string name="medicine_details">ព័ត៌មានលម្អិតពីឱសថ</string>
+	<string name="take_id_photo">ថតរូបអត្តសញ្ញាណប័ណ្ណ</string>
+	<string name="products_term">%s ខែ</string>
+	<string name="general_exclusions">ករណីមិនផ្តល់សំណងទូទៅ</string>
+	<string name="plan_validity_term">សុពលភាពគម្រោង</string>
+	<string name="yes">បាទ/ចាស</string>
+	<string name="no">អត់ទេ</string>
+	<!-- Insurance -->
+	<string name="consent_insurance">ការព្រមព្រៀង</string>
+	<string name="insurers">ក្រុមហ៊ុនធានារ៉ាប់រង</string>
+	<string name="insurance_products">គំរោងធានារ៉ាប់រង</string>
+	<string name="insurance_products_details">ព័ត៌មានលម្អិតនៃកញ្ចប់ធានារ៉ាប់រង</string>
+	<string name="constructs">ប្រភេទនៃការធានា</string>
+	<string name="members">បន្ថែមសមាជិក</string>
+	<string name="premium">ព័ត៌មានលម្អិតពីការបង់ប្រាក់</string>
+	<string name="beneficiaries">បន្ថែមអ្នកទទួលអត្ថប្រយោជន៍</string>
+	<string name="id_upload">បញ្ចូលប័ណ្ណសម្គាល់ខ្លួន</string>
+	<string name="order_preview">ពិនិត្យមើលការបញ្ជាទិញ</string>
+	<string name="max_age_is">"ត្រូវមានអាយុច្រើនបំផុតត្រឹម "</string>
+	<string name="min_age_required">"ត្រូវមានអាយុយ៉ាងតិចត្រឹម "</string>
+	<string name="invalid_phone_number">លេខទូរស័ព្ទមិនត្រឹមត្រូវ</string>
+	<string name="address_is_incomplete">អាសយដ្ឋានបំពេញមិនត្រឹមត្រូវ</string>
+	<string name="insured_amount">ចំនួនទឹកប្រាក់នៃការធានា</string>
+	<string name="exclusions">ករណីមិនផ្តល់សំណង</string>
+	<string name="premium_starting_form">ចាប់ផ្តើមពី% 1 $ s% 2 $ s</string>
+	<string name="period">អំឡុងពេល</string>
+	<string name="premium_breakdown">ដំណាក់កាលនៃការបង់ប្រាក់</string>
+	<string name="primary_members">សមាជិកគោល</string>
+	<string name="extra_members">សមាជិកបន្ថែម</string>
+	<string name="tax">ពន្ធ</string>
+	<string name="final_total_tax">ទឹកប្រាក់ត្រូវបង់សរុប (សរុបតម្លៃ + ពន្ធ)</string>
+	<string name="click_to_add_beneficiaries">ចុច + ដើម្បីបន្ថែមអ្នកទទួលអត្ថប្រយោជន៍</string>
+	<string name="members_covered">សមាជិកដែលត្រូវបានការការពារ</string>
+	<string name="premium_details">ព័ត៌មានលម្អិតពីការបង់ប្រាក់</string>
+	<string name="premium_amount">ចំនួនទឹកប្រាក់ដែលត្រូវបង់</string>
+	<string name="premium_period">រយៈពេលនៃការបង់ប្រាក់</string>
+	<string name="uploaded_id">បញ្ចូលប័ណ្ណសម្គាល់ខ្លួន</string>
+	<string name="buy">ទិញ</string>
+	<string name="confirm_this_purchase">បញ្ជាក់ការទិញនេះឡើងវិញ?</string>
+	<string name="your_insurance_purchase_is_complete">ការទិញធានារ៉ាប់រងរបស់អ្នករួចរាល់</string>
+	<string name="updated_on">បានធ្វើបច្ចុប្បន្នភាពលើ៖</string>
+	<string name="created_on">បានបង្កើតនៅលើ៖</string>
+	<string name="click_to_purchase_new_insurance">ចុច + ដើម្បីទិញធានារ៉ាប់រងថ្មី</string>
+	<string name="weight_in_kg">ទម្ងន់ (គក)</string>
+	<string name="height_in_cm">កម្ពស់​ (សម)</string>
+	<string name="have_you_been_diagnosed_with_any_of_the_following_conditions">តើអ្នកត្រូវបានគេធ្វើរោគវិនិច្ឆ័យឃើញថាមានលក្ខខណ្ឌណាមួយដូចខាងក្រោមដែរឬទេ?</string>
+	<string name="answer">ចម្លើយ</string>
+	<string name="do_you_take_medications">តើអ្នកប្រើថ្នាំដែរឬទេ?</string>
+	<string name="are_you_currently_pregnant_or_have_any_children_under_5_years_old">តើបច្ចុប្បន្នអ្នកមានផ្ទៃពោះឬមានកូនអាយុក្រោម ៥ ឆ្នាំទេ?</string>
+	<string name="i_don_t_want_to_say">ខ្ញុំមិនចង់ឆ្លើយ</string>
+	<string name="not_applicable">មិនអាចអនុវត្តបាន</string>
+	<string name="do_you_have_any_form_of_insurance">តើអ្នកមានទម្រង់នៃការធានារ៉ាប់រងទេ?</string>
+	<string name="if_you_have_insurance_or_think_you_might_in_future_what_cover_do_you_have">ប្រសិនបើអ្នកមានធានារ៉ាប់រងឬគិតថាអ្នកអាចនឹងមាននៅថ្ងៃខាងមុខតើអ្នកចង់បានការធានារ៉ាប់រងទៅលើអ្វី?</string>
+	<string name="do_you_have_a_bank_account">តើអ្នកមានកុងធនាគារទេ?</string>
+	<string name="do_you_have_an_mwallet_or_electronic_payment_solution">តើអ្នកមានវិធីទូទាត់លុយតាមប្រព័ន្ធអេឡិចត្រូនិចដែរឬទេ?</string>
+	<string name="which_of_the_following_products_and_services_would_you_be_interested_in">តើផលិតផលនិងសេវាកម្មណាមួយខាងក្រោមដែលអ្នកចាប់អារម្មណ៍?</string>
+	<string name="Updated">បានធ្វើបច្ចុប្បន្នភាព</string>
+	<string name="service_interests">ចំណាប់អារម្មណ៍ទៅលើសេវាផ្សេងៗ</string>
+	<string name="insurance_profile">ព័ត៌មានពីធានារ៉ាប់រង</string>
+	<string name="health_profile">សម្រង់សុខភាព</string>
+	<string name="weight_too_low">ខ្វះទម្ងន់ខ្លាំង។</string>
+	<string name="weight_too_heavy">ធ្ងន់ខ្លាំង</string>
+	<string name="first_weight_input_not_0">ការបញ្ចូលដំបូងសម្រាប់ទម្ងន់មិនត្រូវជាលេខ ០ ទេ</string>
+	<string name="invalid_weight">ទម្ងន់មិនត្រឹមត្រូវ.</string>
+	<string name="height_too_low">កម្ពសទាបពេក.</string>
+	<string name="height_too_high">កម្ពសខ្ពស់ពេក.</string>
+	<string name="first_height_must_not_0">ការបញ្ចូលដំបូងសម្រាប់កម្ពស់មិនត្រូវជាលេខ ០ ទេ</string>
+	<string name="invalid_height">កម្ពស់មិនត្រឹមត្រូវ.</string>
+	<string name="first_name_cannot_be_empty">ត្រូវតែបញ្ចូលនាមខ្លួន</string>
+	<string name="last_name_cannot_be_empty">ត្រូវតែបញ្ចូលនាមត្រកូល</string>
+	<string name="postal_code_cannot_be_empty">ត្រូវតែបញ្ចូលលេខកូដតំបន់</string>
+	<string name="city_cannot_be_empty">ត្រូវតែបញ្ចូលឈ្មោះក្រុង</string>
+	<string name="dob_not_set">ថ្ងៃខែឆ្នាំកំណើតមិនបានបញ្ចូល</string>
+	<string name="phone_number_cannot_be_empty">ត្រូវតែបញ្ចូលលេខទូរស័ព្ទ</string>
+	<string name="answers_selected">ចម្លើយដែលបានជ្រើសរើស</string>
+	<string name="please_enter_your_email">សូមបញ្ចូលអ៊ីមែលរបស់អ្នកl</string>
+	<string name="resident_previwe_details">ពិនិត្យមើលពត៌មានលម្អិតរបស់អតិថិជន</string>
+	<string name="phone_min_limit">លេខទូរស័ព្ទមិនត្រូវតិចជាង ១០​ ខ្ទង់ទេ</string>
+	<string name="check_order_status">ពិនិត្យស្ថានភាពបញ្ជាទិញ</string>
+	<string name="generic_name">ឈ្មោះដើមរបស់ផលិតផល</string>
+	<string name="brand_name">ឈ្មោះ​យីហោ</string>
+	<string name="total_item_count">ចំនួនផលិតផលសរុប</string>
+	<string name="finish">ចប់</string>
+	<string name="dosage">កម្រិតនៃការប្រើប្រាស់</string>
+	<string name="purchase_medication_list">បញ្ជីឱសថដែលបានទិញ</string>
+	<string name="purchase_medication_details">ព័ត៌មានលម្អិតអំពីការទិញថ្នាំ</string>
+	<string name="medication_order_status">ស្ថានភាពបញ្ជាទិញឱសថ</string>
+	<string name="form">សំណុំបែបបទ</string>
+	<string name="install_access_continue">ដំឡើងការអនុញ្ញាតិដើម្បីបន្ត</string>
+	<string name="add_notes">សូមបន្ថែមការកំណត់ចំណាំមុនពេលរក្សាទុក</string>
+	<string name="successfully_saved">ការកត់ត្រាត្រូវបានរក្សាទុកដោយជោគជ័យ</string>
+	<string name="date_validation">កាលបរិច្ឆេទតាមដានមិនអាចទទេបានទេ</string>
+	<string name="mandatory_fileds">ព័ត៌៌មានសំខាន់មិនទាន់បំពេញ</string>
+	<string name="engagement">ការចូលរួម</string>
+
+
+
+	<string-array name="service_interests">
+		<item>អត្ថបទសុខភាពដែលខ្ញុំអាចអានខ្លួនឯងបាន</item>
+		<item>ភ្ជាប់ការការក្រើនរំលឹកទៅកាន់ទូរស័ព្ទរបស់ខ្ញុំសម្រាប់របៀបរស់នៅដែលមានសុខភាពល្អ</item>
+		<item>ព័ត៌មានសុខភាពតាមរយៈហ្វេសប៊ុកឬ វាត់ស្អាប់</item>
+		<item>ព្រឹត្តិការណ៍សុខភាពក្នុងមូលដ្ឋាននៅក្នុងសហគមន៍របស់ខ្ញុំ</item>
+		<item>គ្រូពេទ្យចុះពិនិត្យនៅតាមសហគមន៍</item>
+		<item>ទំនាក់ទំនងទៅកាន់វេជ្ជបណ្ឌិតតាមរយៈការហៅទូរស័ព្ទ ខលជាវីដេអូ</item>
+		<item>សេវាកម្មសុខភាពផ្ទាល់ខ្លួននៅក្នុងផ្ទះរបស់ខ្ញុំ (ឧទាហរណ៍ការត្រួតពិនិត្យសម្ពាធឈាមនៅផ្ទះ)</item>
+		<item>ទំនាក់ទំនងជាមួយអ្នកជំងឺដទៃទៀតដែលមានស្ថានភាពដូចខ្ញុំដើម្បីរៀនសូត្រឬ ចែករំលែកបទពិសោធន៌</item>
+		<item>ការទទួលបានឱសថដែលមានតំលៃសមរម្យ</item>
+		<item>លទ្ធភាពទទួលបានសេវាកម្មពិនិត្យរោគវិនិច្ឆ័យ</item>
+		<item>ការទទួលបានការធានារ៉ាប់រងសុខភាពដើម្បីរ៉ាប់រងលើការចំណាយរបស់ខ្ញុំ</item>
+		<item>ការទទួលបានការធានារ៉ាប់រងអាយុជីវិត, ្នុងករណីមានគ្រោះថ្នាក់និងដើម្បីការពារគ្រួសារខ្ញុំប្រសិនបើសិនជាខ្ញុំបាត់បង់ជីវីត</item>
+		<item>ការទទួលបានថ្នាំបង្ការ</item>
+		<item>ការទទួលបានផលិតផលអាហារូបត្ថម្ភឬផលិតផលសុខភាព (ឧ. វីតាមីន)</item>
+		<item>ការទទួលបានថ្នាំដែលមិនត្រូវការវេជ្ជបញ្ជា (ឧ. ថ្នាំប៉ារ៉ាសេតាមុល)</item>
+		<item>ការទទួលបានផលិតផលសុខភាពសម្រាប់ប្រើប្រាស់ (ឧទាហរណ៍ ថ្នាំដុសធ្មេញ)</item>
+		<item>គ្មានចំណុចណាមួយខាងលើ (មិនអាចជ្រើសរើសបានលើសពីមួយ)</item>
+		<item>ខ្ញុំមិនចង់ឆ្លើយ (មិនអាចជ្រើសរើសបានលើសពីមួយ)</item>
+	</string-array>
+
+	<string-array name="service_interests_codes">
+		<item>INFO</item>
+		<item>DREM</item>
+		<item>INFO-FB</item>
+		<item>LHE</item>
+		<item>DVC</item>
+		<item>DPV</item>
+		<item>PHSH</item>
+		<item>PSG</item>
+		<item>MEDS</item>
+		<item>DIAG</item>
+		<item>INS-B</item>
+		<item>INS-L</item>
+		<item>VACC</item>
+		<item>NUTR</item>
+		<item>OTC</item>
+		<item>CHP</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+
+	<string-array name="existing_insurance_options">
+		<item>ខ្ញុំមានផែនការធានារ៉ាប់រងជីវិតផ្ទាល់ខ្លួនឬធានារ៉ាប់រងសុខភាព</item>
+		<item>ខ្ញុំមានការធានារ៉ាប់រងផ្សេងទៀត (ឧទាហរណ៍ដូចជា ការដាំដុះ ការធានារ៉ាប់រងម៉ូតូ)</item>
+		<item>ខ្ញុំជាផ្នែកមួយនៃក្រុមឬផែនការគ្រួសារ (ឧទាហរណ៍ ពីបុគ្គលិករបស់ខ្ញុំ)</item>
+		<item>ខ្ញុំមិនមានការធានារ៉ាប់រងទេប៉ុន្តែខ្ញុំចាប់អារម្មណ៍លើរឿងនេះ</item>
+		<item>ខ្ញុំមិនចាប់អារម្មណ៍នឹងការធានារ៉ាប់រងទេ</item>
+		<item>ខ្ញុំសុំមិននិយាយទេ</item>
+	</string-array>
+	<string-array name="existing_insurance_options_codes">
+		<item>PERS</item>
+		<item>OTH</item>
+		<item>FAM</item>
+		<item>NONI</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+
+	<string-array name="future_insurance_options">
+		<item>ការផ្តល់សំណងទៅលើគ្រោះថ្នាក់</item>
+		<item>ការផ្តល់សំណងសម្រាប់ការគេងពេទ្យ</item>
+		<item>ការផ្តល់សំណងផ្នែកវេជ្ជសាស្រ្តសម្រាប់ការថែទាំបឋម (ឧទាហរណ៍ការធ្វើតេស្ត​ ការណាត់ជួបវេជ្ជបណ្ឌិត)</item>
+		<item>ការផ្តល់សំណងមរណភាពដោយចៃដន្យ</item>
+		<item>ការផ្តល់សំណងលើការបាត់បង់ប្រាក់ចំណូល</item>
+		<item>ការធានារ៉ាប់រងការដាំដុះ </item>
+		<item>ការធានារ៉ាប់រងម៉ូតូ</item>
+		<item>មិនអាចអនុវត្តបាន</item>
+	</string-array>
+
+	<string-array name="future_insurance_options_codes">
+		<item>ACC</item>
+		<item>HSP</item>
+		<item>MEDR</item>
+		<item>ACCD</item>
+		<item>LOE</item>
+		<item>CRP</item>
+		<item>MTR</item>
+		<item>NO</item>
+	</string-array>
+
+	<string-array name="health_conditions">
+		<item>ជំងឺភ្លេចភ្លាំង</item>
+		<item>ជំងឺរលាកសន្លាក់</item>
+		<item>ជំងឺផ្លូវដង្ហើម</item>
+		<item>មហារីក</item>
+		<item>ជំងឺសួតរ៉ាំរ៉ៃ (COPD)</item>
+		<item>ក្រិនថ្លើម</item>
+		<item>ជំងឺសរសៃឈាមបេះដូង</item>
+		<item>ជំងឺទឹកនោមផ្អែម</item>
+		<item>ជំងឺរាគរូស</item>
+		<item>ជំងឺថ្លើមប្រភេទ អេ</item>
+		<item>ជំងឺថ្លើមប្រភេទ បេ</item>
+		<item>ជំងឺថ្លើមប្រភេទ សេ</item>
+		<item>ជំងឺអេដស៍</item>
+		<item>ជំងឺលើសឈាម</item>
+		<item>ជំងឺបេះដូង</item>
+		<item>ជំងឺតំរងនោម</item>
+		<item>ជំងឺផ្លូវដង្ហើមផ្នែកខាងក្រោម</item>
+		<item>ជំងឺគ្រុនចាញ់</item>
+		<item>កញ្ជ្រិល</item>
+		<item>Stroke</item>
+		<item>រលាក​សួត</item>
+		<item>ជំងឺរបេង</item>
+		<item>គ្មានចំណុចណាមួយខាងលើ (មិនអាចជ្រើសរើសបានលើសពីមួយ)</item>
+		<item>ខ្ញុំមិនចង់ឆ្លើយ (មិនអាចជ្រើសរើសបានលើសពីមួយ)</item>
+	</string-array>
+	<string-array name="health_conditions_codes">
+		<item>ALZ</item>
+		<item>ART</item>
+		<item>AST</item>
+		<item>CAN</item>
+		<item>COPD</item>
+		<item>CIR</item>
+		<item>CAD</item>
+		<item>DIAB</item>
+		<item>DIAR</item>
+		<item>HEPA</item>
+		<item>HEPB</item>
+		<item>HEPC</item>
+		<item>HIV</item>
+		<item>HYP</item>
+		<item>IHD</item>
+		<item>KID</item>
+		<item>LRI</item>
+		<item>MAL</item>
+		<item>MEA</item>
+		<item>STR</item>
+		<item>PNE</item>
+		<item>TB</item>
+		<item>NO</item>
+		<item>DNA</item>
+	</string-array>
+	<string name="account_setup">បង្កើតគណនី</string>
+	<string name="invalid_pin">លេខកូដមិនត្រឹមត្រូវ</string>
+	<string name="username_taken_error">ឈ្មោះនេះគេប្រើរួចហើយ សូមជ្រើសរើសថ្មី</string>
+	<string name="invalid_username">ឈ្មោះមិនត្រឹមត្រូវ</string>
+	<string name="username_too_short">ឈ្មោះខ្លីពេក យ៉ាងហោចណាស់៦ខ្ទង់</string>
+	<string name="set_up_your_new_account">បង្កើតគណនីថ្មី ជ្រើសរើសឈ្មោះ និងលេខកូដសម្ងាត់</string>
+	<string name="login_again">បញ្ចូលឈ្មោះ និងលេខកូដម្តងទៀត</string>
+	<string name="your_acc_is_locked">គណនីរបស់អ្នកត្រូវគេបិទ</string>
+	<string name="account_not_allowerd">គណនីរបស់អ្នកមិនអាចប្រើកម្មវិធីនេះបានទេ</string>
+	<string name="please_enter_your_username_or_email_and_your_pin_to_continue">"បញ្ចូលឈ្មោះ ឬអ៊ីមែល និងលេខកូដម្តងទៀត   "</string>
+	<string name="username_email">ឈ្មោះ ឬអ៊ីមែល</string>
+	<string name="enter_pin_below">បញ្ចូលលេខកូដខាងក្រៅ</string>
+	<string name="ask_help_from_pin_manager_for_forgot_password">ប្រធានក្រុមរបស់អ្នកនឹងជួយបង្កើតលេខកូដ។ អ្នកអាចទាក់ទងគាត់បាន</string>
+	<string name="update_resident">ធ្វើបច្ចុប្បន្នភាពព័ត៌មានអតិថិជន</string>
+	<string name="later">ក្រោយមក</string>
+	<string name="please_update_the_app_to_continue">អ្នកអាចធ្វើបច្ចុប្បន្នភាពកម្មវិធីបាន សូមចុចដើម្បីបន្ត</string>
+	<string name="goto_playstore">ចូលទៅកាន់ទីកន្លែងផ្ទុកកម្មវិធី</string>
+	<string name="do_you_want_to_install_the_update">អ្នកអាចធ្វើតម្លើងកម្មវិធីថ្មីបានពេលនេះ តើអ្នកចង់តម្លើងទេ?</string>
+	<string name="uploading">កំពុងតែដំណើរការផ្ទុកព័ត៌មាន</string>
+	<string name="account_locked_contact_field_manager">គណនីរបស់អ្នកត្រូវបិទដោយសារអ្នកបញ្ចូលឈ្មោះខុសបីដងហើយ។ ទាក់ទងមេក្រុមរបស់អ្នកដើម្បីដោះស្រាយបញ្ហានេះ។</string>
+	<string name="manufacturer">ក្រុមហ៊ុនផលិត</string>
+
+</resources>

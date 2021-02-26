@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="resident"
+			type="reach52.marketplace.community.resident.entity.Resident" />
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/list_back"
+		android:layout_margin="5dp"
+		android:padding="16dp">
+
+		<TextView
+			android:id="@+id/residentNameTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@{resident.firstName+`, `+resident.lastName}"
+			android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:textColor="#000000"
+			android:textSize="14dp"
+			android:fontFamily="@font/montserrat_bold"
+			tools:text="Resident Name" />
+
+		<TextView
+			android:id="@+id/residentSexTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="@{resident.gender}"
+			tools:text="Female"
+			android:textColor="#000000"
+			android:textSize="12dp"
+			android:fontFamily="@font/opensans_regular"
+			android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+			app:layout_constraintStart_toStartOf="@+id/residentNameTextView"
+			app:layout_constraintTop_toBottomOf="@+id/residentNameTextView" />
+
+
+		<TextView
+			android:id="@+id/residentAgeTextView"
+			android:layout_width="23dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="4dp"
+			android:textColor="#000000"
+			android:textSize="12dp"
+			android:fontFamily="@font/opensans_regular"
+			android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+			app:layout_constraintBaseline_toBaselineOf="@+id/residentSexTextView"
+			app:layout_constraintStart_toEndOf="@+id/residentSexTextView"
+			android:text="@{resident.ageString}"
+			tools:text="42"  />
+
+
+
+
+
+	<!--	<TextView
+			android:id="@+id/residentAddressTextView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="8dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+			android:visibility="gone"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/residentNameTextView"
+			app:layout_constraintTop_toBottomOf="@+id/residentNameTextView"
+			tools:text="Address" />-->
+
+		<androidx.constraintlayout.widget.Guideline
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_percent="0.84" />
+
+		<androidx.constraintlayout.widget.Guideline
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			app:layout_constraintGuide_percent="0.74" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

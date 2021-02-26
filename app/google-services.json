@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286368876956",
+    "project_id": "marketplace-community-edition",
+    "storage_bucket": "marketplace-community-edition.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286368876956:android:c0970f89f79d9852ede059",
+        "android_client_info": {
+          "package_name": "com.reach52.marketplace.community"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286368876956-oepi1sapfh6bj8m3g7p0o8g7js63gng9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnGdVao62PtAPhN1nvZE8R7XqXR-MsEiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286368876956-oepi1sapfh6bj8m3g7p0o8g7js63gng9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

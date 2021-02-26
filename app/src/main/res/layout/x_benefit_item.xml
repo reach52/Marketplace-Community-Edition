@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<variable
+			name="benefit"
+			type="reach52.marketplace.community.insurance.entity.InsuranceProduct.Benefit" />
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingStart="10dp"
+		android:paddingEnd="8dp"
+		android:paddingBottom="4dp"
+
+		>
+
+		<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:cardPreventCornerOverlap="false"
+			app:cardUseCompatPadding="true"
+			app:cardCornerRadius="4dp"
+			android:background="#F7F7F7"
+			app:cardElevation="4dp">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#F7F7F7"
+				android:padding="4dp">
+
+				<TextView
+					android:id="@+id/benefit_name"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="@{benefit.displayName}"
+					android:textStyle="bold"
+					android:textColor="@color/black"
+					android:fontFamily="@font/montserrat_bold"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent" />
+
+
+
+				<TextView
+					android:id="@+id/benefit_desc"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:textColor="@color/black"
+					android:fontFamily="@font/opensans_regular"
+					android:text="@{benefit.displayDesc}"
+					app:layout_constraintEnd_toEndOf="@+id/benefit_name"
+					app:layout_constraintStart_toStartOf="@+id/benefit_name"
+					app:layout_constraintTop_toBottomOf="@+id/benefit_name" />
+
+				<TextView
+					android:id="@+id/textView36"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:text="@string/insured_amount"
+					android:textColor="@color/black"
+					android:fontFamily="@font/opensans_regular"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/benefit_desc" />
+
+				<TextView
+					android:id="@+id/benefit_amount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					tools:text="10000"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="@color/black"
+					android:fontFamily="@font/montserrat_bold"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+				<TextView
+					android:id="@+id/exclusion_heading"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:text="@string/exclusions"
+					android:textColor="@color/black"
+					android:fontFamily="@font/montserrat_bold"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/benefit_amount" />
+
+				<TextView
+					android:id="@+id/benefit_exclusions"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="@{benefit.exclusions}"
+					android:textColor="@color/black"
+					android:fontFamily="@font/opensans_regular"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/exclusion_heading" />
+
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+		</androidx.cardview.widget.CardView>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable name="order" type="reach52.marketplace.community.insurance.entity.PolicyOrder"/>
+	</data>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardPreventCornerOverlap="false"
+		app:cardUseCompatPadding="true"
+		app:cardCornerRadius="2dp"
+		app:cardElevation="2dp"
+		android:layout_marginTop="2dp"
+		android:layout_marginStart="4dp"
+		android:layout_marginEnd="5dp"
+		>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="3dp">
+
+			<TextView
+				android:id="@+id/policyName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@{order.productName}"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:fontFamily="@font/montserrat_bold"
+				android:textColor="@color/black"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:text="Order ProductName" />
+
+			<TextView
+				android:id="@+id/policyProvider"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:text="@{order.insurerName}"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintEnd_toEndOf="@+id/policyName"
+				app:layout_constraintStart_toStartOf="@+id/policyName"
+				app:layout_constraintTop_toBottomOf="@+id/policyName"
+				tools:text="order insurerName" />
+
+			<TextView
+				android:id="@+id/status"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="@{order.orderStatus}"
+				android:textStyle="bold"
+				android:textSize="14sp"
+				android:fontFamily="@font/montserrat_bold"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toEndOf="@+id/textView45"
+				app:layout_constraintTop_toTopOf="@+id/textView45"
+				tools:text="requested" />
+
+			<TextView
+				android:id="@+id/updatedDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="@{order.updatedOn}"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toEndOf="@+id/textView47"
+				app:layout_constraintTop_toTopOf="@+id/textView47"
+				tools:text="02/9/2002" />
+
+			<TextView
+				android:id="@+id/textView45"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:text="@string/status"
+				android:textSize="14sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/policyProvider"
+				app:layout_constraintTop_toBottomOf="@+id/policyProvider" />
+
+			<TextView
+				android:id="@+id/textView47"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/updated_on"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintHorizontal_chainStyle="packed"
+				app:layout_constraintStart_toStartOf="@+id/textView48"
+				app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+			<TextView
+				android:id="@+id/textView48"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:text="@string/created_on"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toStartOf="@+id/textView45"
+				app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+			<TextView
+				android:id="@+id/createdDate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="8dp"
+				android:text="@{order.createdOn}"
+				android:textSize="12sp"
+				android:fontFamily="@font/opensans_regular"
+				android:textColor="@color/black"
+				app:layout_constraintStart_toEndOf="@+id/textView48"
+				app:layout_constraintTop_toTopOf="@+id/textView48"
+				tools:text="02/9/2002" />
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+</layout>

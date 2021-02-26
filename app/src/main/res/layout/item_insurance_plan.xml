@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/insurancePlanName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/malayan"
+                android:textColor="#303030"
+                android:textSize="21sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/categoryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/category"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/insurancePlanName"/>
+
+            <TextView
+                android:id="@+id/insuranceDisplayCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/display"
+                android:layout_marginStart="6dp"
+                app:layout_constraintStart_toEndOf="@id/categoryText"
+                app:layout_constraintBottom_toBottomOf="@id/categoryText"/>
+
+            <TextView
+                android:id="@+id/insuranceSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sample_description"
+                app:layout_constraintTop_toBottomOf="@id/categoryText"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

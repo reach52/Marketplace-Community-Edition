@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<data>
+
+		<variable
+			name="product"
+			type="reach52.marketplace.community.insurance.entity.InsuranceProduct"
+			/>
+
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:background="@drawable/border_insuranceproductdetail"
+		>
+
+		<TextView
+			android:id="@+id/insurance_product_name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="@{product.displayName}"
+			android:layout_margin="12dp"
+			android:textSize="14sp"
+			android:textColor="@color/black"
+			android:fontFamily="@font/montserrat_bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="Display Name" />
+
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

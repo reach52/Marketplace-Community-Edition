@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".auth.view.PINEnterActivity">
+
+	<ImageView
+		android:id="@+id/imageView8"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="32dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/reach52_marketplace_logo" />
+
+	<reach52.marketplace.community.auth.view.PINView
+		android:id="@+id/pin_input"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:codeLength="4"
+		app:codeHiddenMode="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/textView8"
+		app:layout_constraintVertical_bias="0.19"
+		app:textSize="26sp"
+		app:underlineCursorEnabled="false"
+		app:underlineFilledColor="@color/colorPrimary"
+		app:underlineStroke="4dp" />
+
+	<Button
+		android:id="@+id/enter_btn"
+		style="@style/BottomBlueButton"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:enabled="true"
+		android:onClick="onEnterPress"
+		android:text="@string/enter"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/forgot_pin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="20dp"
+		android:text="@string/forgot_pin"
+		android:textAlignment="center"
+		android:textColor="@color/purple"
+		app:layout_constraintBottom_toTopOf="@+id/enter_btn"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/pin_input" />
+
+	<TextView
+		android:id="@+id/textView8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/please_enter_pin"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
