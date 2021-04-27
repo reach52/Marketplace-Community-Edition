@@ -5,14 +5,13 @@ marketplace Community edition is an open-source Kotlin codebase aiming to suppor
 
 ### What is this repository for? ###
 
-* Creating a plug-n-play solution for the existing/upcoming Healthcare e-commerce platforms
 * Current version of this repository is version 0.0.0 (v0.0.0)
 
 ### Dependencies ###
 marketplace community edition uses a number of open source projects to work properly:
 
 * Couchbase - https://docs-archive.couchbase.com/home/index.html - Client version for Couchbase Server : the world's first Engagement Database.
-* [Android] - https://www.android.com/ - creating apps for Android phones and tablets
+* Android - https://www.android.com - creating apps for Android phones and tablets
 
 
 ### How do I get set up? ###
