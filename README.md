@@ -11,9 +11,8 @@ marketplace Community edition is an open-source Kotlin codebase aiming to suppor
 ### Dependencies ###
 marketplace community edition uses a number of open source projects to work properly:
 
-* [Couchbase Lite] - Client version for Couchbase Server : the world's first Engagement Database.
-* [RxAndroid] - RxJava bindings for Android.
-* [Android] - creating apps for Android phones and tablets
+* Couchbase - https://docs-archive.couchbase.com/home/index.html - Client version for Couchbase Server : the world's first Engagement Database.
+* [Android] - https://www.android.com/ - creating apps for Android phones and tablets
 
 
 ### How do I get set up? ###
@@ -23,11 +22,6 @@ marketplace community edition uses a number of open source projects to work prop
 * Import project in Android Studio
 * Wait for it to auto-build, or you can manually build the project by going to Build > Make Project
 * Run
-
-## Build status
-Build status of continus integration - marketplace Community edition 
-
-[![Build Status](CI/CD Repo link: TBD](CI/CD Link: TBD)
 
 ## Tech/framework used
 Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
