@@ -24,9 +24,9 @@ marketplace community edition uses a number of open source projects to work prop
 * Run
 
 ## Tech/framework used
-# Kotlin
+### Kotlin
 is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.
-# Couchbase Server
+### Couchbase Server
 originally known as Membase, is an open-source, distributed multi-model NoSQL document-oriented database software package optimized for interactive applications. These applications may serve many concurrent users by creating, storing, retrieving, aggregating, manipulating and presenting data
 
 
