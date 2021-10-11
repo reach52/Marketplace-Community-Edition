@@ -7,7 +7,7 @@
 
         <variable
             name="medicinePurchaseModel"
-            type="healthcare.alliedworld.dispergo.medicine.viewmodel.MedicationPurchaseViewModel" />
+            type="reach52.marketplace.community.medicine.viewmodel.MedicationPurchaseViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

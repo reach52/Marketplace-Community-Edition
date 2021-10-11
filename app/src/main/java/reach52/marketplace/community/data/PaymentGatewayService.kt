@@ -7,7 +7,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface PaymentGatewayService {
-//'http://uat-paygw.reach52.com/xendit/invoice
-    @POST("/xendit/invoice")
+    @POST("your invoice API")
     fun getPaymentInvoiceUrl(@Body paymentRequestModel: PaymentRequestModel): Call<PaymentResponseModel?>?
 }

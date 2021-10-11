@@ -14,7 +14,6 @@ import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
 import com.jakewharton.rxbinding3.appcompat.queryTextChanges
 import healthcare.alliedworld.dispergo.medicine.view.PaymentFragment
-import healthcare.alliedworld.dispergo.medicine.view.PaymentWebViewFragment
 import reach52.marketplace.community.BuildConfig
 import reach52.marketplace.community.R
 import reach52.marketplace.community.activities.BaseActivity

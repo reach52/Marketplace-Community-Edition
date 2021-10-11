@@ -14,6 +14,7 @@ import io.reactivex.SingleEmitter
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import org.json.JSONObject
 import java.io.File
 import java.io.IOException
@@ -125,17 +126,58 @@ object NetworkManager {
 	}.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 
 
+//	private fun handleResponse(response: Response, it: SingleEmitter<SimpleResponse>) {
+//		val string = response.body()?.string()
+//		logResponse(string)
+//
+//		when (response.code()) {
+//			200, 201, 202 -> {
+//				val sr = SimpleResponse(
+//						response.code(),
+//						response.message(),
+//						response.isSuccessful,
+//						JSONObject(string)
+//				)
+//				it.onSuccess(sr)
+//			}
+//			401 -> {
+//				it.onError(IncorrectCredsException())
+//			}
+//			403 -> {
+//				it.onError(AccessDeniedException())
+//			}
+//			404 -> {
+//				it.onError(AccountNotFoundException())
+//			}
+//			423 -> {
+//				it.onError(AccountLockedException())
+//			}
+//			409 -> {
+//				it.onError(UsernameTakenException())
+//			}
+//			406 -> {
+//				it.onError(InvalidRegistrationDataException())
+//			}
+//			else -> {
+//				it.onError(Exception("${response.code()}: ${response.message()}"))
+//			}
+//		}
+//
+//
+//		response.body()?.close()
+//	}
+
 	private fun handleResponse(response: Response, it: SingleEmitter<SimpleResponse>) {
-		val string = response.body()?.string()
+		val string = response.body?.string()
 		logResponse(string)
 
-		when (response.code()) {
+		when (response.code) {
 			200, 201, 202 -> {
 				val sr = SimpleResponse(
-						response.code(),
-						response.message(),
-						response.isSuccessful,
-						JSONObject(string)
+					response.code,
+					response.message,
+					response.isSuccessful,
+					JSONObject(string)
 				)
 				it.onSuccess(sr)
 			}
@@ -158,17 +200,18 @@ object NetworkManager {
 				it.onError(InvalidRegistrationDataException())
 			}
 			else -> {
-				it.onError(Exception("${response.code()}: ${response.message()}"))
+				it.onError(Exception("${response.code}: ${response.message}"))
 			}
 		}
 
 
-		response.body()?.close()
+		response.body?.close()
 	}
 
 	private fun logResponse(responseString: String?) {
 		Log.d("taaag", "response: $responseString")
 	}
+
 
 	private fun logRequest(request: Request, payload: Any? = null) {
 		val payLd = when (payload) {
@@ -179,7 +222,8 @@ object NetworkManager {
 				payload.toString()
 			}
 		}
-		Log.d("taaag", "request: ${request.method()} ${request.url()}\nbody: $payLd")
+//		Log.d("taaag", "request: ${request.method()} ${request.url()}\nbody: $payLd")
+		Log.d("taaag", "request: ${request.method} ${request.url}\nbody: $payLd")
 	}
 
 	fun makeMultipartRequest(
@@ -211,7 +255,10 @@ object NetworkManager {
 					multipartRequestBuilder.addFormDataPart(
 							file.key,
 							f.absolutePath,
-							RequestBody.create(MediaType.parse(mime), file.value)
+//							RequestBody.create(MediaType.parse(mime), file.value)
+						RequestBody.create(mime?.let { it1 -> it1.toMediaTypeOrNull() },
+														file.value!!
+															)
 					)
 				}
 			}
@@ -221,7 +268,8 @@ object NetworkManager {
 
 			for (string in stringData) {
 				if (string.value != null) {
-					multipartRequestBuilder.addFormDataPart(string.key, string.value)
+//					multipartRequestBuilder.addFormDataPart(string.key, string.value)
+					multipartRequestBuilder.addFormDataPart(string.key, string.value!!)
 				}
 			}
 

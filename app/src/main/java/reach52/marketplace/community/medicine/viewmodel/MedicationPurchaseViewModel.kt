@@ -297,7 +297,7 @@ class MedicationPurchaseViewModel : ViewModel() {
     fun paymentInvoiceApi() {
         _paymentMutable = MutableLiveData()
 
-        val loginService = healthcare.alliedworld.dispergo.app.DispergoApp.create3()
+        val loginService = reach52.marketplace.community.app.DispergoApp.create3()
 //        val call = getLoginedUser()!!._id.let {
 //            getLoginedUser()?.email?.let { it1 ->
 //                PaymentRequestModel(
@@ -319,9 +319,9 @@ class MedicationPurchaseViewModel : ViewModel() {
 
         val call = resident.id.let {
             resident.email.let {
-                Log.d("pay", meds)
+//                Log.d("pay", meds)
                 PaymentRequestModel(
-                    "12323232323232",
+                    "",
                     total,
                     "descriptions",
                     shouldSendEmail,

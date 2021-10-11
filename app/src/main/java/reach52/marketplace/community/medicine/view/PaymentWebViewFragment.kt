@@ -1,4 +1,4 @@
-package healthcare.alliedworld.dispergo.medicine.view
+package reach52.marketplace.community.medicine.view
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -16,7 +16,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.reach52.healthcare.util.SecurePreferences
 import reach52.marketplace.community.R
 import reach52.marketplace.community.databinding.FragmentPaymentWebViewBinding
-import reach52.marketplace.community.medicine.view.MedicationPurchaseActivity
 import reach52.marketplace.community.medicine.viewmodel.MedicationPurchaseViewModel
 import reach52.marketplace.community.util.Constant
 
@@ -65,12 +64,9 @@ class PaymentWebViewFragment : Fragment() {
                 }
             }
 
-            Log.d("Xendid", "onViewCreated: webpage fragment")
             binding.xenditWebView.loadUrl(it.invoice_url)
-            Log.d("paymentGatewayURL", it.invoice_url)
-//            binding.xenditWebView.loadUrl("https://checkout-staging.xendit.co/web/6142bcde651ce324d0507759")
 
-//            countDownStart()
+            countDownStart()
         })
 
         binding.xenditWebView.settings.javaScriptEnabled = true
@@ -80,15 +76,6 @@ class PaymentWebViewFragment : Fragment() {
                 super.onProgressChanged(view, newProgress)
             }
         }
-
-//        Log.d("Xendid", "onViewCreated: webpage fragment")
-////            binding.xenditWebView.loadUrl(it.data.invoice_url)
-////        binding.xenditWebView.loadUrl("http://google.com")
-//        binding.xenditWebView.loadUrl("https://checkout-staging.xendit.co/web/61430a7a45ad6ce26ae06888")
-
-
-
-
     }
 
     private fun countDownStart() {

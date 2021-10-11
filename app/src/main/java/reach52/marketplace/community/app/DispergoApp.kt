@@ -33,9 +33,8 @@ class DispergoApp : Application() {
                 .addConverterFactory(
                     GsonConverterFactory.create()
                 )
-                //https://uat-ma-authapi.reach52.com/api/user/login
-                    //'http://uat-paygw.reach52.com/xendit/invoice
-                .baseUrl("https://api-open.reach52.com")
+
+                .baseUrl("your open API")
                 .client(buildHttpClient())
                 .build()
 
@@ -48,7 +47,7 @@ class DispergoApp : Application() {
                 .addConverterFactory(
                     GsonConverterFactory.create()
                 )
-                .baseUrl("https://uat-paygw.reach52.com")
+                .baseUrl("your UAT payment gateway API")
                 .client(buildHttpClient())
                 .build()
 
