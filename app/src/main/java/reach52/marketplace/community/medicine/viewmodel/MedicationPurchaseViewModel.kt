@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Environment
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import reach52.marketplace.community.DispergoApp
@@ -269,6 +270,88 @@ class MedicationPurchaseViewModel : ViewModel() {
 
         return false
 
+    }
+
+    //    fun updateSubOrderPaymentStatusOnline(str: String) =
+//        if (str == "COD") {
+//            repository?.updateSubOrderPaymentStatusOnline(
+//                purchaseId,
+//                "UNPAID",
+//                "COD"
+//            )
+//        } else {
+//            repository?.updateSubOrderPaymentStatusOnline(
+//                purchaseId,
+//                "UNPAID",
+//                "Online"
+//            )
+//        }
+    var purchasedId: String? = null
+    var shouldSendEmail: Boolean = true
+    var payerEmail: String? = null
+
+    var _paymentMutable = MutableLiveData<PaymentResponseModel>()
+    val paymentMutable: LiveData<PaymentResponseModel>
+        get() = _paymentMutable
+
+    fun paymentInvoiceApi() {
+        _paymentMutable = MutableLiveData()
+
+        val loginService = healthcare.alliedworld.dispergo.app.DispergoApp.create3()
+//        val call = getLoginedUser()!!._id.let {
+//            getLoginedUser()?.email?.let { it1 ->
+//                PaymentRequestModel(
+//                    purchaseId,
+//                    it,
+////                    realmResident._id.toString(),
+////                    "sasasasa",
+//                    residentId.id,
+//                    total.toString(),
+//                    "description",
+//                    it1
+//                )
+//            }
+//        }?.let {
+//            loginService.getPaymentInvoiceUrl(
+//                it
+//            )
+//        }
+
+        val call = resident.id.let {
+            resident.email.let {
+                Log.d("pay", meds)
+                PaymentRequestModel(
+                    "12323232323232",
+                    total,
+                    "descriptions",
+                    shouldSendEmail,
+                    "email@reach52.com",
+                    PaymentRequestModel.Customers(resident.firstName, "email@reach52.com", resident.phone),
+                    "PHP",
+                    listOf(PaymentRequestModel.Items("item name", 2, 100))
+                )
+            }
+        }?.let {
+            loginService.getPaymentInvoiceUrl(
+                it
+            )
+        }
+        call!!.enqueue(object : retrofit2.Callback<PaymentResponseModel?> {
+            override fun onResponse(
+                call: retrofit2.Call<PaymentResponseModel?>,
+                response: retrofit2.Response <PaymentResponseModel?>
+            ) {
+                if (response.isSuccessful) {
+                    _paymentMutable.value = response.body()
+
+                }
+            }
+
+            override fun onFailure(call: retrofit2.Call<PaymentResponseModel?>, t: Throwable) {
+                Log.d("ERROR", t.message.toString())
+            }
+
+        })
     }
 
     class PrescriptionNumberMissingException : Exception()
