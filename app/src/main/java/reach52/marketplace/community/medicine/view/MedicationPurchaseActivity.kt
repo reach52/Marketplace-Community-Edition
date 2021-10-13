@@ -13,6 +13,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
 import com.jakewharton.rxbinding3.appcompat.queryTextChanges
+import healthcare.alliedworld.dispergo.medicine.view.PaymentFragment
 import reach52.marketplace.community.BuildConfig
 import reach52.marketplace.community.R
 import reach52.marketplace.community.activities.BaseActivity
@@ -36,6 +37,8 @@ class MedicationPurchaseActivity: BaseActivity(), MenuItem.OnActionExpandListene
     private val medicationSupplierFragment by lazy { MedicationSupplierFragment() }
     private val medicationBasketFragment by lazy { OrderCartFragment() }
     private val medicineListFragment by lazy { MedicineListFragment() }
+    private val paymentFragment by lazy { PaymentFragment() }
+    private val paymentUIFragment by lazy { PaymentWebViewFragment() }
     private lateinit var id: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -188,6 +191,10 @@ class MedicationPurchaseActivity: BaseActivity(), MenuItem.OnActionExpandListene
         gotoFragment(prescriptionFragment, emptyStack = false, addToBackStack = true)
     }
 
+    fun goToPaymentFragment() {
+        gotoFragment( paymentFragment, emptyStack = false, addToBackStack = true)
+    }
+
     fun goToExtraDataFragment(){
         gotoFragment(orderExtraDataFragment, emptyStack = false, addToBackStack = true)
     }
@@ -203,6 +210,10 @@ class MedicationPurchaseActivity: BaseActivity(), MenuItem.OnActionExpandListene
     fun goToMedicineListFragment() {
         gotoFragment(medicineListFragment, emptyStack = false, addToBackStack = true)
     }
+
+    fun goToPaymentUIFragment() {
+               gotoFragment(paymentUIFragment, emptyStack = false, addToBackStack = true)
+           }
 
 
     fun gotoOrderPreviewhome2(context: Context) {

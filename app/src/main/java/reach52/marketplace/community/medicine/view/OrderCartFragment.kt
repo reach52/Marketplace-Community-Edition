@@ -57,23 +57,33 @@ class OrderCartFragment : Fragment() {
 			activity.goToMedicineListFragment()
 		}
 
+//		val confirmationDialog = AlertDialog.Builder(context!!)
+//				.setMessage(getString(R.string.confirm_this_purchase))
+//				.setPositiveButton(R.string.yes) { dialog, _ ->
+//					b.checkoutButton.isEnabled = false
+//					vm.saveOrder(context!!).subscribe({
+//						dialog.dismiss()
+//						showOrderPlaceDialog()
+//						// Toast.makeText(activity, R.string.order_created, Toast.LENGTH_SHORT).show()
+//					}, {
+//						b.checkoutButton.isEnabled = true
+//						Toast.makeText(context!!, it.message, Toast.LENGTH_SHORT).show()
+//					})
+//				}
+//				.setNegativeButton(R.string.no) { dialog, _ ->
+//					dialog.dismiss()
+//				}
+//				.create()
 		val confirmationDialog = AlertDialog.Builder(context!!)
-				.setMessage(getString(R.string.confirm_this_purchase))
-				.setPositiveButton(R.string.yes) { dialog, _ ->
-					b.checkoutButton.isEnabled = false
-					vm.saveOrder(context!!).subscribe({
-						dialog.dismiss()
-						showOrderPlaceDialog()
-						// Toast.makeText(activity, R.string.order_created, Toast.LENGTH_SHORT).show()
-					}, {
-						b.checkoutButton.isEnabled = true
-						Toast.makeText(context!!, it.message, Toast.LENGTH_SHORT).show()
-					})
-				}
-				.setNegativeButton(R.string.no) { dialog, _ ->
-					dialog.dismiss()
-				}
-				.create()
+			.setMessage(getString(R.string.confirm_this_purchase))
+			.setPositiveButton(R.string.yes) { dialog, _ ->
+				activity.goToPaymentFragment()
+			}
+			.setNegativeButton(R.string.no) { dialog, _ ->
+				dialog.dismiss()
+				Toast.makeText(context, "cancelled", Toast.LENGTH_SHORT).show()
+			}
+			.create()
 
 		b.checkoutButton.setOnClickListener {
 

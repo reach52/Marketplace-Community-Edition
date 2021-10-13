@@ -75,6 +75,11 @@ android {
     }
 }
 
+ext{
+    retrofitVersion = '2.9.0'
+    loggingVersion = '4.3.1'
+}
+
 dependencies {
     def arrow_version = '0.8.2'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -127,5 +132,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.11.2"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
 
 }

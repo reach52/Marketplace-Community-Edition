@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="medicinePurchaseModel"
+            type="reach52.marketplace.community.medicine.viewmodel.MedicationPurchaseViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColorWhite"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ui.medicine.view.PaymentMenuFragment">
+
+        <TextView
+            android:id="@+id/cash_on_deliverybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/squre_border"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="start"
+            android:padding="20dp"
+            android:text="@string/cash_on_delivery"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_cash_on_delivery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xendilbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/squre_border"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="start"
+            android:padding="20dp"
+            android:text="@string/xendit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_credit_card"
+            app:layout_constraintStart_toStartOf="@+id/cash_on_deliverybtn"
+            app:layout_constraintTop_toBottomOf="@+id/cash_on_deliverybtn" />
+
+
+        <TextView
+            android:id="@+id/payTMbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/squre_border"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="start"
+            android:padding="20dp"
+            android:text="@string/paytm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_credit_card"
+            app:layout_constraintStart_toStartOf="@+id/xendilbtn"
+            app:layout_constraintTop_toBottomOf="@+id/xendilbtn" />
+
+        <TextView
+            android:id="@+id/razorpaybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/squre_border"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="start"
+            android:padding="20dp"
+            android:text="@string/razor_pay"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:drawableStartCompat="@drawable/ic_credit_card"
+            app:layout_constraintStart_toStartOf="@+id/payTMbtn"
+            app:layout_constraintTop_toBottomOf="@+id/payTMbtn" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_puple_button_selector"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/checkout"
+            android:textAllCaps="false"
+            android:textColor="@color/textColorWhite"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
